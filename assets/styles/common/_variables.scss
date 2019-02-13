@@ -1,0 +1,247 @@
+// settings
+$main-sm-columns:       12;
+$sidebar-sm-columns:    0;
+$enable-caret:          true;
+$enable-rounded:        true;
+$enable-shadows:        false;
+$enable-gradients:      false;
+$enable-transitions:    true;
+$enable-grid-classes:   true;
+$enable-print-styles:   true;
+
+$grid-columns:                12;
+
+// Colors
+$white:  #fff;
+$gray-100: #f6f6f6;
+$gray-150: #efefef;
+$gray-200: #e7e7e7;
+$gray-300: #E0E0E0;
+$gray-400: #BDBDBD;
+$gray-500: #9E9E9E;
+$gray-600: #757575;
+$gray-700: #616161;
+$gray-800: #424242;
+$gray-900: #181818;
+$black:  #000;
+
+// Custom
+$red:           #e93324;
+
+// Default
+$indigo:        #651FFF;
+$purple:        #6f42c1;
+$pink:          #e83e8c;
+$orange:        #f4701f;
+$teal:          #466baa;
+$turquoise:     #00bfa5;
+$cyan:          #acdcec;
+$blue:          #327fc2; //#25b4e5;
+$green:         #7ead7c;
+$yellow:        #ffcf47;
+
+
+// Color Arrays
+$colors: (
+  yellow:        $yellow,
+  blue:          $blue,
+  cyan:          $cyan,
+  green:         $green,
+  indigo:        $indigo,
+  purple:        $purple,
+  pink:          $pink,
+  red:           $red,
+  orange:        $orange,
+  teal:          $teal,
+  turquoise:     $turquoise,
+);
+
+$theme-colors: (
+  primary:      $blue,
+  secondary:    $yellow,
+  success:      $green,
+  info:         $cyan,
+  warning:      $yellow,
+  danger:       $red,
+  light:        $gray-100,
+  dark:         $gray-800,
+
+  yellow:       $yellow,
+  blue:         $blue,
+  cyan:         $cyan,
+  green:        $green,
+  indigo:       $indigo,
+  purple:       $purple,
+  pink:         $pink,
+  red:          $red,
+  orange:       $orange,
+  teal:         $teal,
+  turquoise:    $turquoise,
+
+  gray-100:     $gray-100,
+  gray-200:     $gray-200,
+  gray-300:     $gray-300,
+  gray-400:     $gray-400,
+  gray-500:     $gray-500,
+  gray-600:     $gray-600,
+  gray-700:     $gray-700,
+  gray-800:     $gray-800,
+  gray-900:     $gray-900,
+  black:        $black
+);
+
+$grays: (
+  100: $gray-100,
+  200: $gray-200,
+  300: $gray-300,
+  400: $gray-400,
+  500: $gray-500,
+  600: $gray-600,
+  700: $gray-700,
+  800: $gray-800,
+  900: $gray-900
+);
+
+// Spacing system
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: ($spacer * .25),
+  2: ($spacer * .5),
+  3: $spacer,
+  4: ($spacer * 1.5),
+  5: ($spacer * 3),
+  6: ($spacer * 4),
+  7: ($spacer * 5),
+  8: ($spacer * 6),
+  9: ($spacer * 7),
+  10: ($spacer * 8),
+);
+
+
+$body-bg:                     $red;
+$body-color:                  $black;
+
+$font-family-sans-serif:      'Archive', sans-serif;
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$font-family-base:            $font-family-sans-serif;
+
+$font-size-base:              1.125rem;        // About 18px
+$font-size-lg:                $font-size-base; // About 18px
+$font-size-sm:                1rem;            // About 16px
+
+$line-height-lg:              1.35;
+$line-height-sm:              1.35;
+
+$font-weight-light:           300;
+$font-weight-normal:          400;
+$font-weight-bold:            700;
+
+$font-weight-base:            $font-weight-normal;
+$line-height-base:            1.5;
+
+$link-color:                  $black;
+$link-decoration:             none;
+$link-hover-color:            $link-color;
+$link-hover-decoration:       none;
+
+$paragraph-margin-bottom:     .6rem;
+
+$headings-margin-bottom:      .6rem;
+$headings-font-family:        'Heebo', serif;
+$headings-font-weight:        800;
+$headings-line-height:        1.17;
+$headings-color:              inherit;
+
+$h1-font-size:                2.38rem;  // 38px
+$h2-font-size:                2rem;     // 32px
+$h3-font-size:                1.625rem; // 26px
+$h4-font-size:                1.5rem;   // 24px
+$h5-font-size:                1.375rem; // 22px
+$h6-font-size:                1.125rem; // 18px
+
+$display1-size:               4rem;
+$display2-size:               3.5rem;
+$display3-size:               3rem;
+$display4-size:               2.8rem;
+
+$display1-weight:             700;
+$display2-weight:             300;
+$display3-weight:             300;
+$display4-weight:             300;
+$display-line-height:         1;
+
+$lead-font-size:              ($font-size-base * 1.25);
+$lead-font-weight:            300;
+
+$small-font-size:             80%;
+
+$text-muted:                  $gray-600;
+
+$navbar-padding-y:                  0;
+$navbar-padding-x:                  40px;
+
+$navbar-brand-padding-y:            0;
+
+$navbar-nav-link-padding-x:         .8rem;
+
+$nav-link-padding-y:                .5rem;
+$nav-link-padding-x:                1rem;
+$nav-link-disabled-color:           $gray-600;
+
+$navbar-dark-color:                 $white;
+$navbar-dark-hover-color:           rgba($white, .75);
+$navbar-dark-active-color:          $white;
+$navbar-dark-disabled-color:        rgba($white, .25);
+$navbar-dark-toggler-border-color:  transparent;
+
+$navbar-light-color:                $white;
+$navbar-light-hover-color:          #33a6d5;
+$navbar-light-active-color:         #33a6d5;
+$navbar-light-disabled-color:       rgba($black, .3);
+$navbar-light-toggler-border-color: transparent;
+
+
+$table-border-color:          rgba(255, 255, 255, .2);
+$table-hover-bg:              rgba($gray-100, .3);
+
+$input-focus-color:           $red;
+$input-focus-border-color:    $cyan;
+$input-placeholder-color:     $gray-400;
+
+$border-width:                2px;
+$border-color:                $gray-300;
+
+$border-radius:               0;
+$border-radius-lg:            0;
+$border-radius-sm:            0;
+
+$transition-base:             all .3s ease;
+$transition-fade:             opacity .3s ease;
+$transition-collapse:         height .3s ease;
+
+$input-btn-padding-y:         .8rem;
+$input-btn-padding-x:         1.2rem;
+$input-btn-line-height:       $line-height-base;
+
+$input-btn-focus-width:       0rem;
+$input-btn-focus-color:       $red;
+
+
+$input-btn-padding-y-sm:      .25rem;
+$input-btn-padding-x-sm:      1.3rem;
+$input-btn-line-height-sm:    $line-height-sm;
+
+$input-btn-padding-y-lg:      .5rem;
+$input-btn-padding-x-lg:      1.8rem;
+$input-btn-line-height-lg:    $line-height-lg;
+$input-btn-border-width:      $border-width;
+
+$input-border-radius:         0;
+$input-padding-y:             .7rem;
+$input-padding-x:             .7rem;
+$input-border-color:          $yellow;
+$input-border-width:          2px;
+$input-height:                50px;
+
+$alert-border-radius:         .2rem;

@@ -1,2 +1,2 @@
-# artitude
-Roots/Sage Thema voor ARTITUDE
+# boilerplate
+IMAGA's Roots/Sage boilerplate remix

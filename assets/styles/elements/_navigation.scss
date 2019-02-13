@@ -1,0 +1,111 @@
+#header{
+  #brand{
+    position: absolute;
+    top:0;
+    left: calc(50vw - 161.5px);
+    box-shadow: 0px 5px 25px 0 rgba(26, 23, 27, 0.63);
+    margin: 0;
+    transition: .3s ease-in-out;
+    z-index: 2000;
+  }
+
+  #toggler{
+    position: relative;
+    outline: transparent;
+    padding: 0;
+    border: none;
+    margin-top: 15px;
+    width: 111px;
+
+    .animated-toggler{
+      position: relative;
+      width: 40px;
+      height: 30px;
+      transform: rotate(0deg);
+      transition: .3s ease-in-out;
+      cursor: pointer;
+
+      span{
+        display: block;
+        position: absolute;
+        height: 4px;
+        width: 100%;
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+        transition: .3s ease-in-out;
+        background-color: $white;
+
+        &:nth-child(1) {
+          top: 0px;
+        }
+
+        &:nth-child(2), &:nth-child(3) {
+          top: 12px;
+        }
+
+        &:nth-child(4) {
+          top: 24px;
+        }
+      }
+
+      &.open{
+        span{
+          &:nth-child(1) {
+            top: 11px;
+            width: 0%;
+            left: 50%;
+          }
+
+          &:nth-child(2) {
+            transform: rotate(45deg);
+          }
+
+          &:nth-child(3) {
+            transform: rotate(-45deg);
+          }
+
+          &:nth-child(4) {
+            top: 11px;
+            width: 0%;
+            left: 50%;
+          }
+        }
+      }
+    }
+
+    .text{
+      position: absolute;
+      content:'';
+      height: 20px;
+      width: 50px;
+      background-image: url('../images/icons/menu.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      top: calc(50% - 11px);
+      left: 55px;
+      color: transparent;
+    }
+  }
+
+  #navigation{
+    z-index: 2010;
+
+    #primary_navigation{
+      width:100%;
+
+      .dropdown-toggle:after{
+        display: none;
+      }
+    }
+  }
+
+  &.open{
+    #brand{
+      top: -65px;
+      box-shadow: 0px 5px 25px 0 rgba(26, 23, 27, 0);
+      transition: .3s ease-in-out;
+    }
+  }
+}
