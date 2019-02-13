@@ -27,8 +27,6 @@ function navigation( $theme_location = "primary_navigation", $container_id = "pr
       'container_class'   => $container_class,
       'container_id'      => $container_id,
       'menu_class'        => $menu_class,
-      'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
-      'walker'            => new Bootstrap_Walker\WP_Bootstrap_Navwalker()
     )
   );
 }

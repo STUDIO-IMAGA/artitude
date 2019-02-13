@@ -1,12 +1,20 @@
 #header{
+  transition: .3s ease-in-out;
   #brand{
     position: absolute;
     top:0;
     left: calc(50vw - 161.5px);
+    height: 65px;
+    width: 323px;
     box-shadow: 0px 5px 25px 0 rgba(26, 23, 27, 0.63);
     margin: 0;
     transition: .3s ease-in-out;
     z-index: 2000;
+
+    img{
+      width:100%;
+      height: auto;
+    }
   }
 
   #toggler{
@@ -14,8 +22,9 @@
     outline: transparent;
     padding: 0;
     border: none;
-    margin-top: 15px;
     width: 111px;
+    margin-left: 40px;
+    height: 65px;
 
     .animated-toggler{
       position: relative;
@@ -92,11 +101,102 @@
   #navigation{
     z-index: 2010;
 
-    #primary_navigation{
-      width:100%;
+    #topbar{
+      position: absolute;
+      top: 0;
+      left: 200;
+      right: 0;
+      height: 65px;
+      display: none;
+      opacity:0;
+      transition: .3s ease-in-out;
 
-      .dropdown-toggle:after{
-        display: none;
+      #secondary_navigation{
+        padding-right: 40px;
+
+        ul{
+          justify-content: flex-end;
+
+          .menu-item{
+            position: relative;
+            margin-left: 107px;
+            line-height: 65px;
+
+            a{
+              color: $white;
+            }
+
+            &.phone:before,
+            &.mail:before,
+            &.visit:before{
+              display: block;
+              position: absolute;
+              content:'';
+              background-size: contain;
+              background-repeat: no-repeat;
+              background-position: center;
+              height: 36px;
+              width: 36px;
+              left: -42px;
+              top: calc(50% - 20px);
+            }
+            &.phone:before{
+              background-image: url('https://placehold.it/36');
+            }
+            &.mail:before{
+              background-image: url('https://placehold.it/36');
+            }
+            &.visit:before{
+              background-image: url('https://placehold.it/36');
+            }
+          }
+        }
+      }
+    }
+
+    #navigation_container{
+      background-color: $gray-900;
+
+      #primary_navigation{
+        width:100%;
+        max-width:1200px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        ul{
+          justify-content: space-around;
+
+          .menu-item{
+
+            a{
+              font-family: 'Overpass Mono', monospace;
+              font-size: 1.21875rem;
+              letter-spacing: 1.6px;
+              color: $white;
+            }
+
+            .sub-menu{
+              list-style-type: none;
+              padding: 0;
+              margin-top: 28px;
+
+              .menu-item{
+                margin: 0;
+
+                a{
+                  display: block;
+                  font-family: 'Archivo', sans-serif;
+                  font-size: 1.15625rem;
+                  font-weight: 400;
+                  letter-spacing: 1.5px;
+                  color: $white;
+                  padding-top: 2px;
+                  padding-bottom: 2px;
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -107,5 +207,16 @@
       box-shadow: 0px 5px 25px 0 rgba(26, 23, 27, 0);
       transition: .3s ease-in-out;
     }
+    #navigation{
+      #topbar{
+        display: block;
+        opacity: 1;
+        transition: .3s ease-in-out;
+      }
+    }
+  }
+
+  &.open{
+    background-color: $black;
   }
 }

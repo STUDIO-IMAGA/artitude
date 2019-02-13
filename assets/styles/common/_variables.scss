@@ -123,7 +123,7 @@ $body-bg:                     $red;
 $body-color:                  $black;
 
 $font-family-sans-serif:      'Archive', sans-serif;
-$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$font-family-monospace:       'Overpass Mono', monospace;
 $font-family-base:            $font-family-sans-serif;
 
 $font-size-base:              1.125rem;        // About 18px
@@ -177,30 +177,6 @@ $lead-font-weight:            300;
 $small-font-size:             80%;
 
 $text-muted:                  $gray-600;
-
-$navbar-padding-y:                  0;
-$navbar-padding-x:                  40px;
-
-$navbar-brand-padding-y:            0;
-
-$navbar-nav-link-padding-x:         .8rem;
-
-$nav-link-padding-y:                .5rem;
-$nav-link-padding-x:                1rem;
-$nav-link-disabled-color:           $gray-600;
-
-$navbar-dark-color:                 $white;
-$navbar-dark-hover-color:           rgba($white, .75);
-$navbar-dark-active-color:          $white;
-$navbar-dark-disabled-color:        rgba($white, .25);
-$navbar-dark-toggler-border-color:  transparent;
-
-$navbar-light-color:                $white;
-$navbar-light-hover-color:          #33a6d5;
-$navbar-light-active-color:         #33a6d5;
-$navbar-light-disabled-color:       rgba($black, .3);
-$navbar-light-toggler-border-color: transparent;
-
 
 $table-border-color:          rgba(255, 255, 255, .2);
 $table-hover-bg:              rgba($gray-100, .3);

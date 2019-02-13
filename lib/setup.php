@@ -5,7 +5,7 @@ namespace IMAGA\Theme\Setup;
 use IMAGA\Theme\Assets;
 
 // Define Google Fonts
-define("GOOGLE_FONTS", "Archivo|Heebo:800|Overpass+Mono:300");
+define("GOOGLE_FONTS", "Archivo:400|Heebo:800|Overpass+Mono:300,600");
 
 /*
  * Theme setup
