@@ -1,0 +1,40 @@
+.element{
+  &.header{
+    position: relative;
+    background-color: $red;
+    overflow: hidden;
+    color: $white;
+
+    .header-image{
+      position: absolute;
+      top: 120px;
+    }
+    
+    .filler{
+      height: 792px;
+    }
+
+    .content{
+
+      *{
+        color: $white;
+      }
+
+      p{
+        color: $white;
+        font-size: 1.125rem;
+      }
+    }
+
+    &:after{
+      content: "";
+      background: white;
+      height: 100px;
+      transform: skewY(-1deg);
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -50px;
+    }
+  }
+}

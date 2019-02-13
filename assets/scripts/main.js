@@ -24,6 +24,7 @@
            offset: 220,
            startEvent: 'load',
            once: 'true',
+           duration: 400,
         });
 
         // init Smooth Scroll
