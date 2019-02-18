@@ -1,0 +1,12 @@
+.element{
+  &.quote{
+    font-family: 'Overpass Mono', monospace;
+
+    .text{
+      font-size: 1.563rem
+    }
+    .author{
+      font-size: 1.125rem;
+    }
+  }
+}

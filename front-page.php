@@ -18,6 +18,21 @@
   </div>
 </section>
 
+<section class="elemet quote">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="text">
+          <p>Gllis. Cras dignissim scelerisque vestibulum. Mauris eget diam ut ante porttitor malesuada id et arcu. Nam sollicitudin justo ex, sed iacu mollis. Cras dignissim scelerisque vestibulum. Mauris eget diam ut ante porttitor malesuada id et arcu. Nam sollicitudin justo ex, sed iacu</p>
+        </div>
+        <div class="author">
+          <span>- Tom Moerdijk, Directeur Natuurmuseum Fryslân</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <? if( have_rows('layouts') ): ?>
   <? while( have_rows('layouts') ): the_row(); ?>
 
