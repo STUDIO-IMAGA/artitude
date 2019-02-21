@@ -1,0 +1,43 @@
+.element{
+  &.content-gallery{
+    .text{
+      text-align:right;
+    }
+
+    .gallery-container{
+      position:relative;
+      width:900px;
+      height:520px;
+      box-shadow: -20px 20px 0 0 #ccc2c2;
+    }
+
+    .paging-container{
+      position:absolute;
+      background-color:$black;
+      line-height:65px;
+      height:65px;
+      width:125px;
+      bottom:0;
+      left:0;
+      padding-left:53px;
+      z-index: 1000;
+
+      .slick-paging{
+        color:$white;
+        font-size:1.125rem;
+        @extend .heebo;
+      }
+
+      .slick-next{
+        display:inline-block;
+        height:12px;
+        width:12px;
+        transform:rotate(45deg);
+        border-top:2px solid $white;
+        border-right:2px solid $white;
+        border-left:0px solid transparent;
+        border-bottom:0px solid transparent;
+      }
+    }
+  }
+}

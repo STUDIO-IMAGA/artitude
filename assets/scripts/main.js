@@ -34,18 +34,28 @@
           topOnEmptyHash: true
         });
 
-        // init review slider
-        $(".review-slider").slick({
+        var paging = $('.slick-paging');
+        var next = $('.paging-container');
+        var gallery = $('.slick-slider');
+
+        gallery.on('init reInit', function(event, slick){
+          paging.text('1/' + slick.slideCount);
+        }).slick({
           infinite: true,
-          slidesToShow: 3,
-          slidesToScroll: 3,
           dots: false,
-          arrows: true,
-          centerMode: true,
-          centerPadding: 0,
+          arrows: false,
           draggable: true,
           mobileFirst: true,
+          speed: 500,
+          fade: true,
+        }).on('beforeChange', function(event, slick, currentSlide, nextSlide){
+          paging.text( (nextSlide + 1) + '/' + slick.slideCount);
         });
+
+        next.on('click', function(){
+          gallery.slick('slickNext');
+        });
+
 
         // return scroll percentage
         function getScrollPercentage() {
@@ -57,18 +67,18 @@
         }
 
         // toggle scroll to top anchor
-        document.addEventListener('scroll', function(){
-
-          var percentage = Math.floor( getScrollPercentage() );
-
-          if( percentage >= 40){
-            document.getElementById("scroll-to-top").classList.add('showing');
-            document.getElementById("scroll-to-top").classList.remove('hidden');
-          }else{
-            document.getElementById("scroll-to-top").classList.add('hidden');
-            document.getElementById("scroll-to-top").classList.remove('showing');
-          }
-        });
+        // document.addEventListener('scroll', function(){
+        //
+        //   var percentage = Math.floor( getScrollPercentage() );
+        //
+        //   if( percentage >= 40){
+        //     document.getElementById("scroll-to-top").classList.add('showing');
+        //     document.getElementById("scroll-to-top").classList.remove('hidden');
+        //   }else{
+        //     document.getElementById("scroll-to-top").classList.add('hidden');
+        //     document.getElementById("scroll-to-top").classList.remove('showing');
+        //   }
+        // });
 
       },
       finalize: function() {

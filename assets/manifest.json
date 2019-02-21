@@ -22,11 +22,6 @@
         "styles/dashboard.scss"
       ]
     },
-    "customizer.js": {
-      "files": [
-        "scripts/customizer.js"
-      ]
-    },
     "tinymce.js": {
       "files": [
         "scripts/tinymce.js"
