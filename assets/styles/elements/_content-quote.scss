@@ -1,0 +1,16 @@
+.element{
+  &.content-quote{
+    text-align: center;
+    @extend .overpass;
+
+    .text{
+      font-size: 1.563rem;
+      line-height: 1.813rem;
+    }
+
+    .author{
+      font-size: 1.125rem;
+      line-height: 2.438rem;
+    }
+  }
+}

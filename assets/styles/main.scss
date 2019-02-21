@@ -49,8 +49,11 @@
 @import "components/wp-classes";
 @import "components/typography";
 
-@import "elements/header";
-@import "elements/navigation";
-@import "elements/footer";
-@import "elements/pages";
-@import "elements/posts";
+@import "layouts/header";
+@import "layouts/navigation";
+@import "layouts/footer";
+@import "layouts/pages";
+@import "layouts/posts";
+
+@import "elements/content-text";
+@import "elements/content-quote";

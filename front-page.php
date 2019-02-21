@@ -9,8 +9,8 @@
 
 <section class="element content-text">
   <div class="container">
-    <div class="row">
-      <div class="col-12">
+    <div class="row justify-content-center">
+      <div class="col-9">
         <h2>Dit is een heading 2</h2>
         <p>Hier leg je uit met welk probleem de klant kwam. Welke uitdagingen jullie voorstonden als team en hoe je dat hebt aangevlogen. Alsof je onder water bent. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec tortor dui. Cras vitae mi ac ante tempus imperdiet quis vel dui. Sed dictum odio.</p>
       </div>
@@ -18,10 +18,10 @@
   </div>
 </section>
 
-<section class="elemet quote">
+<section class="element content-quote">
   <div class="container">
-    <div class="row">
-      <div class="col-12">
+    <div class="row justify-content-center">
+      <div class="col-9">
         <div class="text">
           <p>Gllis. Cras dignissim scelerisque vestibulum. Mauris eget diam ut ante porttitor malesuada id et arcu. Nam sollicitudin justo ex, sed iacu mollis. Cras dignissim scelerisque vestibulum. Mauris eget diam ut ante porttitor malesuada id et arcu. Nam sollicitudin justo ex, sed iacu</p>
         </div>

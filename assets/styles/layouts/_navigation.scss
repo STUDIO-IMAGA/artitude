@@ -1,5 +1,7 @@
 #header{
   transition: .3s ease-in-out;
+  z-index: 2000;
+
   #brand{
     position: absolute;
     top:0;
@@ -9,7 +11,7 @@
     box-shadow: 0px 5px 25px 0 rgba(26, 23, 27, 0.63);
     margin: 0;
     transition: .3s ease-in-out;
-    z-index: 2000;
+    z-index: 2050;
 
     img{
       width:100%;
@@ -25,6 +27,7 @@
     width: 111px;
     margin-left: 40px;
     height: 65px;
+    z-index: 2050;
 
     .animated-toggler{
       position: relative;
@@ -99,17 +102,17 @@
   }
 
   #navigation{
-    z-index: 2010;
+    z-index: 2020;
 
     #topbar{
       position: absolute;
       top: 0;
-      left: 200;
+      left: 0;
       right: 0;
-      height: 65px;
-      display: none;
+      height: 0px;
       opacity:0;
       transition: .3s ease-in-out;
+      z-index: 2000;
 
       #secondary_navigation{
         padding-right: 40px;
@@ -123,12 +126,15 @@
             line-height: 65px;
 
             a{
-              color: $white;
+              color: $gray-600;
+              font-size: 1.125rem;
+
+              @extend .heebo;
             }
 
             &.phone:before,
             &.mail:before,
-            &.visit:before{
+            &.address:before{
               display: block;
               position: absolute;
               content:'';
@@ -140,13 +146,16 @@
               left: -42px;
               top: calc(50% - 20px);
             }
+
             &.phone:before{
               background-image: url('https://placehold.it/36');
             }
+
             &.mail:before{
               background-image: url('https://placehold.it/36');
             }
-            &.visit:before{
+
+            &.address:before{
               background-image: url('https://placehold.it/36');
             }
           }
@@ -155,12 +164,16 @@
     }
 
     #navigation_container{
+      position: absolute;
+      top:0;
+      left:0;
+      right:0;
       background-color: $gray-900;
 
       #primary_navigation{
         width:100%;
         max-width:1200px;
-        padding-top: 40px;
+        padding-top: 105px;
         padding-bottom: 40px;
 
         ul{
@@ -202,21 +215,31 @@
   }
 
   &.open{
+    transition: .3s ease-in-out;
+
     #brand{
       top: -65px;
       box-shadow: 0px 5px 25px 0 rgba(26, 23, 27, 0);
       transition: .3s ease-in-out;
     }
+
     #navigation{
       #topbar{
-        display: block;
         opacity: 1;
+        height: 65px;
+        transition: .3s ease-in-out;
+        background-color: $black;
+      }
+
+      #navigation_container{
         transition: .3s ease-in-out;
       }
     }
   }
+}
 
-  &.open{
-    background-color: $black;
+.admin-bar{
+  #header{
+    top: 32px;
   }
 }
