@@ -1,0 +1,12 @@
+.element{
+  &.oneliner{
+    .text{
+      text-align: center;
+      color: #ccc3c3;
+      font-size: 3.75rem;
+      line-height: 3.75rem;
+
+      @extend .codystar;
+    }
+  }
+}

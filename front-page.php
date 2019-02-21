@@ -33,6 +33,18 @@
   </div>
 </section>
 
+<section class="element content-oneliner">
+  <div class="container">
+    <div class="row">
+      <div class="col-9">
+        <div class="text">
+          Wauw. Wat een vette onliner <br>staat hier zomaar.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <? if( have_rows('layouts') ): ?>
   <? while( have_rows('layouts') ): the_row(); ?>
 
