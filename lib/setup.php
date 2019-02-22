@@ -5,7 +5,7 @@ namespace IMAGA\Theme\Setup;
 use IMAGA\Theme\Assets;
 
 // Define Google Fonts
-define("GOOGLE_FONTS", "Archivo:400|Heebo:800,400|Overpass+Mono:300,600|Codystar:400");
+define("GOOGLE_FONTS", "Archivo:400|Heebo:800,500,400|Overpass+Mono:300,600|Codystar:400");
 
 /*
  * Theme setup
@@ -24,6 +24,7 @@ function setup() {
   register_nav_menus([
     'primary_navigation' => __('Primary Navigation', 'imaga'),
     'secondary_navigation' => __('Secondary Navigation', 'imaga'),
+    'tertiary_navigation' => __('Legal Navigation', 'imaga'),
   ]);
 
   // Enable post thumbnails
@@ -151,3 +152,12 @@ add_action( 'admin_enqueue_scripts', __NAMESPACE__ . '\\register_admin_styles');
  * Disable auto-paragraphing for Contact Form 7
  */
 add_filter('wpcf7_autop_or_not', '__return_false');
+
+/*
+ * increase upload limit
+ * Source: https://stackoverflow.com/questions/45161081/cannot-increase-maximum-upload-file-size-in-local-wordpress
+ */
+function increase_upload($bytes) {
+    return 134217700;
+}
+add_filter('upload_size_limit', __NAMESPACE__ . '\\increase_upload');

@@ -2,16 +2,20 @@
   &.header{
     position: relative;
     background-color: $red;
-    overflow: hidden;
     color: $white;
+    padding-bottom:0;
+    margin-bottom: 8rem;
 
     .header-image{
-      position: absolute;
-      top: 120px;
+      position:absolute;
+      top:120px;
+      right:65px;
+      width:800px;
+      height:600px;
     }
-    
+
     .filler{
-      height: 792px;
+      height: 750px;
     }
 
     .content{
@@ -27,14 +31,15 @@
     }
 
     &:after{
-      content: "";
-      background: white;
-      height: 100px;
-      transform: skewY(-1deg);
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: -50px;
+      position:absolute;
+      content:"";
+      background:$red;
+      height:100px;
+      transform:skewY(-2deg);
+      left:0;
+      right:0;
+      bottom:-3vw;
+      z-index:-1;
     }
   }
 }

@@ -1,5 +1,6 @@
 #header{
   transition: .3s ease-in-out;
+  height:0;
   z-index: 2000;
 
   #brand{
@@ -7,8 +8,7 @@
     top:0;
     left: calc(50vw - 161.5px);
     height: 65px;
-    width: 323px;
-    box-shadow: 0px 5px 25px 0 rgba(26, 23, 27, 0.63);
+    width: 324px;
     margin: 0;
     transition: .3s ease-in-out;
     z-index: 2050;
@@ -16,6 +16,7 @@
     img{
       width:100%;
       height: auto;
+      box-shadow: 0px 5px 25px 0 rgba(26, 23, 27, 0.63);
     }
   }
 
@@ -101,6 +102,7 @@
     }
   }
 
+
   #navigation{
     z-index: 2020;
 
@@ -116,82 +118,56 @@
 
       #secondary_navigation{
         padding-right: 40px;
-
-        ul{
-          justify-content: flex-end;
-
-          .menu-item{
-            position: relative;
-            margin-left: 107px;
-            line-height: 65px;
-
-            a{
-              color: $gray-600;
-              font-size: 1.125rem;
-
-              @extend .heebo;
-            }
-
-            &.phone:before,
-            &.mail:before,
-            &.address:before{
-              display: block;
-              position: absolute;
-              content:'';
-              background-size: contain;
-              background-repeat: no-repeat;
-              background-position: center;
-              height: 36px;
-              width: 36px;
-              left: -42px;
-              top: calc(50% - 20px);
-            }
-
-            &.phone:before{
-              background-image: url('https://placehold.it/36');
-            }
-
-            &.mail:before{
-              background-image: url('https://placehold.it/36');
-            }
-
-            &.address:before{
-              background-image: url('https://placehold.it/36');
-            }
-          }
-        }
       }
     }
 
     #navigation_container{
-      position: absolute;
+      position:absolute;
       top:0;
       left:0;
       right:0;
-      background-color: $gray-900;
+      background-color:$gray-900;
 
       #primary_navigation{
         width:100%;
-        max-width:1200px;
-        padding-top: 105px;
-        padding-bottom: 40px;
+        max-width:1440px;
+        padding-top:105px;
+        padding-left:40px;
+        padding-bottom:40px;
 
         ul{
-          justify-content: space-around;
+          justify-content:space-between;
+          height:0;
 
           .menu-item{
 
             a{
-              font-family: 'Overpass Mono', monospace;
-              font-size: 1.21875rem;
-              letter-spacing: 1.6px;
-              color: $white;
+              font-family:'Overpass Mono', monospace;
+              font-size:1.21875rem;
+              letter-spacing:1.6px;
+              color:$white;
+            }
+
+            &.external-link{
+              a{
+                &:after{
+                  display:inline-block;
+                  content:'';
+                  right:-20px;
+                  width:20px;
+                  height:20px;
+                  background-image:url('https:/placehold.it/20x20');
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  background-position: center;
+                }
+              }
             }
 
             .sub-menu{
               list-style-type: none;
               padding: 0;
-              margin-top: 28px;
+              margin-top: 20px;
 
               .menu-item{
                 margin: 0;
@@ -233,13 +209,87 @@
 
       #navigation_container{
         transition: .3s ease-in-out;
+
+        #primary_navigation{
+          ul{
+            height:auto;
+          }
+        }
       }
     }
   }
 }
 
+.toggler-bg{
+  position:fixed;
+  top:0;
+  left:0;
+  width:200px;
+  height:65px;
+  background-color:$black;
+  z-index:-1;
+}
+
 .admin-bar{
   #header{
     top: 32px;
+  }
+}
+
+
+ul.contact-menu{
+  justify-content: flex-end;
+
+  .menu-item{
+    position: relative;
+    margin-left: 107px;
+    line-height: 65px;
+
+    a{
+      color: $gray-600;
+      font-size: 1.125rem;
+
+      @extend .heebo;
+    }
+
+    &.phone:before,
+    &.mail:before,
+    &.address:before{
+      display: block;
+      position: absolute;
+      content:'';
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 32px;
+      width: 32px;
+      left: -42px;
+      top: calc(50% - 16px);
+    }
+
+    &.phone:before{
+      background-image: url('https://placehold.it/36');
+    }
+
+    &.mail:before{
+      background-image: url('../images/icons/mail.svg');
+    }
+
+    &.address:before{
+      background-image: url('../images/icons/koffie.svg');
+    }
+  }
+}
+
+#legal_navigation{
+  .menu-item{
+    margin-right: 2rem;
+    a{
+      color:$black;
+      font-size:.875rem;
+      line-height: 1.8;
+      letter-spacing: 0.3px;
+      padding:6px;
+    }
   }
 }

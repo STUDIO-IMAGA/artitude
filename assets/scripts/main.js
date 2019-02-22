@@ -56,30 +56,32 @@
           gallery.slick('slickNext');
         });
 
+        var video = $('video');
+        var progress = $('.video-progress > .progress-bar');
 
-        // return scroll percentage
-        function getScrollPercentage() {
-          var h = document.documentElement,
-          b = document.body,
-          st = 'scrollTop',
-          sh = 'scrollHeight';
-          return (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
-        }
+        $('.btn-play').on('click',function(){
+          video.trigger('play');
+          video.parent().toggleClass('playing');
+        });
 
-        // toggle scroll to top anchor
-        // document.addEventListener('scroll', function(){
-        //
-        //   var percentage = Math.floor( getScrollPercentage() );
-        //
-        //   if( percentage >= 40){
-        //     document.getElementById("scroll-to-top").classList.add('showing');
-        //     document.getElementById("scroll-to-top").classList.remove('hidden');
-        //   }else{
-        //     document.getElementById("scroll-to-top").classList.add('hidden');
-        //     document.getElementById("scroll-to-top").classList.remove('showing');
-        //   }
-        // });
+        video.on('click',function(){
+          this[this.paused ? 'play' : 'pause']();
+          video.parent().toggleClass('playing');
+        });
 
+        video.on('loadedmetadata', function(event){
+          progress.attr('aria-valuemax',event.target.duration);
+        });
+
+        video.on('timeupdate', function(event) {
+
+          var duration = event.target.duration;
+          var currentTime = event.target.currentTime;
+          var percentage = (currentTime / duration) * 100;
+
+          progress.width(percentage);
+          progress.attr('aria-valuenow',event.target.currentTime);
+        });
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
