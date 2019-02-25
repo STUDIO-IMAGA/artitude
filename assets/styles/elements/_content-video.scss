@@ -1,6 +1,10 @@
 .element{
   &.content-video{
+    position: relative;
+
     .embed-responsive{
+      box-shadow: 0px 5px 25px 0 rgba(26, 23, 27, 0.63);
+
       .btn-play{
         position:absolute;
         height:100px;
@@ -31,6 +35,18 @@
           z-index:-1;
         }
       }
+    }
+
+    .bg-video{
+      display: block;
+      content:'';
+      position: absolute;
+      top: 38px;
+      right: 57px;
+      width: calc(100% - 30px);
+      height:100%;
+      background: repeating-linear-gradient(-45deg, $red,transparent 1px, transparent 0px, transparent 12px);
+      z-index: -1;
     }
   }
 }

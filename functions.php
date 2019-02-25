@@ -1,19 +1,25 @@
 <?
 $files = [
   'lib/setup.php',                        // Theme setup
+
+  'lib/integrations/wpsvg.php',           // WPSVG
+  'lib/integrations/version-info.php',    // Version Info
+  'lib/integrations/tgmpa.php',           // TGM Plugin Activation
+  'lib/integrations/acf.php',             // TGM Plugin Activation
+
   'lib/nags.php',                         // Disable nags
-  'lib/options.php',                      // ACF option pages
   'lib/shortcodes.php',                   // Theme shortcodes
   'lib/navigation.php',                   // Navigation Functions
   'lib/navigation/bootstrap_walker.php',  // Navigation Bootstrap Walker
   'lib/navigation/start_depth.php',       // Navigation Start Depth
-  'lib/tgmpa.php',                        // TGM Plugin Activation
   'lib/plugins.php',                      // Required plugins
   'lib/assets.php',                       // Scripts and stylesheets
   'lib/extras.php',                       // Custom functions
   'lib/titles.php',                       // Page titles
   'lib/wrapper.php',                      // Theme wrapper class
   'lib/customizer.php',                   // Theme customizer
+
+  'lib/posttypes/projecten.php',
 ];
 
 foreach ($files as $file):

@@ -1,12 +1,12 @@
 body.login {
- background-color: #e93324;
+ background-color: #fff;
 }
 body.login div#login h1 a {
   background-image: url('../images/brand.svg');
   background-size: contain;
-  width: 300px;
-}
-body.login div#login form#loginform {
+  width: 325px;
+  height: 65px;
+  box-shadow: 0px 5px 25px 0 rgba(26, 23, 27, 0.63);
 }
 body.login div#login form#loginform input#user_login,
 body.login div#login form#loginform input#user_pass {

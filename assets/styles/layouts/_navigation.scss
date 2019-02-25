@@ -104,19 +104,21 @@
 
 
   #navigation{
-    z-index: 2020;
+    z-index:2020;
 
     #topbar{
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 0px;
+      position:absolute;
+      top:0;
+      left:0;
+      right:0;
+      height:0;
       opacity:0;
       transition: .3s ease-in-out;
+      overflow: hidden;
       z-index: 2000;
 
       #secondary_navigation{
+        height:0;
         padding-right: 40px;
       }
     }
@@ -284,6 +286,7 @@ ul.contact-menu{
 #legal_navigation{
   .menu-item{
     margin-right: 2rem;
+    
     a{
       color:$black;
       font-size:.875rem;
