@@ -32,7 +32,8 @@
           updateURL: false,
           offset: -2,
           topOnEmptyHash: true,
-          ignore: '.nav-link'
+          ignore: '.nav-link',
+          header: '#header'
         });
 
         var paging = $('.slick-paging');

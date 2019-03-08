@@ -1,79 +1,102 @@
-body.login {
- background-color: #fff;
-}
-body.login div#login h1 a {
-  background-image: url('../images/brand.svg');
-  background-size: contain;
-  width: 325px;
-  height: 65px;
-  box-shadow: 0px 5px 25px 0 rgba(26, 23, 27, 0.63);
-}
-body.login div#login form#loginform input#user_login,
-body.login div#login form#loginform input#user_pass {
-  display: block;
-  width: 100%;
-  height: calc(2.25rem + 2px);
-  padding: .375rem .75rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #495057;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid #ced4da;
-  border-radius: .25rem;
-  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
-body.login div#login form#loginform input#user_login:focus,
-body.login div#login form#loginform input#user_pass:focus{
-  color: #495057;
-  background-color: #fff;
-  border-color: #80bdff;
-  outline: 0;
-}
-body.login div#login form#loginform p.submit input#wp-submit {
-  display: inline-block;
-  font-weight: 400;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  user-select: none;
-  border: 1px solid transparent;
-  font-size: 1rem;
-  line-height: 1.5;
-  border-radius: .25rem;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-  color: #fff;
-background-color: #00b0ff;
-border-color: #00b0ff;
-text-shadow: none;
-box-shadow: none;
-}
-body.login div#login form#loginform p.submit input#wp-submit:focus {
-  box-shadow: 0 0 0 .2rem hsla(198.6, 100%, 50%, 0.5);
-}
-body.login div#login p#nav a,
-body.login div#login p#backtoblog a {
-  color: #fff;
-}
-body.login div#login p#nav a:hover,
-body.login div#login p#backtoblog a:hover{
-  color: #d2d2d2;
-}
+@import "common/variables";
 
-.login #login_error{
-  border-radius: 3px;
-  border-left: 8px solid #EF4836;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,.1), 0 2px 2px 0 rgba(0,0,0,.1);
-}
+body{
+  &.login {
+    background-color: $red;
 
-.login .message{
-  border-radius: 3px;
-  border-left: 8px solid #57E3F2;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,.1), 0 2px 2px 0 rgba(0,0,0,.1);
-}
+    #login{
+      h1 a {
+        background-image: url('../images/brand.svg');
+        background-size: cover;
+        width: 320px;
+        height: 65px;
+        box-shadow: 0px 5px 25px 0 rgba(26, 23, 27, 0.63);
+      }
 
-.login .success{
-  border-radius: 3px;
-  border-left: 8px solid #0BDA51;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,.1), 0 2px 2px 0 rgba(0,0,0,.1);
+      #loginform{
+        background-color: $red;
+        box-shadow: none;
+        border: 2px solid $white;
+
+        label{
+          color: $white;
+        }
+
+        #user_login,
+        #user_pass{
+          display: block;
+          width: 100%;
+          height: calc(2.25rem + 2px);
+          padding: .375rem .75rem;
+          font-size: 1rem;
+          line-height: 1.5;
+          color: $white;
+          background-color: $red;
+          border: 2px solid $white;
+          border-radius: 0;
+          transition: border-color .3s ease-in-out,box-shadow .15s ease-in-out;
+
+          &:focus{
+            color: #495057;
+            background-color: #fff;
+            border-color: #80bdff;
+            outline: 0;
+          }
+        }
+
+        .submit {
+          #wp-submit {
+            display: inline-block;
+            font-weight: 400;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            user-select: none;
+            border: 1px solid transparent;
+            font-size: 1rem;
+            line-height: 1.5;
+            border-radius: .25rem;
+            transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+            color: #fff;
+            background-color: #00b0ff;
+            border-color: #00b0ff;
+            text-shadow: none;
+            box-shadow: none;
+
+            &:focus{
+              box-shadow: 0 0 0 .2rem hsla(198.6, 100%, 50%, 0.5);
+            }
+          }
+        }
+      }
+
+
+      #nav a,
+      #backtoblog a {
+        color: red;
+
+        &:hover{
+          color: #d2d2d2;
+        }
+      }
+
+      #login_error{
+        border-radius: 3px;
+        border-left: 8px solid #EF4836;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.1), 0 2px 2px 0 rgba(0,0,0,.1);
+      }
+
+      .message{
+        border-radius: 3px;
+        border-left: 8px solid #57E3F2;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.1), 0 2px 2px 0 rgba(0,0,0,.1);
+      }
+
+      .success{
+        border-radius: 3px;
+        border-left: 8px solid #0BDA51;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.1), 0 2px 2px 0 rgba(0,0,0,.1);
+      }
+    }
+  }
 }
