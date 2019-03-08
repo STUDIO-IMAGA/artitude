@@ -21,21 +21,23 @@
 
         // init Animate On Scroll
         AOS.init({
-           offset: 220,
+           offset: 300,
            startEvent: 'load',
            once: 'true',
-           duration: 400,
+           duration: 700,
         });
 
         // init Smooth Scroll
         var scroll = new SmoothScroll('a[href*="#"]', {
           updateURL: false,
           offset: -2,
-          topOnEmptyHash: true
+          topOnEmptyHash: true,
+          ignore: '.nav-link'
         });
 
         var paging = $('.slick-paging');
-        var next = $('.paging-container');
+        var prev = $('.slick-prev');
+        var next = $('.slick-next');
         var gallery = $('.slick-slider');
 
         gallery.on('init reInit', function(event, slick){
@@ -50,6 +52,10 @@
           fade: true,
         }).on('beforeChange', function(event, slick, currentSlide, nextSlide){
           paging.text( (nextSlide + 1) + '/' + slick.slideCount);
+        });
+
+        prev.on('click', function(){
+          gallery.slick('slickPrev');
         });
 
         next.on('click', function(){

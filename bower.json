@@ -6,15 +6,6 @@
   ],
   "license": "GPL",
   "private": true,
-  "dependencies": {
-    "jquery": "^3.1.1",
-    "popper.js": "https://unpkg.com/popper.js",
-    "bootstrap": "git://github.com/twbs/bootstrap.git#v4.1.0",
-    "aos": "2.2.0",
-    "smooth-scroll.js": "12.1.5",
-    "font-awesome": "4.7.0",
-    "slick-carousel": "1.9.0"
-  },
   "overrides": {
     "bootstrap": {
       "main": [
@@ -52,18 +43,7 @@
         "./scss/_popover.scss",
         "./scss/_carousel.scss",
         "./scss/_utilities.scss",
-        "./js/dist/transition.js",
-        "./js/dist/alert.js",
-        "./js/dist/button.js",
-        "./js/dist/carousel.js",
-        "./js/dist/collapse.js",
-        "./js/dist/dropdown.js",
-        "./js/dist/modal.js",
-        "./js/dist/tooltip.js",
-        "./js/dist/popover.js",
-        "./js/dist/scrollspy.js",
-        "./js/dist/tab.js",
-        "./js/dist/util.js"
+        "./dist/js/bootstrap.min.js"
       ]
     },
     "font-awesome": {

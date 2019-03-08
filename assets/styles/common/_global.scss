@@ -1,6 +1,15 @@
-::selection {
-  background:$red;
-  color:$white;
+.element{
+  ::selection {
+    background: $red;
+    color: $white;
+  }
+
+  &.header{
+    ::selection {
+      background: $white;
+      color: $red;
+    }
+  }
 }
 
 html{

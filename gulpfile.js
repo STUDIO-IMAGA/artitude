@@ -163,7 +163,7 @@ var writeToManifest = function(directory) {
 // `gulp styles` - Compiles, combines, and optimizes Bower CSS and project CSS.
 // By default this task will only log a warning if a precompiler error is
 // raised. If the `--production` flag is set: this task will fail outright.
-gulp.task('styles', ['wiredep'], function() {
+gulp.task('styles', function() {
   var merged = merge();
   manifest.forEachDependency('css', function(dep) {
     var cssTasksInstance = cssTasks(dep.name);
@@ -299,19 +299,6 @@ gulp.task('build', function(callback) {
     this,
     tasks.concat([callback])
   );
-});
-
-// ### Wiredep
-// `gulp wiredep` - Automatically inject Less and Sass Bower dependencies. See
-// https://github.com/taptapship/wiredep
-gulp.task('wiredep', function() {
-  var wiredep = require('wiredep').stream;
-  return gulp.src(project.css)
-    .pipe(wiredep())
-    .pipe(changed(path.source + 'styles', {
-      hasChanged: changed.compareSha1Digest
-    }))
-    .pipe(gulp.dest(path.source + 'styles'));
 });
 
 // ### Gulp

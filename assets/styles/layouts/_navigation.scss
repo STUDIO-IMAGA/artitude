@@ -1,11 +1,11 @@
 #header{
   transition: .3s ease-in-out;
-  height:0;
+  height: 0;
   z-index: 2000;
 
   #brand{
     position: absolute;
-    top:0;
+    top: 0;
     left: calc(50vw - 161.5px);
     height: 65px;
     width: 324px;
@@ -14,7 +14,7 @@
     z-index: 2050;
 
     img{
-      width:100%;
+      width: 100%;
       height: auto;
       box-shadow: 0px 5px 25px 0 rgba(26, 23, 27, 0.63);
     }
@@ -104,61 +104,61 @@
 
 
   #navigation{
-    z-index:2020;
+    z-index: 2020;
 
     #topbar{
-      position:absolute;
-      top:0;
-      left:0;
-      right:0;
-      height:0;
-      opacity:0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 0;
+      opacity: 0;
       transition: .3s ease-in-out;
       overflow: hidden;
       z-index: 2000;
 
       #secondary_navigation{
-        height:0;
+        height: 0;
         padding-right: 40px;
       }
     }
 
     #navigation_container{
-      position:absolute;
-      top:0;
-      left:0;
-      right:0;
-      background-color:$gray-900;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: $gray-900;
 
       #primary_navigation{
-        width:100%;
-        max-width:1440px;
-        padding-top:105px;
-        padding-left:40px;
-        padding-bottom:40px;
+        width: 100%;
+        max-width: 1440px;
+        padding-top: 105px;
+        padding-left: 40px;
+        padding-bottom: 40px;
 
         ul{
-          justify-content:space-between;
-          height:0;
+          justify-content: space-between;
+          height: 0;
 
           .menu-item{
 
             a{
-              font-family:'Overpass Mono', monospace;
-              font-size:1.21875rem;
-              letter-spacing:1.6px;
-              color:$white;
+              font-family: 'Overpass Mono', monospace;
+              font-size: 1.21875rem;
+              letter-spacing: 1.6px;
+              color: $white;
             }
 
             &.external-link{
               a{
                 &:after{
-                  display:inline-block;
-                  content:'';
-                  right:-20px;
-                  width:20px;
-                  height:20px;
-                  background-image:url('https:/placehold.it/20x20');
+                  display: inline-block;
+                  content: '';
+                  right: -20px;
+                  width: 20px;
+                  height: 20px;
+                  background-image: url('https:/placehold.it/20x20');
                   background-repeat: no-repeat;
                   background-size: contain;
                   background-position: center;
@@ -214,7 +214,7 @@
 
         #primary_navigation{
           ul{
-            height:auto;
+            height: auto;
           }
         }
       }
@@ -223,13 +223,13 @@
 }
 
 .toggler-bg{
-  position:fixed;
-  top:0;
-  left:0;
-  width:200px;
-  height:65px;
-  background-color:$black;
-  z-index:-1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 65px;
+  background-color: $black;
+  z-index: 1;
 }
 
 .admin-bar{
@@ -259,7 +259,7 @@ ul.contact-menu{
     &.address:before{
       display: block;
       position: absolute;
-      content:'';
+      content: '';
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
@@ -286,13 +286,13 @@ ul.contact-menu{
 #legal_navigation{
   .menu-item{
     margin-right: 2rem;
-    
+
     a{
-      color:$black;
-      font-size:.875rem;
+      color: $black;
+      font-size: .875rem;
       line-height: 1.8;
       letter-spacing: 0.3px;
-      padding:6px;
+      padding: 6px;
     }
   }
 }

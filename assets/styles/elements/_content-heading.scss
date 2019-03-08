@@ -1,0 +1,12 @@
+.element{
+  &.content-heading{
+    .title{
+      text-align: right;
+    }
+
+    .text{
+      padding-left: $grid-gutter-width;
+      border-left: 2px solid $black;
+    }
+  }
+}
