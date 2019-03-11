@@ -1,0 +1,316 @@
+{
+    "key": "group_5c741dcc331e3",
+    "title": "Standaard Template",
+    "fields": [
+        {
+            "key": "field_5c741ddaaef16",
+            "label": "Header",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5c741de6aef17",
+            "label": "Inhoud",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5c741ecea9bdd",
+            "label": "Elementen",
+            "name": "elements",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "5c741ee266a84": {
+                    "key": "5c741ee266a84",
+                    "name": "content-text",
+                    "label": "Tekst Element",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5c741ee5a9bde",
+                            "label": "Clone Tekst Element",
+                            "name": "clone_tekst_element",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5c741e2ce4840"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5c742384acc53": {
+                    "key": "layout_5c742384acc53",
+                    "name": "content-quote",
+                    "label": "Quote Element",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5c74238dacc54",
+                            "label": "Clone Quote Element",
+                            "name": "clone_quote_element",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5c742339df9db"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5c74243b553f2": {
+                    "key": "layout_5c74243b553f2",
+                    "name": "content-oneliner",
+                    "label": "Oneliner Element",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5c742449553f3",
+                            "label": "Clone Oneliner Element",
+                            "name": "clone_oneliner_element",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5c7423e5d742f"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5c7425384b77c": {
+                    "key": "layout_5c7425384b77c",
+                    "name": "content-gallery",
+                    "label": "Galerij Element",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5c7425444b77d",
+                            "label": "Clone Galerij Element",
+                            "name": "clone_galerij_element",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5c7424c32350a"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5c750ea7b77e0": {
+                    "key": "layout_5c750ea7b77e0",
+                    "name": "content-video",
+                    "label": "Video Element",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5c750eb2b77e1",
+                            "label": "Clone Video Element",
+                            "name": "clone_video_element",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5c750db741df9"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5c7518fb991eb": {
+                    "key": "layout_5c7518fb991eb",
+                    "name": "content-heading",
+                    "label": "Heading Element",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5c751907991ec",
+                            "label": "Clone Heading Element",
+                            "name": "clone_heading_element",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5c751894b5794"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5c7533c7c0e5c": {
+                    "key": "layout_5c7533c7c0e5c",
+                    "name": "content-tabs",
+                    "label": "Tab Element",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5c7533cfc0e5d",
+                            "label": "Clone Tab Element",
+                            "name": "clone_tab_element",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5c75306797f6a"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "Element toevoegen",
+            "min": "",
+            "max": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            },
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "default"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "projecten"
+            },
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "default"
+            }
+        ]
+    ],
+    "menu_order": -1,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1552321999
+}
