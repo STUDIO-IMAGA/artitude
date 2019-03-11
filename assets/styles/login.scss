@@ -5,6 +5,8 @@ body{
     background-color: $red;
 
     #login{
+      width: 400px;
+
       h1 a {
         background-image: url('../images/brand.svg');
         background-size: cover;
@@ -18,23 +20,20 @@ body{
         box-shadow: none;
         border: 2px solid $white;
 
-        label{
-          color: $white;
-        }
-
         #user_login,
         #user_pass{
           display: block;
           width: 100%;
-          height: calc(2.25rem + 2px);
+          height: 50px;
           padding: .375rem .75rem;
-          font-size: 1rem;
+          font-size: 1.125rem;
           line-height: 1.5;
           color: $white;
           background-color: $red;
           border: 2px solid $white;
           border-radius: 0;
           transition: border-color .3s ease-in-out,box-shadow .15s ease-in-out;
+          margin: 0;
 
           &:focus{
             color: #495057;

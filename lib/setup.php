@@ -51,7 +51,9 @@ add_action('after_setup_theme', __NAMESPACE__ . '\\setup');
  * Theme assets
  */
 function assets() {
-  wp_enqueue_style('imaga/css', Assets\asset_path('styles/main.css'), false, null);
+
+  wp_register_style('imaga/css', Assets\asset_path('styles/main.css') );
+  wp_enqueue_style( 'imaga/css');
 
   wp_deregister_script('jquery');
   wp_enqueue_script('jquery', Assets\asset_path('scripts/jquery.js'), null, null, true);
@@ -63,14 +65,18 @@ add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);
 /*
  * Login assets
  */
-function add_login_stylesheet() {
+function login_assets() {
 
   wp_register_style('imaga/login', Assets\asset_path('styles/login.css') );
+
+  wp_enqueue_script('jquery', Assets\asset_path('scripts/jquery.js'), null, null, true);
+
+  wp_enqueue_script('imaga/login', Assets\asset_path('scripts/login.js'), null, null, true);
 
   wp_enqueue_style( 'imaga/login');
 
 }
-add_action( 'login_enqueue_scripts', __NAMESPACE__ . '\\add_login_stylesheet' );
+add_action( 'login_enqueue_scripts', __NAMESPACE__ . '\\login_assets' );
 
 /*
  * ACF Google Maps API Key

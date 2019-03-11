@@ -1,0 +1,48 @@
+.element{
+  &.content-tabs{
+    .nav{
+      border-bottom: 2px solid #c0c0c0;
+
+      .nav-item{
+        .nav-link{
+          position: relative;
+          font-family: 'Heebo', sans-serif;
+          font-weight: 800;
+          font-size: 1.5rem;
+          padding: 1.3rem 1rem;
+          margin-bottom: -2px;
+          border-bottom: 4px solid transparent;
+
+          &:after{
+            opacity: 0;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -20px;
+            height: 126px;
+            content:'';
+            background-image: url('../images/active-tab.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            z-index: -1;
+            transition: all .3s ease-in-out;
+          }
+
+          &.active{
+            border-bottom: 4px solid $red;
+            color: $red;
+
+            &:after{
+              opacity: 1;
+              transition: opacity .3s ease-in-out;
+            }
+          }
+        }
+      }
+    }
+    .panes{
+      padding-top: 5rem;
+    }
+  }
+}

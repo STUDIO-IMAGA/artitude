@@ -66,21 +66,3 @@ function acf_flexible_content_layout_title( $title, $field, $layout, $i ) {
 	return $title;
 }
 add_filter( 'acf/fields/flexible_content/layout_title', __NAMESPACE__ . '\\acf_flexible_content_layout_title', 10, 4 );
-
-/**
- * Shorten $text by $limit amount of words
- */
-function limit_text($text, $limit, $prepend) {
-
-  $text = strip_tags($text);
-
-  if (str_word_count($text, 0) > $limit):
-
-    $words = str_word_count($text, 2);
-    $pos = array_keys($words);
-    $text = substr($text, 0, $pos[$limit]) . $prepend;
-
-  endif;
-
-  return $text;
-}
