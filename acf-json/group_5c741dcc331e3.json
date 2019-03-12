@@ -19,6 +19,49 @@
             "endpoint": 0
         },
         {
+            "key": "field_5c8770cfdba65",
+            "label": "Header Afbeelding",
+            "name": "header_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "40",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5c8770e1dba66",
+            "label": "Header Tekst",
+            "name": "header_text",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "60",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
             "key": "field_5c741de6aef17",
             "label": "Inhoud",
             "name": "",
@@ -312,5 +355,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1552321999
+    "modified": 1552380763
 }

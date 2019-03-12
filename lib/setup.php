@@ -43,7 +43,7 @@ function setup() {
 
   // Add image sizes
   // Header Element
-  add_image_size('header-narrow', 750, 600, true);
+  add_image_size('header-image', 800, 600, true);
 }
 add_action('after_setup_theme', __NAMESPACE__ . '\\setup');
 
@@ -98,7 +98,7 @@ function add_google_fonts() {
   // Defined in functions.php
   if( ! defined( 'GOOGLE_FONTS' ) ) return;
 
-  wp_enqueue_style( 'imaga/google-fonts', 'http://fonts.googleapis.com/css?family=' . GOOGLE_FONTS );
+  wp_enqueue_style( 'imaga/google-fonts', 'https://fonts.googleapis.com/css?family=' . GOOGLE_FONTS );
 
 }
 add_action( 'wp_head', __NAMESPACE__ . '\\add_google_fonts' , 1);
