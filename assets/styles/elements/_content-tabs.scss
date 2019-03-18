@@ -1,17 +1,21 @@
 .element{
   &.content-tabs{
     .container{
+      position: relative;
+
       &:before{
         position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
+        top: 119px;
+        bottom: -110px;
+        left: -70px;
+        right: 0;
         content:'';
         background-image: url('../images/diagonal.png');
         background-repeat: no-repeat;
         background-size: contain;
-        background-position: center;
+        background-position: left top;
         z-index: -1;
+        min-height: 620px;
       }
 
       .nav{
