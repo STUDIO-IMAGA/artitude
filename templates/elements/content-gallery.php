@@ -23,10 +23,10 @@
               <? endforeach; ?>
             <? endif; ?>
           </div>
-          <div class="paging-container" data-aos="fade-down">
-            <span class="slick-prev"></span>
-            <span class="slick-paging"></span>
-            <span class="slick-next"></span>
+          <div class="gallery-nav" data-aos="fade-left">
+            <span class="gallery-prev"></span>
+            <span class="gallery-paging"></span>
+            <span class="gallery-next"></span>
           </div>
         </div>
       </div>

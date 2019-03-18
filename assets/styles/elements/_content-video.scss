@@ -27,6 +27,10 @@
         right:0;
         bottom:0;
         height:4px;
+
+        .progress-bar{
+          transition: none;
+        }
       }
 
       &.playing{

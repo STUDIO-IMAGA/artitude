@@ -21,7 +21,7 @@
 
         // init Animate On Scroll
         AOS.init({
-           offset: 300,
+           offset: 200,
            startEvent: 'load',
            once: 'true',
            duration: 700,
@@ -30,65 +30,96 @@
         // init Smooth Scroll
         var scroll = new SmoothScroll('a[href*="#"]', {
           updateURL: false,
-          offset: -2,
           topOnEmptyHash: true,
           ignore: '.nav-link',
           header: '#header'
         });
 
-        var paging = $('.slick-paging');
-        var prev = $('.slick-prev');
-        var next = $('.slick-next');
-        var gallery = $('.slick-slider');
+        // Setup galleries
+        $('.slick-slider').each(function(){
 
-        gallery.on('init reInit', function(event, slick){
-          paging.text('1/' + slick.slideCount);
-        }).slick({
-          infinite: true,
-          dots: false,
-          arrows: false,
-          draggable: true,
-          mobileFirst: true,
-          speed: 500,
-          fade: true,
-        }).on('beforeChange', function(event, slick, currentSlide, nextSlide){
-          paging.text( (nextSlide + 1) + '/' + slick.slideCount);
+          // Current gallery
+          var gallery = $(this);
+
+          // Current gallery navigation
+          var galleryNav = $(this).siblings('.gallery-nav');
+
+          // Set next/Prev buttons
+          var galleryNext = galleryNav.children('.gallery-next');
+          var galleryPrev = galleryNav.children('.gallery-prev');
+
+          // Set paging
+          var galleryPaging = galleryNav.children('.gallery-paging');
+
+          // Setup Slick
+          gallery.on('init reInit', function(event, slick){
+            galleryPaging.text('1/' + slick.slideCount);
+          }).slick({
+            infinite: true,
+            dots: false,
+            arrows: false,
+            draggable: true,
+            mobileFirst: true,
+            speed: 500,
+            fade: true,
+          }).on('beforeChange', function(event, slick, currentSlide, nextSlide){
+            galleryPaging.text( (nextSlide + 1) + '/' + slick.slideCount);
+          });
+
+          // Setup next button
+          galleryNext.on('click', function(){
+            gallery.slick('slickNext');
+          });
+
+          // Setup previous button
+          galleryPrev.on('click', function(){
+            gallery.slick('slickPrev');
+          });
         });
 
-        prev.on('click', function(){
-          gallery.slick('slickPrev');
+        // Setup videos
+        $('video').each(function(){
+
+          var video = $(this);
+          var play = video.siblings('.btn-play');
+          var progress = video.siblings('.video-progress').children('.progress-bar');
+
+          play.on('click',function(){
+            video.trigger('play');
+            video.parent().toggleClass('playing');
+          });
+
+          video.on('click',function(){
+            this[this.paused ? 'play' : 'pause']();
+            video.parent().toggleClass('playing');
+          });
+
+          video.on('loadedmetadata', function(event){
+            progress.attr('aria-valuemax', event.target.duration);
+          });
+
+          video.on('timeupdate', function() {
+
+            var duration = this.duration;
+            var currentTime = this.currentTime;
+            var percentage = (currentTime / duration) * 100;
+
+            progress.width(percentage + '%');
+            progress.attr('aria-valuenow', this.currentTime);
+
+          });
+
+          video.on('ended', function(){
+            video.parent().toggleClass('playing');
+          });
+
         });
 
-        next.on('click', function(){
-          gallery.slick('slickNext');
+        // Reinit Slick on tab change.
+        $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+          $('.slick-slider').slick('setPosition');
         });
 
-        var video = $('video');
-        var progress = $('.video-progress > .progress-bar');
-
-        $('.btn-play').on('click',function(){
-          video.trigger('play');
-          video.parent().toggleClass('playing');
-        });
-
-        video.on('click',function(){
-          this[this.paused ? 'play' : 'pause']();
-          video.parent().toggleClass('playing');
-        });
-
-        video.on('loadedmetadata', function(event){
-          progress.attr('aria-valuemax',event.target.duration);
-        });
-
-        video.on('timeupdate', function(event) {
-
-          var duration = event.target.duration;
-          var currentTime = event.target.currentTime;
-          var percentage = (currentTime / duration) * 100;
-
-          progress.width(percentage);
-          progress.attr('aria-valuenow',event.target.currentTime);
-        });
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired

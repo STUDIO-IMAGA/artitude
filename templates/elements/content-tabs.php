@@ -24,7 +24,7 @@
 
         </ul>
 
-        <div class="panes" id="tabContent-<?= get_row_index(); ?>" data-aos="fade-down">
+        <div class="tab-content panes" id="tabContent-<?= get_row_index(); ?>" data-aos="fade-down">
 
           <? $i = 0;?>
           <? foreach($tabs as $tab): $i++; ?>
