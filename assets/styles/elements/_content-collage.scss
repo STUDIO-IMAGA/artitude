@@ -1,0 +1,59 @@
+.element-inline{
+  &.content-collage{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .collage-item{
+      position: relative;
+      width: 50%;
+      padding: 8px;
+      white-space: nowrap;
+      font-size: 0;
+
+      .title{
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        bottom: 8px;
+        left: 8px;
+        text-align: center;
+
+        &:before{
+          display: inline-block;
+          vertical-align: middle;
+          height: 100%;
+          content:'';
+        }
+
+        div{
+          display: inline-block;
+          vertical-align: middle;
+          font-size: $font-size-base;
+          white-space: normal;
+
+          span{
+            opacity: 0;
+            background-color: rgba($black, .8);
+            padding: 15px 19px;
+            color: $white;
+            box-decoration-break: clone;
+            line-height: 52px;
+            transition: all .3s ease-in-out;
+          }
+        }
+      }
+
+      &:hover{
+        .title{
+          div{
+            span{
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}

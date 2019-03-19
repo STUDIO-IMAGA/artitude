@@ -151,3 +151,34 @@ function custom_gallery_shortcode( $attr ) {
 remove_shortcode( 'gallery' );
 
 add_shortcode( 'gallery', __NAMESPACE__ . '\\custom_gallery_shortcode' );
+
+/**
+ * Collage wrapper
+ */
+add_shortcode( 'collage', function($atts, $content = null){
+
+  $content = strip_tags($content);
+
+  return '<div class="element-inline content-collage">' . do_shortcode($content) . '</div>';
+});
+
+/**
+ * Collage image
+ */
+add_shortcode( 'collage-item', function($atts){
+
+  $image_meta = wp_get_attachment_metadata( $atts['id'] );
+
+  $image = wp_get_attachment_image_src( $atts['id'], 'large', false);
+
+  $output = '<div class="collage-item">';
+    $output .= '<a href="'.$atts['link'].'">';
+
+      $output .= '<img class="img-fluid" src="'.$image[0].'" title="'.$image_meta['image_meta']['title'].'"/>';
+      $output .= '<div class="title"><div><span>'.$atts['title'].'</span></div></div>';
+
+    $output .= '</a>';
+  $output .= '</div>';
+
+  return $output;
+});

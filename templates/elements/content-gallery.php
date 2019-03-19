@@ -23,7 +23,7 @@
               <? endforeach; ?>
             <? endif; ?>
           </div>
-          <div class="gallery-nav" data-aos="fade-left">
+          <div class="gallery-nav" data-aos="fade-left" data-aos-offset="0">
             <span class="gallery-prev"></span>
             <span class="gallery-paging"></span>
             <span class="gallery-next"></span>
