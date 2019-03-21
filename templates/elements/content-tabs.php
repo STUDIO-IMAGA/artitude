@@ -1,5 +1,5 @@
 <section class="element content-tabs" >
-  <div class="container">
+  <div class="container" data-aos="fade-right">
     <div class="row">
       <div class="col-12">
 

@@ -307,6 +307,37 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_5c93a77cff9b4": {
+                    "key": "layout_5c93a77cff9b4",
+                    "name": "content-themes",
+                    "label": "Thema's Element",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5c93a77cff9b5",
+                            "label": "Clone Thema's Element",
+                            "name": "clone_themes_element",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5c93a4b103a4e"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Element toevoegen",
@@ -355,5 +386,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1552380763
+    "modified": 1553180580
 }
