@@ -24,12 +24,13 @@
         .nav-item{
           .nav-link{
             position: relative;
-            font-family: 'Heebo', sans-serif;
             font-weight: 800;
             font-size: 1.5rem;
             padding: 1.3rem 1rem;
             margin-bottom: -2px;
             border-bottom: 4px solid transparent;
+
+            @extend .heebo;
 
             &:after{
               opacity: 0;

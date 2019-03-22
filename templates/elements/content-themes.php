@@ -4,6 +4,7 @@
       <div class="col-12">
         <div class="title" data-aos="fade-up">
           <? the_sub_field('title'); ?>
+          <div class="title-accent"></div>
         </div>
       </div>
     </div>

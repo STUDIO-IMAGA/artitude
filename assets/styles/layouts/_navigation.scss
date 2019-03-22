@@ -144,21 +144,26 @@
           .menu-item{
 
             a{
-              font-family: 'Overpass Mono', monospace;
               font-size: 1.21875rem;
               letter-spacing: 1.6px;
               color: $white;
+              @extend .overpass;
+
+              &:hover, &:active, &:focus{
+                color: $red;
+              }
             }
 
+            &.externe-link,
             &.external-link{
               a{
                 &:after{
                   display: inline-block;
                   content: '';
                   right: -20px;
-                  width: 20px;
-                  height: 20px;
-                  background-image: url('https:/placehold.it/20x20');
+                  width: 16px;
+                  height: 16px;
+                  background-image: url('../images/icons/externe-link.png');
                   background-repeat: no-repeat;
                   background-size: contain;
                   background-position: center;
@@ -183,6 +188,10 @@
                   color: $white;
                   padding-top: 2px;
                   padding-bottom: 2px;
+
+                  &:hover, &:active, &:focus{
+                    color: $red;
+                  }
                 }
               }
             }

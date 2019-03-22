@@ -1,16 +1,27 @@
 .element{
   &.content-themes{
     .title{
-      font-family: 'Heebo', sans-serif;
       font-weight: 800;
       font-size: 2.46875rem;
       color: $red;
       text-align: center;
+      @extend .heebo;
+
+      &-accent{
+        width: 181px;
+        height: 43px;
+        margin: 0 auto;
+        background-image: url('../images/accents/7.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        margin-bottom: 1.1rem;
+      }
     }
 
     .sub-title{
-      font-family: 'Archivo', sans-serif;
       text-align: center;
+      @extend .archivo;
     }
 
     .themes{
@@ -30,11 +41,12 @@
 
         .title{
           font-weight: 800;
-          font-family: 'Heebo', sans-serif;
           font-size: 1.125rem;
           text-align: center;
+          color: $black;
           padding-top: 1.6rem;
           padding-bottom: 3rem;
+          @extend .heebo;
         }
 
         .gallery-nav{

@@ -34,7 +34,7 @@ function create_post_type_posttype() {
   );
 
   // Registering the post type
-  register_post_type( 'projecten', $args );
+  register_post_type( 'project', $args );
 }
 
 add_action( 'init', __NAMESPACE__ . '\\create_post_type_posttype' );

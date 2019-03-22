@@ -26,26 +26,20 @@
         @extend .heebo;
       }
 
-      .gallery-prev{
-        display: inline-block;
-        height: 12px;
-        width: 12px;
-        transform: rotate(-45deg);
-        border-top: 2px solid $white;
-        border-right: 0px solid transparent;
-        border-left: 2px solid $white;
-        border-bottom: 0px solid transparent;
-      }
-
+      .gallery-prev,
       .gallery-next{
         display: inline-block;
-        height: 12px;
-        width: 12px;
-        transform: rotate(45deg);
-        border-top: 2px solid $white;
-        border-right: 2px solid $white;
-        border-left: 0px solid transparent;
-        border-bottom: 0px solid transparent;
+        vertical-align: middle;
+        height: 32px;
+        width: 32px;
+        background-image: url('../images/icons/chevron.svg');
+        background-size: 14px;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .gallery-prev{
+        transform: rotate(-180deg);
       }
     }
   }
