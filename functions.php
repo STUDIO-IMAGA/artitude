@@ -5,7 +5,7 @@ $files = [
   'lib/integrations/wpsvg.php',           // WPSVG
   'lib/integrations/version-info.php',    // Version Info
   'lib/integrations/tgmpa.php',           // TGM Plugin Activation
-  'lib/integrations/acf.php',             // TGM Plugin Activation
+  'lib/integrations/acf.php',             // Advanced Custom Fields
 
   'lib/nags.php',                         // Disable nags
   'lib/shortcodes.php',                   // Theme shortcodes
@@ -19,7 +19,7 @@ $files = [
   'lib/wrapper.php',                      // Theme wrapper class
   'lib/customizer.php',                   // Theme customizer
 
-  'lib/posttypes/projecten.php',
+  // 'lib/posttypes/projecten.php',
 ];
 
 foreach ($files as $file):

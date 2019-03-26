@@ -17,13 +17,13 @@
     </div>
     <div class="row align-items-center">
       <div class="col-12 themes">
-        <div class="row">
+        <div class="row justify-content-center">
           <? $themes = get_sub_field('themes'); $i=-2; ?>
           <? foreach( $themes as $theme ): $i++; ?>
-            <div class="col-4 <?=($i % 3)?'theme':'theme offset';?>">
+            <div class="col-12 col-sm-6 col-md-4 <?=($i % 3)?'theme':'theme offset';?>">
               <div class="element-inline content-gallery">
                 <div class="gallery-container">
-                  <div class="slick-slider">
+                  <div class="slick-slider" data-aos="fade-down-right">
                     <? $images = $theme['gallery']; ?>
                     <? if( $images ): ?>
                       <? foreach( $images as $image ): ?>
@@ -33,7 +33,7 @@
                       <? endforeach; ?>
                     <? endif; ?>
                   </div>
-                  <div class="gallery-nav">
+                  <div class="gallery-nav" data-aos="fade-up-left">
                     <span class="gallery-prev"></span>
                     <span class="gallery-paging"></span>
                     <span class="gallery-next"></span>

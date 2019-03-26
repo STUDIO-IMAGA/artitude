@@ -60,3 +60,46 @@
     }
   }
 }
+
+@include media-breakpoint-down(md){
+  .element{
+    &.content-themes{
+      .themes{
+        padding-top: 4rem;
+
+        .theme{
+          padding-right: 1rem;
+          padding-left: 1rem;
+
+          &.offset{
+            transform: translateY(-2rem);
+          }
+
+          .title{
+            padding-bottom: 1.8rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm){
+  .element{
+    &.content-themes{
+      .themes{
+        padding-top: 2rem;
+
+        .theme{
+          &.offset{
+            transform: translateY(0);
+          }
+
+          .title{
+            padding-bottom: 1.6rem;
+          }
+        }
+      }
+    }
+  }
+}

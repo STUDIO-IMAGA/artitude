@@ -1,15 +1,15 @@
-<? $toggle = get_sub_field('toggle'); ?>
-<? $order = (  $toggle == 'left' ) ? "order-1" : "order-3"; ?>
+<? $align_gallery = ( get_sub_field('align') == 'left' ) ? "order-1" : "order-3"; ?>
+<? $align_text = ( get_sub_field('align') == 'left' ) ? "text-left" : "text-right"; ?>
 
 <section class="element content-gallery">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-4 pr-md-2 pr-xl-4">
-        <div class="text" data-aos="fade-up">
+      <div class="col-4 pr-md-2 pr-xl-4 order-2">
+        <div class="text <?= $align_text; ?>" data-aos="fade-up">
           <? the_sub_field('text'); ?>
         </div>
       </div>
-      <div class="col-8 pl-md-4 pl-xl-6">
+      <div class="col-8 pl-md-4 pl-xl-6 <?= $align_gallery; ?>">
         <div class="gallery-container">
           <div class="bg-gallery" data-aos="fade-left"></div>
           <div class="slick-slider" data-aos="fade-right">

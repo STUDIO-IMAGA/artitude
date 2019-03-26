@@ -1,12 +1,31 @@
+.element{
+  &.content-gallery{
+    padding-bottom: 6rem;
+  }
+}
+
 .element,
 .element-inline{
   &.content-gallery{
+
     .text{
       text-align: right;
     }
 
     .gallery-container{
       position: relative;
+
+      .bg-gallery{
+        display: block;
+        content:'';
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 100%;
+        height: 100%;
+        background-color: #ccc2c2;
+        z-index: -1;
+      }
     }
 
     .gallery-nav{

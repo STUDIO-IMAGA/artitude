@@ -48,21 +48,3 @@ function add_bootstrap_container_class( $field_container, $field, $form, $css_cl
 	return '<li id="' . $field_id . '" class="' . $css_class . ' form-group">{FIELD_CONTENT}</li>';
 }
 add_filter( 'gform_field_container', __NAMESPACE__ . '\\add_bootstrap_container_class', 10, 6 );
-
-/**
- * Replace Flex Layout title with content
- */
-function acf_flexible_content_layout_title( $title, $field, $layout, $i ) {
-
-  // some magic
-  // see: https://stackoverflow.com/a/40607717
-  $desc = strip_tags( get_sub_field( 'title' ) ??0?: get_sub_field( 'lead' ) ??0?: get_sub_field( 'author' ) ??0?: get_sub_field( 'content' ) );
-
-	if ( !empty($desc) ) {
-
-    return $title . " - " . $desc = (strlen($desc) > 50) ? mb_substr($desc, 0, 50).'...' : $desc;
-
-	}
-	return $title;
-}
-add_filter( 'acf/fields/flexible_content/layout_title', __NAMESPACE__ . '\\acf_flexible_content_layout_title', 10, 4 );

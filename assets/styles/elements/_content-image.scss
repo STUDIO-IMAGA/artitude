@@ -1,0 +1,31 @@
+.element{
+  &.content-image{
+    .image-container{
+      position: relative;
+
+      .bg-image{
+        display: block;
+        content:'';
+        position: absolute;
+        top: 35px;
+        right: 30px;
+        width: 100%;
+        height: calc(100% - 70px);
+        background-color: #bf1c0f;
+        z-index: -1;
+      }
+    }
+
+    .right{
+      .bg-image{
+        right: 30px;
+      }
+    }
+    
+    .left{
+      .bg-image{
+        left: 30px;
+      }
+    }
+  }
+}

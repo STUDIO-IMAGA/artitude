@@ -6,20 +6,43 @@
             "key": "field_5c7423ecf081f",
             "label": "Text",
             "name": "text",
-            "type": "text",
+            "type": "textarea",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "80",
                 "class": "",
                 "id": ""
             },
             "default_value": "",
             "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "maxlength": "",
+            "rows": 2,
+            "new_lines": "br"
+        },
+        {
+            "key": "field_5c9a16f5cdffa",
+            "label": "Uitlijning",
+            "name": "align",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "text-left": "Links",
+                "text-center": "Midden",
+                "text-right": "Rechts"
+            },
+            "allow_null": 0,
+            "default_value": "text-center",
+            "layout": "horizontal",
+            "return_format": "value"
         }
     ],
     "location": [
@@ -39,5 +62,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1552322029
+    "modified": 1553602658
 }
