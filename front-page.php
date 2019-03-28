@@ -9,3 +9,9 @@
 
   <? endwhile; ?>
 <? endif; ?>
+
+<div class="shape-1"></div>
+<div class="shape-2"></div>
+<div class="shape-3"></div>
+<div class="shape-4"></div>
+<div class="shape-5"></div>

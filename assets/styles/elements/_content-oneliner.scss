@@ -1,5 +1,7 @@
 .element{
   &.content-oneliner{
+    padding: 0;
+    
     .text{
       color: #ccc3c3;
       font-size: 3.75rem;

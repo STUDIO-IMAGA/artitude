@@ -10,6 +10,13 @@
       color: $red;
     }
   }
+  
+  .home &{
+    ::selection {
+      background: $white;
+      color: $red;
+    }
+  }
 }
 
 html{

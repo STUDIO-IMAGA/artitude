@@ -18,6 +18,14 @@
           <div class="bg-image" data-aos="<?= $aos; ?>"></div>
           <img class="img-fluid" src="<?= $image['sizes']['large']; ?>" alt="<?= $image['alt']; ?>" title="<?= $image['title']; ?>" data-aos="fade-down" />
         </div>
+        <div class="image-meta">
+          <? if(get_sub_field('description')): ?>
+            <span class="meta-description"><? the_sub_field('description'); ?></span>
+          <? endif; ?>
+          <? if(get_sub_field('link')): ?>
+            <a class="meta-link" href="<? the_sub_field('link'); ?>" >Bekijk Project</a>
+          <? endif;?>
+        </div>
       </div>
     </div>
   </div>

@@ -10,8 +10,8 @@
     </div>
     <div class="row justify-content-center">
       <div class="col-6">
-        <div class="sub-title" data-aos="fade-down">
-          <? the_sub_field('sub-title'); ?>
+        <div class="lead" data-aos="fade-down">
+          <? the_sub_field('lead'); ?>
         </div>
       </div>
     </div>

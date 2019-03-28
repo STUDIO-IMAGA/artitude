@@ -19,8 +19,10 @@
       }
     }
 
-    .sub-title{
+    .lead{
       text-align: center;
+      font-size: $font-size-base;
+      font-weight: $font-weight-base;
       @extend .archivo;
     }
 

@@ -13,9 +13,10 @@
             <? $active = ( $i == 1 ) ? 'active' : '' ; ?>
             <? $aria_selected = ( $i == 1 ) ? 'aria-selected="true"' : '' ; ?>
             <? $name = mb_strtolower( $tab['title'] ); ?>
+            <? $tab_name = str_replace( ' ', '', $name ); ?>
 
             <li class="nav-item">
-              <a class="nav-link <?= $active; ?>" id="<?= $name; ?>-tab" data-toggle="tab" href="#<?= $name; ?>-pane" role="tab" aria-controls="<?= $name; ?>-pane" <?= $aria_selected; ?>>
+              <a class="nav-link <?= $active; ?>" id="<?= $tab_name; ?>-tab" data-toggle="tab" href="#<?= $tab_name; ?>-pane" role="tab" aria-controls="<?= $tab_name; ?>-pane" <?= $aria_selected; ?>>
                 <?= $name; ?>
               </a>
             </li>
@@ -31,8 +32,9 @@
 
             <? $active = ( $i == 1 ) ? 'active show' : '' ; ?>
             <? $name = mb_strtolower( $tab['title'] ); ?>
+            <? $tab_name = str_replace( ' ', '', $name ); ?>
 
-            <div class="tab-pane fade <?= $active; ?>" id="<?= $name; ?>-pane" role="tabpanel" aria-labelledby="<?= $name; ?>-tab">
+            <div class="tab-pane fade <?= $active; ?>" id="<?= $tab_name; ?>-pane" role="tabpanel" aria-labelledby="<?= $tab_name; ?>-tab">
               <div class="row">
                 <div class="col-12 col-lg-6">
                   <?= $tab['text_left']; ?>

@@ -1,5 +1,16 @@
-.element:not(.header){
-  @extend .py-md-3;
-  @extend .py-lg-4;
-  @extend .py-xl-7;
+.element{
+  @include media-breakpoint-down(md){
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  @include media-breakpoint-down(lg){
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  @include media-breakpoint-down(xl){
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
 }

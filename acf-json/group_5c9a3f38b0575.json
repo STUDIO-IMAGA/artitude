@@ -64,8 +64,49 @@
             },
             "allow_null": 0,
             "default_value": "",
-            "layout": "vertical",
+            "layout": "horizontal",
             "return_format": "value"
+        },
+        {
+            "key": "field_5c9ce8c9ef0bf",
+            "label": "Onderschrift",
+            "name": "description",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "60",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5c9ce8ffef0c0",
+            "label": "Link",
+            "name": "link",
+            "type": "page_link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "40",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "page",
+                "post"
+            ],
+            "taxonomy": "",
+            "allow_null": 0,
+            "allow_archives": 0,
+            "multiple": 0
         }
     ],
     "location": [
@@ -85,5 +126,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1553612638
+    "modified": 1553787721
 }

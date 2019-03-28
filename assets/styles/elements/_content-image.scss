@@ -20,11 +20,32 @@
       .bg-image{
         right: 30px;
       }
+
+      .image-meta{
+        text-align: right;
+      }
     }
-    
+
     .left{
       .bg-image{
         left: 30px;
+      }
+    }
+
+    .image-meta{
+      padding-top: 2.25rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      font-size: .875rem;
+
+      .meta-link{
+        display: inline-block;
+        vertical-align: baseline;
+        background-color: $black;
+        padding: .2rem .6rem;
+        color: $white;
+        margin-left: .5rem;
+        margin-right: .5rem;
       }
     }
   }
