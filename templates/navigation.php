@@ -11,13 +11,13 @@
 
   <?= Navigation\toggler( 'navigation_container' ); ?>
 
-  <div id="navigation">
+  <div id="navigation_container" class="collapse">
 
     <div id="topbar">
       <?= Navigation\navigation( 'secondary_navigation', 'secondary_navigation' , 0, 1, "nav contact-menu", ""); ?>
     </div>
 
-    <nav  id="navigation_container" class="collapse">
+    <nav  id="navigation">
       <?= Navigation\navigation( 'primary_navigation', 'primary_navigation' , 0, 2, "nav", ""); ?>
     </nav>
 
