@@ -21,7 +21,7 @@
 
         // init Animate On Scroll
         AOS.init({
-           offset: 10,
+           offset: 100,
            once: 'true',
            duration: 700,
         });

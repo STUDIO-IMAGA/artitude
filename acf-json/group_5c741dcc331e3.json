@@ -400,6 +400,18 @@
                 "operator": "==",
                 "value": "default"
             }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            },
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "template-project.php"
+            }
         ]
     ],
     "menu_order": -1,
@@ -417,5 +429,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1553612721
+    "modified": 1554725451
 }

@@ -25,6 +25,7 @@ function setup() {
     'primary_navigation' => __('Primary Navigation', 'imaga'),
     'secondary_navigation' => __('Secondary Navigation', 'imaga'),
     'tertiary_navigation' => __('Legal Navigation', 'imaga'),
+    'quaternary_navigation' => __('Contact Navigation', 'imaga'),
   ]);
 
   // Enable post thumbnails
