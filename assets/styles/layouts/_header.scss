@@ -30,11 +30,9 @@
     }
 
     .content{
-
       *{
         color: $white;
       }
-
       p{
         color: $white;
         font-size: 1.125rem;
@@ -51,6 +49,26 @@
       right: 0;
       bottom: -3vw;
       z-index: -1;
+    }
+  }
+}
+
+
+@include media-breakpoint-down(sm){
+  .element{
+    &.header{
+      margin-bottom: 0rem;
+      padding-top: 5rem;
+      padding-bottom: 1rem;
+
+      .header-image{
+        transform: translateX(0);
+        margin-top: 2rem;
+
+        &-bg{
+          display: none;
+        }
+      }
     }
   }
 }

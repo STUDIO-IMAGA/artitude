@@ -13,11 +13,13 @@
 
           <div class="social-media">
             <? $socials = get_field('social_media','options'); ?>
-            <? foreach($socials as $social): ?>
-              <a class="social-item" href="<?= $social['url']; ?>">
-                <img class="img-fluid" src="<?= $social['icon']['url']; ?>"/>
-              </a>
-            <? endforeach; ?>
+            <? if($socials): ?>
+              <? foreach($socials as $social): ?>
+                <a class="social-item" href="<?= $social['url']; ?>">
+                  <img class="img-fluid" src="<?= $social['icon']['url']; ?>"/>
+                </a>
+              <? endforeach; ?>
+            <? endif; ?>
           </div>
 
         </div>

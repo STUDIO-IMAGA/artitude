@@ -1,5 +1,24 @@
 .btn{
-  &.black{
-    
+  position: relative;
+
+  &-black{
+    @extend .archivo;
+
+    &:before{
+      position: absolute;
+      content:'';
+      background-image: url('../images/icons/knop-pijl.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 25px;
+      height: 25px;
+      left: -15px;
+      transition: all .3s ease-out;
+    }
+    &:hover{
+      &:before{
+        left: -10px;
+      }
+    }
   }
 }

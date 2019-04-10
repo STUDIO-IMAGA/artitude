@@ -1,6 +1,5 @@
 .element{
   &.content-quote{
-    text-align: center;
     @extend .overpass;
 
     .quote{
@@ -14,7 +13,6 @@
         background-position: center;
         background-repeat: no-repeat;
       }
-
       &:before{
         width: 57px;
         height: 90px;
@@ -22,7 +20,6 @@
         left: -40px;
         bottom: -25px;
       }
-
       &:after{
         width: 50px;
         height: 122px;
@@ -30,15 +27,26 @@
         top: -25px;
         right: -40px;
       }
-
       .text{
         font-size: 1.563rem;
         line-height: 1.813rem;
       }
-
       .author{
         font-size: 1.125rem;
         line-height: 2.438rem;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(md){
+  .element{
+    &.content-quote{
+      .quote{
+        &:before,
+        &:after{
+          display: none;
+        }
       }
     }
   }

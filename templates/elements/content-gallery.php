@@ -4,12 +4,12 @@
 <section class="element content-gallery">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-5 pr-md-2 <?= $align_text; ?> order-2">
+      <div class="col-12 col-sm-5 pr-md-2 pb-4 <?= $align_text; ?> order-2">
         <div class="text" data-aos="fade-up">
           <? the_sub_field('text'); ?>
         </div>
       </div>
-      <div class="col-7 pl-md-4 <?= $align_gallery; ?>">
+      <div class="col-12 col-sm-7 pl-md-4 mb-4 mb-sm-0 <?= $align_gallery; ?>">
         <div class="gallery-container">
           <div class="bg-gallery" data-aos="fade-left"></div>
           <div class="slick-slider" data-aos="fade-right">

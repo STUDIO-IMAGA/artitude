@@ -91,6 +91,37 @@
                 "id": ""
             },
             "layouts": {
+                "layout_5c7518fb991eb": {
+                    "key": "layout_5c7518fb991eb",
+                    "name": "content-heading",
+                    "label": "Heading Element",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5c751907991ec",
+                            "label": "Clone Heading Element",
+                            "name": "clone_heading_element",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5c751894b5794"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
                 "5c741ee266a84": {
                     "key": "5c741ee266a84",
                     "name": "content-text",
@@ -184,37 +215,6 @@
                     "min": "",
                     "max": ""
                 },
-                "layout_5c7425384b77c": {
-                    "key": "layout_5c7425384b77c",
-                    "name": "content-gallery",
-                    "label": "Galerij Element",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_5c7425444b77d",
-                            "label": "Clone Galerij Element",
-                            "name": "clone_galerij_element",
-                            "type": "clone",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "clone": [
-                                "group_5c7424c32350a"
-                            ],
-                            "display": "seamless",
-                            "layout": "block",
-                            "prefix_label": 0,
-                            "prefix_name": 0
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
                 "layout_5c9a3f7c9f7cc": {
                     "key": "layout_5c9a3f7c9f7cc",
                     "name": "content-image",
@@ -246,6 +246,37 @@
                     "min": "",
                     "max": ""
                 },
+                "layout_5c7425384b77c": {
+                    "key": "layout_5c7425384b77c",
+                    "name": "content-gallery",
+                    "label": "Galerij Element",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5c7425444b77d",
+                            "label": "Clone Galerij Element",
+                            "name": "clone_galerij_element",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5c7424c32350a"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
                 "layout_5c750ea7b77e0": {
                     "key": "layout_5c750ea7b77e0",
                     "name": "content-video",
@@ -267,37 +298,6 @@
                             },
                             "clone": [
                                 "group_5c750db741df9"
-                            ],
-                            "display": "seamless",
-                            "layout": "block",
-                            "prefix_label": 0,
-                            "prefix_name": 0
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
-                "layout_5c7518fb991eb": {
-                    "key": "layout_5c7518fb991eb",
-                    "name": "content-heading",
-                    "label": "Heading Element",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_5c751907991ec",
-                            "label": "Clone Heading Element",
-                            "name": "clone_heading_element",
-                            "type": "clone",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "clone": [
-                                "group_5c751894b5794"
                             ],
                             "display": "seamless",
                             "layout": "block",
@@ -369,6 +369,37 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_5cadef8c2df1e": {
+                    "key": "layout_5cadef8c2df1e",
+                    "name": "content-cta",
+                    "label": "Call-To-Action Element",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5cadefa42df1f",
+                            "label": "Clone Call-To-Action Element",
+                            "name": "clone_call-to-action_element",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5cadee6916b2d"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Element toevoegen",
@@ -429,5 +460,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1554725451
+    "modified": 1554902983
 }

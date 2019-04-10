@@ -58,9 +58,9 @@
             dots: false,
             arrows: false,
             draggable: true,
-            mobileFirst: true,
             speed: 500,
             fade: true,
+            adaptiveHeight: true
           }).on('beforeChange', function(event, slick, currentSlide, nextSlide){
             galleryPaging.text( (nextSlide + 1) + '/' + slick.slideCount);
           });

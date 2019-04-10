@@ -1,12 +1,10 @@
-.element{
-  &.content-heading{
-    .title{
-      text-align: right;
-    }
-
-    .text{
-      padding-left: $grid-gutter-width;
-      border-left: 2px solid $black;
+@include media-breakpoint-up(md){
+  .element{
+    &.content-heading{
+      .text{
+        padding-left: $grid-gutter-width;
+        border-left: 2px solid $black;
+      }
     }
   }
 }

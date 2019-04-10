@@ -36,10 +36,10 @@
 
             <div class="tab-pane fade <?= $active; ?>" id="<?= $tab_name; ?>-pane" role="tabpanel" aria-labelledby="<?= $tab_name; ?>-tab">
               <div class="row">
-                <div class="col-12 col-lg-6">
+                <div class="col-12 col-lg-6 pb-3">
                   <?= $tab['text_left']; ?>
                 </div>
-                <div class="col-12 col-lg-6">
+                <div class="col-12 col-lg-6 pb-3">
                   <?= $tab['text_right']; ?>
                 </div>
               </div>

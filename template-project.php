@@ -10,10 +10,10 @@ use IMAGA\Theme\Extras;
 
   <? get_template_part('templates/header'); ?>
 
-  <? if( have_rows('layouts') ): ?>
-    <? while( have_rows('layouts') ): the_row(); ?>
+  <? if( have_rows('elements') ): ?>
+    <? while( have_rows('elements') ): the_row(); ?>
 
-      <? Extras\get_layout( get_row_layout() ); ?>
+      <? Extras\get_element( get_row_layout() ); ?>
 
     <? endwhile; ?>
   <? endif; ?>
