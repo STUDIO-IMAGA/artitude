@@ -10,6 +10,8 @@
   <? endwhile; ?>
 <? endif; ?>
 
+<? get_template_part('templates/footer','front-page'); ?>
+
 <div class="shape-1"></div>
 <div class="shape-2"></div>
 <div class="shape-3"></div>

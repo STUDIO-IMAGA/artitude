@@ -1,0 +1,98 @@
+.element{
+  &.content-highlights{
+    .title.h1{
+      margin-bottom: 5rem;
+
+      &:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        right: 0;
+        bottom: 1rem;
+        height: 48px;
+        background-image:url('../images/accents/3.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+    }
+    .tiles{
+      padding-top: 3rem;
+
+      .tile{
+        position: relative;
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        .content{
+          position: relative;
+          z-index: 10;
+
+          .icon{
+            width: 75px;
+            height: 75px;
+            margin: 0 auto;
+
+            svg{
+              transition: all .3s ease-in-out;
+              fill: #4c0903;
+            }
+          }
+
+          .title{
+            text-align: center;
+            color: #860f06;
+            font-size: 1.5rem;
+            font-weight: 300;
+            line-height: 40px;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            transition: all .3s ease-in-out;
+            @extend .heebo;
+          }
+
+          .text{
+            color: #860f06;
+            font-size: 1rem;
+            transition: all .3s ease-in-out;
+            padding-left: ($grid-gutter-width / 2);
+            padding-right: ($grid-gutter-width / 2);
+          }
+        }
+
+        &:after{
+          position: absolute;
+          content: '';
+          top: -1.5rem;
+          left: -1.5rem;
+          right: -1.5rem;
+          bottom: -1.5rem;
+          background-color: $white;
+          box-shadow: 0px 5px 25px 0 rgba(26, 23, 27, 0.63);
+          opacity: 0;
+          transition: all .3s ease-in-out;
+          z-index: 0;
+        }
+
+        &:hover,
+        &:active,
+        &:focus{
+
+          .icon{
+            svg{
+              fill: #cb1506;
+            }
+          }
+          .title,
+          .text{
+            color: #ca1506;
+          }
+
+          &:after{
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

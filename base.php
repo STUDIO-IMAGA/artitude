@@ -7,7 +7,7 @@ use IMAGA\Theme\Wrapper;
 <html <? language_attributes(); ?>>
   <? get_template_part('templates/head'); ?>
   <body id="top" <? body_class(); ?>>
-    <div class="d-none" style="position:fixed; top: 0; right: 0;z-index:9999999;background:black;color:white;font-size:2rem;">
+    <div style="position:fixed;bottom:0;right:0;z-index:9999999;background:black;color:white;font-size:2rem;">
       <b class="d-block d-sm-none">XS</b>
       <b class="d-none d-sm-block d-md-none">SM</b>
       <b class="d-none d-md-block d-lg-none">MD</b>

@@ -127,7 +127,6 @@
 
       #primary_navigation{
         width: 100%;
-        max-width: 1440px;
         padding-top: 2.313rem;
         padding-left: 2.1rem;
         padding-right: 2.1rem;
@@ -135,6 +134,8 @@
 
         ul{
           justify-content: space-between;
+          padding-left: 2.1rem;
+          padding-right: 2.1rem;
 
           .menu-item{
             padding-left: .4rem;
@@ -280,6 +281,26 @@ ul.contact-menu{
       background-image: url('../images/icons/koffie.svg');
     }
   }
+
+  &.light{
+    .menu-item{
+      a{
+        color: $white;
+      }
+
+      &.phone:before{
+        background-image: url('../images/icons/telefoon-light.svg');
+      }
+
+      &.mail:before{
+        background-image: url('../images/icons/mail-light.svg');
+      }
+
+      &.address:before{
+        background-image: url('../images/icons/koffie-light.svg');
+      }
+    }
+  }
 }
 
 #legal_navigation{
@@ -292,6 +313,21 @@ ul.contact-menu{
       line-height: 1.8;
       letter-spacing: 0.3px;
       padding: 6px;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm){
+  #header{
+    #navigation_container{
+      #topbar{
+        display: none;
+      }
+      #navigation{
+        #primary_navigation{
+          padding-top: 65px;
+        }
+      }
     }
   }
 }
@@ -343,12 +379,29 @@ ul.contact-menu{
       }
     }
     #navigation_container{
-      #topbar{
-        display: none;
-      }
       #navigation{
         overflow-y: scroll;
-        max-height: 90vh;
+        max-height: 100vh;
+
+        #primary_navigation{
+          width: 100%;
+          padding-top: 2.313rem;
+          padding-left: 1rem;
+          padding-right: 1rem;
+          padding-bottom: .5rem;
+
+          ul{
+            justify-content: flex-start;
+            flex-direction: column;
+            padding-left: 0px;
+            padding-right: 0px;
+
+            .menu-item{
+              padding-left: 1rem;
+              padding-right: 1rem;
+            }
+          }
+        }
       }
     }
   }
