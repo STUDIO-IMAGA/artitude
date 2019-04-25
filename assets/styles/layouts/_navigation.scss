@@ -7,7 +7,7 @@
     position: absolute;
     opacity: 1;
     top: 0;
-    left: calc(50vw - 161.5px);
+    left: calc(50% - 162px);
     height: 65px;
     width: 324px;
     margin: 0;
@@ -26,7 +26,7 @@
     outline: transparent;
     padding: 0;
     border: none;
-    width: 111px;
+    width: 160px;
     margin-left: 40px;
     height: 65px;
     z-index: 2050;
@@ -109,6 +109,7 @@
     top: 0;
     left: 0;
     right: 0;
+    transition: .3s ease-in-out;
     z-index: 2020;
 
     #topbar{
@@ -141,12 +142,13 @@
             padding-left: .4rem;
             padding-right: .4rem;
             padding-bottom: 2rem;
-            text-transform: uppercase;
 
             a{
               font-size: 1.21875rem;
               letter-spacing: 1.6px;
+              font-weight: 600;
               color: $white;
+              text-transform: uppercase;
               @extend .overpass;
 
               &:hover, &:active, &:focus{
@@ -186,6 +188,7 @@
                   font-size: 1.15625rem;
                   font-weight: 400;
                   letter-spacing: 1.5px;
+                  text-transform: lowercase;
                   color: $white;
                   padding-top: 2px;
                   padding-bottom: 2px;

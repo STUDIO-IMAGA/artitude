@@ -311,8 +311,6 @@ gulp.task('default', ['clean'], function() {
 //`gulp zip` - Zip up a distribution of the compiled WordPress theme.
 gulp.task('zip', function(callback) {
   var pkg = getPackageJSON();
-  var newversion = semver.inc(pkg.version, argv.production);
-
   return gulp.src([
     'dist/**/*',
     'acf-json/*',
@@ -329,7 +327,7 @@ gulp.task('zip', function(callback) {
   ], {
    base: '.'
   })
-  .pipe(loadplugins.zip(pkg.name + '-v' + newversion +'.zip'))
+  .pipe(loadplugins.zip(pkg.name + '.zip'))
   .pipe(gulp.dest( OSHome + '/Documents/Themes'));
 });
 

@@ -168,9 +168,9 @@
 </section>
 
 <section class="element footer-front-page">
-  <div class="container">
-    <div class="row">
-      <div class="col-3">
+  <div class="container border border-white">
+    <div class="row border-bottom border-white">
+      <div class="col-3 border-right border-white py-5">
         <div class="title">
           <div>
             <span class="h4">Deze klanten hadden een idee..</span>
@@ -181,11 +181,10 @@
         </div>
       </div>
       <div class="col-9">
-        [BRAND GALLERY]
       </div>
     </div>
     <div class="row align-items-center">
-      <div class="col-4 pr-0">
+      <div class="col-4 pr-0 py-6">
         <h6>Een keertje vrijblijvend sparren over je idee?</h6>
       </div>
       <div class="col-8 pl-0">

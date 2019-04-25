@@ -30,6 +30,8 @@
     }
 
     .content{
+      z-index: 10;
+      
       *{
         color: $white;
       }
@@ -43,7 +45,7 @@
       position: absolute;
       content:"";
       background: $red;
-      height: 100px;
+      height: 20vw;
       transform: skewY(-2deg);
       left: 0;
       right: 0;

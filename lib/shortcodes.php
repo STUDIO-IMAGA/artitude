@@ -48,7 +48,7 @@ add_shortcode( 'button', function($atts, $content = null){
 
   $color = $atts['color'] ??0?: 'black' ;
 
-  return '<a class="btn btn-' . $color . ' ' . $atts['extra'] . '" href="' . $atts['url'] . '">' . do_shortcode($content) . '</a>';
+  return '<a class="btn btn-' . $color . ' ' . $atts['extra'] . ' ml-3" href="' . $atts['url'] . '">' . do_shortcode($content) . '</a>';
 });
 
 /**
@@ -89,7 +89,7 @@ function custom_gallery_shortcode( $attr ) {
 			'order'      => 'ASC',
 			'orderby'    => 'menu_order ID',
 			'id'         => $post ? $post->ID : 0,
-			'size'       => 'thumbnail',
+			'size'       => 'gallery-small',
 			'include'    => '',
 		),
 		$attr,
@@ -169,7 +169,7 @@ add_shortcode( 'collage-item', function($atts){
 
   $image_meta = wp_get_attachment_metadata( $atts['id'] );
 
-  $image = wp_get_attachment_image_src( $atts['id'], 'large', false);
+  $image = wp_get_attachment_image_src( $atts['id'], 'gallery-large', false);
 
   $output = '<div class="collage-item">';
     $output .= '<a href="'.$atts['link'].'">';

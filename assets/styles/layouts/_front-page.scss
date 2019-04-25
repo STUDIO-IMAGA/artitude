@@ -11,6 +11,20 @@
       z-index: 0;
       margin-bottom: 0;
 
+      .header-image{
+        transform: translateX(0px);
+        box-shadow: 0px 5px 25px 0 rgba(26, 23, 27, 0.63);
+
+        &-bg{
+          display: none;
+        }
+      }
+
+      .content{
+        padding: 2rem;
+        border: 2px solid $white;
+      }
+
       &:after{
         display: none;
       }
@@ -67,6 +81,8 @@
           }
         }
       }
+    }
+    &.footer-front-page{
     }
   }
 

@@ -21,9 +21,11 @@
 
         // init Animate On Scroll
         AOS.init({
-           offset: 100,
-           once: 'true',
-           duration: 700,
+          offset: 300,
+          once: 'true',
+          duration: 700,
+          delay: 50,
+          disable: 'mobile'
         });
 
         // init Smooth Scroll
@@ -123,6 +125,9 @@
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
 
+        // Refresh AOS. Some bug...
+        setTimeout(function() { AOS.refresh(); }, 500);
+
         // Set the offset when entering page with hash present in the url
         window.setTimeout(function(){
           if (location.hash.length !== 0) {
@@ -131,17 +136,13 @@
         }, 0);
 
         $('#navigation_container').on('show.bs.collapse', function () {
-
           $('#header').addClass('open');
           $('.animated-toggler').addClass('open');
-
         });
 
         $('#navigation_container').on('hide.bs.collapse', function () {
-
           $('#header').removeClass('open');
           $('.animated-toggler').removeClass('open');
-
         });
 
       }

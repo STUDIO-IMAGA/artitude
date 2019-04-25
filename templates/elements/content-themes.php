@@ -23,17 +23,17 @@
             <div class="col-12 col-sm-6 col-md-4 <?=($i % 3)?'theme':'theme offset';?>">
               <div class="element-inline content-gallery">
                 <div class="gallery-container">
-                  <div class="slick-slider" data-aos="fade-down-right">
+                  <div class="slick-slider" data-aos="fade-down">
                     <? $images = $theme['gallery']; ?>
                     <? if( $images ): ?>
                       <? foreach( $images as $image ): ?>
 
-                        <img src="<?= $image['url']; ?>" alt="<?= $image['alt']; ?>" />
+                        <img src="<?= $image['sizes']['gallery-small']; ?>" alt="<?= $image['alt']; ?>" />
 
                       <? endforeach; ?>
                     <? endif; ?>
                   </div>
-                  <div class="gallery-nav" data-aos="fade-up-left">
+                  <div class="gallery-nav" data-aos="fade-up">
                     <span class="gallery-prev"></span>
                     <span class="gallery-paging"></span>
                     <span class="gallery-next"></span>

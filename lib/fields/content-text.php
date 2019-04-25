@@ -2,14 +2,14 @@
 if( function_exists('acf_add_local_field_group') ):
 
 acf_add_local_field_group(array(
-	'key' => 'group_5c750db741df9',
-	'title' => 'Video Element',
+	'key' => 'group_5c741e2ce4840',
+	'title' => 'Tekst Element',
 	'fields' => array(
 		array(
-			'key' => 'field_5c750dbc8d7bc',
-			'label' => 'Video',
-			'name' => 'video',
-			'type' => 'file',
+			'key' => 'field_5c741e3414380',
+			'label' => 'Inhoud',
+			'name' => 'text',
+			'type' => 'wysiwyg',
 			'instructions' => '',
 			'required' => 0,
 			'conditional_logic' => 0,
@@ -18,11 +18,11 @@ acf_add_local_field_group(array(
 				'class' => '',
 				'id' => '',
 			),
-			'return_format' => 'url',
-			'library' => 'all',
-			'min_size' => '',
-			'max_size' => '',
-			'mime_types' => '',
+			'default_value' => '',
+			'tabs' => 'visual',
+			'toolbar' => 'full',
+			'media_upload' => 0,
+			'delay' => 1,
 		),
 	),
 	'location' => array(
@@ -43,7 +43,7 @@ acf_add_local_field_group(array(
 	'active' => false,
 	'description' => '',
 	0 => false,
-	'modified' => 1552322038,
+	'modified' => 1552322036,
 ));
 
 endif;

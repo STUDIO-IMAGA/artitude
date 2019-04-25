@@ -1,6 +1,6 @@
 <?
 /**
-* Template Name: Project
+* Template Name: Content template
 */
 
 use IMAGA\Theme\Extras;

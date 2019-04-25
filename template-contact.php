@@ -1,6 +1,6 @@
 <?
 /**
-* Template Name: Contact
+* Template Name: Contact template
 */
 
 use IMAGA\Theme\Extras;

@@ -45,6 +45,10 @@ function setup() {
   // Add image sizes
   // Header Element
   add_image_size('header-image', 800, 600, true);
+
+  // Gallery Element
+  add_image_size('gallery-large', 800, 550, true);
+  add_image_size('gallery-small', 420, 280, true);
 }
 add_action('after_setup_theme', __NAMESPACE__ . '\\setup');
 

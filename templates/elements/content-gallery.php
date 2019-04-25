@@ -18,7 +18,7 @@
             <? if( $images ): ?>
               <? foreach( $images as $image ): ?>
 
-                <img src="<?= $image['url']; ?>" alt="<?= $image['alt']; ?>" />
+                <img src="<?= $image['sizes']['gallery-large']; ?>" alt="<?= $image['alt']; ?>" />
 
               <? endforeach; ?>
             <? endif; ?>
