@@ -21,3 +21,29 @@ h4,.h4{
 ul{
   list-style-type: square;
 }
+
+.home{
+  .h-accent{
+    position: relative;
+
+    &:after{
+      position: static;
+      top: -20px;
+      left: -20px;
+      right: -20px;
+      bottom: -20px;
+      content:'';
+    }
+
+    &.type-1:after{
+      background-image: url('../images/accents/h-accent-1.png');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+    &.type-2:after{
+      background-image: url('../images/accents/h-accent-1.png');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+  }
+}

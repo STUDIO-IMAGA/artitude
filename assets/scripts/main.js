@@ -145,6 +145,22 @@
           $('.animated-toggler').removeClass('open');
         });
 
+        $('h1, h2').each(function(){
+
+          // making sure headings are visible. This excludes tabs.
+          if( $(this).height() > 0 ){
+
+            console.log( $(this).height() );
+
+            if( $(this).height() >= 100 ){
+              $(this).addClass('h-accent type-1');
+            }else if( $(this).height() >= 50 ){
+              $(this).addClass('h-accent type-2');
+            }
+
+          }
+        });
+
       }
     },
     // Home page
