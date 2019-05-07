@@ -185,3 +185,16 @@ add_filter('rest_jsonp_enabled', '_return_false');
  * Source: https://www.wpbeginner.com/plugins/how-to-disable-xml-rpc-in-wordpress/
  */
 add_filter('xmlrpc_enabled', '__return_false');
+
+/*
+ * Edit Roles
+ */
+function edit_roles(){
+
+  $role_object = get_role( 'editor' );
+
+  if( !$role_object->has_cap('edit_theme_options') ){
+    $role_object->add_cap( 'edit_theme_options' );
+  }
+}
+add_action( 'admin_init', __NAMESPACE__ . '\\edit_roles', 100);
