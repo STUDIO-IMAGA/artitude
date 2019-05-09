@@ -150,15 +150,34 @@
           // making sure headings are visible. This excludes tabs.
           if( $(this).height() > 0 ){
 
-            console.log( $(this).height() );
+            var element = $(this);
+            var content = element.html();
 
-            if( $(this).height() >= 100 ){
-              $(this).addClass('h-accent type-1');
-            }else if( $(this).height() >= 50 ){
-              $(this).addClass('h-accent type-2');
+            if( element.height() >= 114 ){
+              element.addClass('h-accent type-6');
+            }else if( element.height() >= 110 ){
+              element.addClass('h-accent type-5');
+            }else if( element.height() >= 95 ){
+              element.addClass('h-accent type-4');
+            }else if( element.height() >= 93 ){
+              element.addClass('h-accent type-3');
+            }else if( element.height() >= 92 ){
+              element.addClass('h-accent type-2');
+            }else if( element.height() >= 30 ){
+              element.html('<span class="h-accent type-1">' + content + '</span>');
             }
 
           }
+        });
+
+        // Slick for Customers
+        $('.customers').slick({
+          infinite: true,
+          arrows: true,
+          draggable: true,
+          speed: 500,
+          slidesToShow: 5,
+          slidesToScroll: 5
         });
 
       }

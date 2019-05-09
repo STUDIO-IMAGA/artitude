@@ -181,6 +181,16 @@
         </div>
       </div>
       <div class="col-9">
+        <div class="customers">
+          <? $klanten = get_field('customers','options'); ?>
+          <? if($klanten): ?>
+            <? foreach($klanten as $klant): ?>
+              <div class="customers-item">
+                <img class="img-fluid" src="<?= $klant['image']['url'] ?>" alt="<?= $klant["customer_name"]?>"/>
+              </div>
+            <? endforeach; ?>
+          <? endif; ?>
+        </div>
       </div>
     </div>
     <div class="row align-items-center">

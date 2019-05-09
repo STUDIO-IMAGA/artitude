@@ -1,11 +1,11 @@
 {
     "key": "group_5cc1bad19bf44",
-    "title": "Merken",
+    "title": "Klanten",
     "fields": [
         {
             "key": "field_5cc1bae56ac7f",
-            "label": "Merken",
-            "name": "brands",
+            "label": "Klanten",
+            "name": "customers",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -23,8 +23,8 @@
             "sub_fields": [
                 {
                     "key": "field_5cc1bad86ac7e",
-                    "label": "Merknaam",
-                    "name": "brandname",
+                    "label": "Klantnaam",
+                    "name": "customer",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -84,5 +84,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1556200315
+    "modified": 1557398053
 }

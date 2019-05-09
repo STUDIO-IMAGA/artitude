@@ -15,8 +15,9 @@
             <? $socials = get_field('social_media','options'); ?>
             <? if($socials): ?>
               <? foreach($socials as $social): ?>
+                <? $url = (is_front_page()) ? $social['icon_light']['url'] : $social['icon']['url'];?>
                 <a class="social-item" href="<?= $social['url']; ?>">
-                  <img class="img-fluid" src="<?= $social['icon']['url']; ?>"/>
+                  <img class="img-fluid" src="<?= $url ?>"/>
                 </a>
               <? endforeach; ?>
             <? endif; ?>

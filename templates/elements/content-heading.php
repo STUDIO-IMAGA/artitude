@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-12 col-md-3">
-        <div class="title text-left text-md-right pr-md-4">
+        <div class="title text-left text-md-right">
           <h2><? the_sub_field('title'); ?></h2>
         </div>
       </div>
