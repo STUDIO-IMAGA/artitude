@@ -167,10 +167,10 @@
   </div>
 </section>
 
-<section class="element footer-front-page">
+<section class="element footer-front-page p-3 p-sm-0">
   <div class="container border border-white">
     <div class="row border-bottom border-white">
-      <div class="col-3 border-right border-white py-5">
+      <div class="col-12 col-md-4 border-right border-white p-3 p-md-5">
         <div class="title">
           <div>
             <span class="h4">Deze klanten hadden een idee..</span>
@@ -180,7 +180,7 @@
           </div>
         </div>
       </div>
-      <div class="col-9">
+      <div class="col-12 col-md-8">
         <div class="customers">
           <? $klanten = get_field('customers','options'); ?>
           <? if($klanten): ?>
@@ -194,10 +194,10 @@
       </div>
     </div>
     <div class="row align-items-center">
-      <div class="col-4 pr-0 py-6">
+      <div class="col-12 col-md-4 pr-0 py-md-6 p-3 pl-md-5">
         <h6>Een keertje vrijblijvend sparren over je idee?</h6>
       </div>
-      <div class="col-8 pl-0">
+      <div class="col-12 col-md-8 pl-0">
         <?= Navigation\navigation( 'secondary_navigation', 'footer_front_page_navigation' , 0, 1, "nav contact-menu light", ""); ?>
       </div>
     </div>

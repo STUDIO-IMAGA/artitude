@@ -83,6 +83,48 @@
       }
     }
     &.footer-front-page{
+      ul.contact-menu{
+        justify-content: flex-start;
+      }
+      .customers{
+        .slick-arrow{
+          position: absolute;
+          top: calc(50% - 13px);
+          font-size: 0px;
+          width: 28px;
+          height: 28px;
+          z-index: 1000;
+          border-color: transparent;
+          background-color: transparent;
+
+          &:after{
+            display: block;
+            height: 15px;
+            width: 15px;
+            content:'';
+            border-top: 3px solid #b71407;
+            border-bottom: 0px solid transparent;
+          }
+          &.slick-prev{
+            left: 0;
+
+            &:after{
+              border-right: 0px solid transparent;
+              border-left: 3px solid #b71407;
+              transform: rotate(-45deg);
+            }
+          }
+          &.slick-next{
+            right: 0;
+
+            &:after{
+              border-right: 3px solid #b71407;
+              border-left: 0px solid transparent;
+              transform: rotate(45deg);
+            }
+          }
+        }
+      }
     }
   }
 
@@ -168,6 +210,12 @@
     .shape-4,
     .shape-5{
       display: none;
+    }
+
+    .footer-front-page{
+      .border-right{
+        border-right: none !important;
+      }
     }
   }
 }
