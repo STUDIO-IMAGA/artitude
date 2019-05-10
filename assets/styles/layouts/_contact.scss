@@ -6,11 +6,22 @@
       color: $white;
     }
 
+    #contact_navigation{
+      display: inline-block;
+    }
+
+    ul.contact-menu{
+      justify-content: flex-start;
+    }
+
     .social-media{
+      display: inline-block;
+
       .social-item{
-        img{
-          width: 32px;
-        }
+        display: inline-block;
+        margin-left: 10px;
+        height: 26px;
+        width: 26px;
       }
     }
   }

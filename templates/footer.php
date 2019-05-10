@@ -13,11 +13,11 @@
 
           <div class="social-media">
             <? $socials = get_field('social_media','options'); ?>
-            <? if($socials): ?>
+            <? if($socials && !is_page_template('template-contact.php')): ?>
               <? foreach($socials as $social): ?>
                 <? $url = (is_front_page()) ? $social['icon_light']['url'] : $social['icon']['url'];?>
                 <a class="social-item" href="<?= $social['url']; ?>">
-                  <img class="img-fluid" src="<?= $url ?>"/>
+                  <img class="img-fluid" src="<?= $url ?>" alt="<?= $social['service']; ?>"/>
                 </a>
               <? endforeach; ?>
             <? endif; ?>
