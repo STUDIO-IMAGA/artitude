@@ -43,7 +43,11 @@
         "./scss/_popover.scss",
         "./scss/_carousel.scss",
         "./scss/_utilities.scss",
-        "./dist/js/bootstrap.min.js"
+        "./js/dist/index.js",
+        "./js/dist/tab.js",
+        "./js/dist/util.js",
+        "./js/dist/collapse.js",
+        "./js/dist/modal.js"
       ]
     },
     "font-awesome": {
