@@ -124,16 +124,16 @@ $spacers: (
 $grid-breakpoints: (
   xs: 0,
   sm: 768px,
-  md: 992px,
-  lg: 1480px,
-  xl: 1620px
+  md: 1024px,
+  lg: 1280px,
+  xl: 1600px
 );
 
 $container-max-widths: (
   sm: 720px,
   md: 960px,
-  lg: 1440px,
-  xl: 1600px
+  lg: 1120px,
+  xl: 1440px
 );
 
 $body-bg:                     $white;
@@ -198,9 +198,9 @@ $text-muted:                  $gray-600;
 $table-border-color:          rgba(255, 255, 255, .2);
 $table-hover-bg:              rgba($gray-100, .3);
 
-$input-focus-color:           $red;
-$input-focus-border-color:    $cyan;
-$input-placeholder-color:     $gray-400;
+$input-focus-color:           $white;
+$input-focus-border-color:    $white;
+$input-placeholder-color:     $red-dark;
 
 $border-width:                2px;
 $border-color:                $gray-300;
@@ -220,7 +220,6 @@ $input-btn-line-height:       $line-height-base;
 $input-btn-focus-width:       0rem;
 $input-btn-focus-color:       $red;
 
-
 $input-btn-padding-y-sm:      .25rem;
 $input-btn-padding-x-sm:      1.3rem;
 $input-btn-line-height-sm:    $line-height-sm;
@@ -233,8 +232,10 @@ $input-btn-border-width:      $border-width;
 $input-border-radius:         0;
 $input-padding-y:             .7rem;
 $input-padding-x:             .7rem;
-$input-border-color:          $yellow;
+$input-border-color:          $white;
 $input-border-width:          2px;
 $input-height:                50px;
+$input-bg:                    transparent;
+$input-color:                 $white;
 
 $alert-border-radius:         .2rem;
