@@ -13,7 +13,7 @@ use IMAGA\Theme\Navigation;
   <section class="mt-8">
     <div class="container">
       <div class="row">
-        <div class="col-12">
+        <div class="col-12 pb-6 page-title">
           <h1>Contact</h1>
         </div>
       </div>
@@ -50,18 +50,18 @@ use IMAGA\Theme\Navigation;
         </div>
         <div class="col-6 border-left border-right border-bottom">
           <div class="row border-bottom border-white p-4">
-            <div class="col-3">
+            <div class="col-4 adresgegevens">
               <h5>Adresgegevens</h5>
               <p>Zuiderkruisweg 12</p>
               <p>8938 AP</p>
               <p>Leeuwarden</p>
             </div>
-            <div class="col-9">
-              <img src="<?= Assets\asset_path('images/artitude-kaart.png'); ?>" alt="ARTITUDE">
+            <div class="col-8">
+              <img class="img-fluid" src="<?= Assets\asset_path('images/artitude-kaart.png'); ?>" alt="ARTITUDE">
             </div>
           </div>
           <div class="row p-4">
-            <div class="col-12">
+            <div class="col-12 overige-gegevens">
               <h5>Overige gegevens</h5>
               <p>KvK nr 1209343838</p>
               <p>Btw nr NL 102981233432</p>

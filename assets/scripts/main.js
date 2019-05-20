@@ -145,31 +145,6 @@
           $('.animated-toggler').removeClass('open');
         });
 
-        $('h1, h2').each(function(){
-
-          // making sure headings are visible. This excludes tabs.
-          if( $(this).height() > 0 ){
-
-            var element = $(this);
-            var content = element.html();
-
-            if( element.height() >= 114 ){
-              element.addClass('h-accent type-6');
-            }else if( element.height() >= 110 ){
-              element.addClass('h-accent type-5');
-            }else if( element.height() >= 95 ){
-              element.addClass('h-accent type-4');
-            }else if( element.height() >= 93 ){
-              element.addClass('h-accent type-3');
-            }else if( element.height() >= 92 ){
-              element.addClass('h-accent type-2');
-            }else if( element.height() >= 30 ){
-              element.html('<span class="h-accent type-1">' + content + '</span>');
-            }
-
-          }
-        });
-
         // Slick for Customers
         $('.customers').slick({
           infinite: true,
@@ -210,6 +185,32 @@
     'home': {
       init: function() {
         // JavaScript to be fired on the home page
+
+        $('h1, h2').each(function(){
+
+          // making sure headings are visible. This excludes tabs.
+          if( $(this).height() > 0 ){
+
+            var element = $(this);
+            var content = element.html();
+
+            if( element.height() >= 114 ){
+              element.addClass('h-accent type-6');
+            }else if( element.height() >= 110 ){
+              element.addClass('h-accent type-5');
+            }else if( element.height() >= 95 ){
+              element.addClass('h-accent type-4');
+            }else if( element.height() >= 93 ){
+              element.addClass('h-accent type-3');
+            }else if( element.height() >= 92 ){
+              element.addClass('h-accent type-2');
+            }else if( element.height() >= 30 ){
+              element.html('<span class="h-accent type-1">' + content + '</span>');
+            }
+
+          }
+        });
+        
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS

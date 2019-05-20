@@ -17,9 +17,16 @@ add_action( 'after_setup_theme', function() {
       'required'           => true,
     ),
     array(
-      'name'               => 'Fast Velocity Minify',
-      'slug'               => 'fast-velocity-minify',
-      'required'           => true,
+      'name'               => 'Contact Form 7',
+      'slug'               => 'contact-form-7',
+    ),
+    array(
+      'name'               => 'Bootstrap for Contact Form 7',
+      'slug'               => 'bootstrap-for-contact-form-7',
+    ),
+    array(
+      'name'               => 'Autoptimize',
+      'slug'               => 'autoptimize',
     ),
   );
 
