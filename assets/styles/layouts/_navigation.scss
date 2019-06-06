@@ -152,11 +152,12 @@
               font-size: 1.21875rem;
               letter-spacing: 1.6px;
               font-weight: 600;
-              color: $white;
+              color: $red;
               text-transform: uppercase;
               @extend .overpass;
-              &:hover, &:active, &:focus{
-                color: $red;
+
+              &[href="#"]{
+                cursor:default;
               }
             }
             &.externe-link,
