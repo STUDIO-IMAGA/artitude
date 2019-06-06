@@ -3,10 +3,12 @@
 
 <header id="header" class="fixed-top">
 
-  <div id="brand">
-    <a href="/">
-      <img src="<?= Assets\asset_path("images/brand.svg"); ?>" alt="<?= bloginfo('description'); ?>">
-    </a>
+  <div id="brand-container">
+    <div id="brand">
+      <a href="/">
+        <img src="<?= Assets\asset_path("images/brand.svg"); ?>" alt="<?= bloginfo('description'); ?>">
+      </a>
+    </div>
   </div>
 
   <?= Navigation\toggler( 'navigation_container' ); ?>

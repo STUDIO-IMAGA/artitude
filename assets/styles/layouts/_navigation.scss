@@ -2,20 +2,27 @@
   transition: .3s ease-in-out;
   height: 0;
   z-index: 2000;
-  #brand{
+  #brand-container{
     position: absolute;
-    opacity: 1;
-    top: 0;
-    left: calc(50% - 162px);
+    left:0;
+    right:0;
     height: 65px;
-    width: 324px;
-    margin: 0;
-    transition: .3s ease-in-out;
-    z-index: 2050;
-    img{
-      width: 100%;
-      height: auto;
-      box-shadow: 0px 5px 25px 0 rgba(26, 23, 27, 0.63);
+    background-color: $red;
+    box-shadow: 0px 5px 25px 0 rgba(26, 23, 27, 0.63);
+    #brand{
+      position: absolute;
+      opacity: 1;
+      top: 0;
+      left: calc(50% - 162px);
+      height: 65px;
+      width: 324px;
+      margin: 0;
+      transition: .3s ease-in-out;
+      z-index: 2040;
+      img{
+        width: 100%;
+        height: auto;
+      }
     }
   }
   #toggler{
