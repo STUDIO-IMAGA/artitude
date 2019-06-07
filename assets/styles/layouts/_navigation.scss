@@ -8,7 +8,7 @@
     right:0;
     height: 65px;
     background-color: $red;
-    box-shadow: 0px 5px 25px 0 rgba(26, 23, 27, 0.63);
+    box-shadow: 0px -8px 20px 0 rgba(26, 23, 27, 0.63);
     #brand{
       position: absolute;
       opacity: 1;
@@ -18,7 +18,7 @@
       width: 324px;
       margin: 0;
       transition: .3s ease-in-out;
-      z-index: 2040;
+      z-index: 2000;
       img{
         width: 100%;
         height: auto;
