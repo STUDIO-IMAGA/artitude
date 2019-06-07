@@ -32,7 +32,7 @@
     <div class="triangle"></div>
 
     <div class="brand">
-      <img src="<?= Assets\asset_path("images/brand.svg"); ?>" alt="<?= bloginfo('description'); ?>">
+      <img src="<?= Assets\asset_path("images/brand-color.svg"); ?>" alt="<?= bloginfo('description'); ?>">
     </div>
 
     <div class="container">
