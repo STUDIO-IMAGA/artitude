@@ -3,11 +3,11 @@
 <? $padding_image =   ( get_sub_field('align') == 'left' ) ? "pr-md-4 pr-xl-6" : "pl-md-4 pl-xl-6"; ?>
 <? $padding_text =    ( get_sub_field('align') == 'left' ) ? "pl-md-2 pl-xl-4" : "pr-md-2 pr-xl-4"; ?>
 <? $aos =             ( get_sub_field('align') == 'left' ) ? "fade-left" : "fade-right"; ?>
-<? $image = get_sub_field('image'); ?>
+<? $image =           get_sub_field('image'); ?>
 
 <section class="element content-image">
   <div class="container">
-    <div class="row align-items-center">
+    <div class="row">
       <div class="col-12 col-md-6 order-2">
         <div class="text text-left <?= $padding_text; ?> <?= $align_text; ?>" data-aos="fade-up">
           <? the_sub_field('text'); ?>
