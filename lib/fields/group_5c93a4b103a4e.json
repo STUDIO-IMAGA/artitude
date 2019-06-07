@@ -101,7 +101,36 @@
                     "max_width": "",
                     "max_height": "",
                     "max_size": "",
-                    "mime_types": ""
+                    "mime_types": "",
+                    "return_format": "array",
+                    "preview_size": "medium"
+                },
+                {
+                    "key": "field_5c93a4e9265df",
+                    "label": "Galerij",
+                    "name": "\n\t\t\t\tgallery\t\t",
+                    "type": "gallery",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "min": "",
+                    "max": "",
+                    "insert": "append",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "return_format": "array",
+                    "preview_size": "medium"
                 }
             ]
         }
@@ -123,5 +152,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1553783010
+    "modified": 1559899394
 }

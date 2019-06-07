@@ -1,12 +1,12 @@
 {
-    "key": "group_5c750db741df9",
-    "title": "Video Element",
+    "key": "group_5c741e2ce4840",
+    "title": "Tekst Element",
     "fields": [
         {
-            "key": "field_5c750dbc8d7bc",
-            "label": "Video",
-            "name": "video",
-            "type": "file",
+            "key": "field_5c741e3414380",
+            "label": "Inhoud",
+            "name": "text",
+            "type": "wysiwyg",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -15,11 +15,11 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "url",
-            "library": "all",
-            "min_size": "",
-            "max_size": "",
-            "mime_types": ""
+            "default_value": "",
+            "tabs": "visual",
+            "toolbar": "full",
+            "media_upload": 0,
+            "delay": 1
         }
     ],
     "location": [
@@ -39,5 +39,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1552322038
+    "modified": 1559899391
 }

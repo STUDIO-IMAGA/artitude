@@ -1,48 +1,44 @@
 {
-    "key": "group_5c7423e5d742f",
-    "title": "Oneliner Element",
+    "key": "group_5c751894b5794",
+    "title": "Heading Element",
     "fields": [
         {
-            "key": "field_5c7423ecf081f",
-            "label": "Text",
-            "name": "text",
-            "type": "textarea",
+            "key": "field_5c7518a6d21cf",
+            "label": "Titel",
+            "name": "title",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "80",
+                "width": "",
                 "class": "",
                 "id": ""
             },
             "default_value": "",
             "placeholder": "",
-            "maxlength": "",
-            "rows": 2,
-            "new_lines": "br"
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         },
         {
-            "key": "field_5c9a16f5cdffa",
-            "label": "Uitlijning",
-            "name": "align",
-            "type": "button_group",
+            "key": "field_5c7518b1d21d0",
+            "label": "Tekst",
+            "name": "text",
+            "type": "wysiwyg",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "20",
+                "width": "",
                 "class": "",
                 "id": ""
             },
-            "choices": {
-                "text-left": "Links",
-                "text-center": "Midden",
-                "text-right": "Rechts"
-            },
-            "allow_null": 0,
-            "default_value": "text-center",
-            "layout": "horizontal",
-            "return_format": "value"
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0,
+            "delay": 0
         }
     ],
     "location": [
@@ -62,5 +58,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1553602658
+    "modified": 1559899374
 }

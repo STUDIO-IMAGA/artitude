@@ -41,6 +41,41 @@
                     "maxlength": ""
                 },
                 {
+                    "key": "field_5c75307bc8ed8",
+                    "label": "Titel",
+                    "name": "\n\t\t\t\ttitle\t\t",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5c8685ccf079f",
+                    "label": "Tekst Links",
+                    "name": "",
+                    "type": "tab",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placement": "top",
+                    "endpoint": 0
+                },
+                {
                     "key": "field_5c8685ccf079f",
                     "label": "Tekst Links",
                     "name": "",
@@ -74,6 +109,41 @@
                     "toolbar": "full",
                     "media_upload": 1,
                     "delay": 1
+                },
+                {
+                    "key": "field_5c753087c8ed9",
+                    "label": "Tekst Links",
+                    "name": "\n\t\t\t\ttext_left\t\t",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 1
+                },
+                {
+                    "key": "field_5c8685dcf07a0",
+                    "label": "Tekst Rechts",
+                    "name": "",
+                    "type": "tab",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placement": "top",
+                    "endpoint": 0
                 },
                 {
                     "key": "field_5c8685dcf07a0",
@@ -130,5 +200,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1552322034
+    "modified": 1559899388
 }

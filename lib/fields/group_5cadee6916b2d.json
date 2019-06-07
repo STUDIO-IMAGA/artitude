@@ -1,9 +1,9 @@
 {
-    "key": "group_5c751894b5794",
-    "title": "Heading Element",
+    "key": "group_5cadee6916b2d",
+    "title": "Call-To-Action Element",
     "fields": [
         {
-            "key": "field_5c7518a6d21cf",
+            "key": "field_5cadee89344fd",
             "label": "Titel",
             "name": "title",
             "type": "text",
@@ -11,7 +11,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "30",
                 "class": "",
                 "id": ""
             },
@@ -22,10 +22,29 @@
             "maxlength": ""
         },
         {
-            "key": "field_5c7518b1d21d0",
-            "label": "Tekst",
-            "name": "text",
-            "type": "wysiwyg",
+            "key": "field_5cadee9f344fe",
+            "label": "Knop tekst",
+            "name": "btn_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "30",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5cadeebf344ff",
+            "label": "Knop URL",
+            "name": "btn_url",
+            "type": "link",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -34,11 +53,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 0,
-            "delay": 0
+            "return_format": "url"
         }
     ],
     "location": [
@@ -58,5 +73,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1552322015
+    "modified": 1559899365
 }

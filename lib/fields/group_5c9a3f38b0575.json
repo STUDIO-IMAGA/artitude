@@ -1,9 +1,9 @@
 {
-    "key": "group_5c7424c32350a",
-    "title": "Galerij Element",
+    "key": "group_5c9a3f38b0575",
+    "title": "Afbeelding Element",
     "fields": [
         {
-            "key": "field_5c7424cbd44d0",
+            "key": "field_5c9a3f3a142e8",
             "label": "Tekst",
             "name": "text",
             "type": "wysiwyg",
@@ -22,10 +22,10 @@
             "delay": 0
         },
         {
-            "key": "field_5c750b31738f3",
-            "label": "Afbeeldingen",
-            "name": "images",
-            "type": "gallery",
+            "key": "field_5c9a3f3a14716",
+            "label": "Afbeelding",
+            "name": "image",
+            "type": "image",
             "instructions": "",
             "required": 1,
             "conditional_logic": 0,
@@ -34,9 +34,8 @@
                 "class": "",
                 "id": ""
             },
-            "min": 2,
-            "max": "",
-            "insert": "append",
+            "return_format": "array",
+            "preview_size": "thumbnail",
             "library": "all",
             "min_width": "",
             "min_height": "",
@@ -47,7 +46,7 @@
             "mime_types": ""
         },
         {
-            "key": "field_5c9a1b48d3684",
+            "key": "field_5c9a3f3a14aed",
             "label": "Uitlijning",
             "name": "align",
             "type": "button_group",
@@ -65,8 +64,49 @@
             },
             "allow_null": 0,
             "default_value": "",
-            "layout": "vertical",
+            "layout": "horizontal",
             "return_format": "value"
+        },
+        {
+            "key": "field_5c9ce8c9ef0bf",
+            "label": "Onderschrift",
+            "name": "description",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "60",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5c9ce8ffef0c0",
+            "label": "Link",
+            "name": "link",
+            "type": "page_link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "40",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "page",
+                "post"
+            ],
+            "taxonomy": "",
+            "allow_null": 0,
+            "allow_archives": 0,
+            "multiple": 0
         }
     ],
     "location": [
@@ -86,5 +126,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1553603465
+    "modified": 1559899348
 }
