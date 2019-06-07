@@ -1,8 +1,8 @@
 .element{
   &.content-highlights{
+    padding-top: 0;
     .title.h1{
       margin-bottom: 5rem;
-
       &:after{
         position: absolute;
         content: '';
@@ -18,27 +18,22 @@
     }
     .tiles{
       padding-top: 3rem;
-
       .tile{
         position: relative;
         padding-top: 40px;
         padding-bottom: 40px;
-
         .content{
           position: relative;
           z-index: 10;
-
           .icon{
             width: 75px;
             height: 75px;
             margin: 0 auto;
-
             svg{
               transition: all .3s ease-in-out;
               fill: #4c0903;
             }
           }
-
           .title{
             text-align: center;
             color: #860f06;
@@ -50,7 +45,6 @@
             transition: all .3s ease-in-out;
             @extend .heebo;
           }
-
           .text{
             color: #860f06;
             font-size: 1rem;
@@ -59,7 +53,6 @@
             padding-right: ($grid-gutter-width / 2);
           }
         }
-
         &:after{
           position: absolute;
           content: '';
@@ -73,11 +66,9 @@
           transition: all .3s ease-in-out;
           z-index: 0;
         }
-
         &:hover,
         &:active,
         &:focus{
-
           .icon{
             svg{
               fill: #cb1506;

@@ -3,24 +3,9 @@
 
 <section class="element content-highlights">
   <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <div class="title h1">
-          Artitude. Met het puntje op de i.
-        </div>
-      </div>
-    </div>
-    <div class="row justify-content-center">
-      <div class="col-12 col-md-8 col-lg-6 text-center">
-        <div class="text">
-          <p>Naast concept, decorbouw en beleving verzrogen wij ook de details. <br/>Licht, geluid, signing en bijvoorbeeld ict. </p>
-        </div>
-      </div>
-    </div>
     <div class="row tiles">
-
       <div class="col-12 col-md-6 col-lg">
-        <a href="#">
+        <a href="<? the_field('audio_page','options'); ?>">
           <div class="tile">
             <div class="content">
               <div class="icon">
@@ -37,10 +22,10 @@
                 </svg>
               </div>
               <div class="title">
-                Audio
+                <? the_field('audio_title','options'); ?>
               </div>
               <div class="text">
-                <p>Wij zijn er voor de vorm en inhoudelijke technische aspecten. Vanaf het begin van je idee bn. Vanaf het begin van je idee betrokken tot een gedegen en geslaagd eindresultaat. <b>Meer</b></p>
+                <p><? the_field('audio_alinea','options'); ?> <b>Meer</b></p>
               </div>
             </div>
           </div>
@@ -48,7 +33,7 @@
       </div>
 
       <div class="col-12 col-md-6 col-lg">
-        <a href="#">
+        <a href="<? the_field('licht_page','options'); ?>">
           <div class="tile">
             <div class="content">
               <div class="icon">
@@ -63,10 +48,10 @@
                 </svg>
               </div>
               <div class="title">
-                Licht
+                <? the_field('licht_title','options'); ?>
               </div>
               <div class="text">
-                <p>Wij zijn er voor de vorm en inhoudelijke technische aspecten. Vanaf het begin van je idee bn. Vanaf het begin van je idee betrokken tot een gedegen en geslaagd eindresultaat. <b>Meer</b></p>
+                <p><? the_field('licht_alinea','options'); ?> <b>Meer</b></p>
               </div>
             </div>
           </div>
@@ -74,7 +59,7 @@
       </div>
 
       <div class="col-12 col-md-6 col-lg">
-        <a href="#">
+        <a href="<? the_field('interactief_page','options'); ?>">
           <div class="tile">
             <div class="content">
               <div class="icon">
@@ -95,10 +80,10 @@
                 </svg>
               </div>
               <div class="title">
-                Grafisch
+                <? the_field('interactief_title','options'); ?>
               </div>
               <div class="text">
-                <p>Wij zijn er voor de vorm en inhoudelijke technische aspecten. Vanaf het begin van je idee bn. Vanaf het begin van je idee betrokken tot een gedegen en geslaagd eindresultaat. <b>Meer</b></p>
+                <p><? the_field('interactief_alinea','options'); ?> <b>Meer</b></p>
               </div>
             </div>
           </div>
@@ -106,7 +91,7 @@
       </div>
 
       <div class="col-12 col-md-6 col-lg">
-        <a href="#">
+        <a href="<? the_field('signing_page','options'); ?>">
           <div class="tile">
             <div class="content">
               <div class="icon">
@@ -123,10 +108,10 @@
                 </svg>
               </div>
               <div class="title">
-                Signing
+                <? the_field('signing_title','options'); ?>
               </div>
               <div class="text">
-                <p>Wij zijn er voor de vorm en inhoudelijke technische aspecten. Vanaf het begin van je idee bn. Vanaf het begin van je idee betrokken tot een gedegen en geslaagd eindresultaat. <b>Meer</b></p>
+                <p><? the_field('signing_alinea','options'); ?> <b>Meer</b></p>
               </div>
             </div>
           </div>
@@ -134,7 +119,7 @@
       </div>
 
       <div class="col-12 col-md-6 col-lg">
-        <a href="#">
+        <a href="<? the_field('techniek_page','options'); ?>">
           <div class="tile">
             <div class="content">
               <div class="icon">
@@ -153,10 +138,10 @@
                 </svg>
               </div>
               <div class="title">
-                ICT
+                <? the_field('techniek_title','options'); ?>
               </div>
               <div class="text">
-                <p>Wij zijn er voor de vorm en inhoudelijke technische aspecten. Vanaf het begin van je idee bn. Vanaf het begin van je idee betrokken tot een gedegen en geslaagd eindresultaat. <b>Meer</b></p>
+                <p><? the_field('techniek_alinea','options'); ?> <b>Meer</b></p>
               </div>
             </div>
           </div>
@@ -191,14 +176,6 @@
             <? endforeach; ?>
           <? endif; ?>
         </div>
-      </div>
-    </div>
-    <div class="row align-items-center">
-      <div class="col-12 col-md-4 pr-0 py-md-6 p-3 pl-md-5">
-        <h6>Een keertje vrijblijvend sparren over je idee?</h6>
-      </div>
-      <div class="col-12 col-md-8 pl-0">
-        <?= Navigation\navigation( 'secondary_navigation', 'footer_front_page_navigation' , 0, 1, "nav contact-menu light", ""); ?>
       </div>
     </div>
   </div>
