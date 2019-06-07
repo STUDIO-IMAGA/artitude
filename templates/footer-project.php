@@ -35,8 +35,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-12 text-center pt-5">
-        <span class="h4 mr-lg-5">Uw idee met ons bespreken?</span>
+      <div class="col-12 col-sm-10 text-right pt-5">
         <a href="#" class="btn btn-black btn-arrow">Neem contact op</a>
       </div>
     </div>
