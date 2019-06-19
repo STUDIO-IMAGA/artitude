@@ -36,7 +36,7 @@
     </div>
     <div class="row">
       <div class="col-12 col-sm-10 text-right pt-5">
-        <a href="#" class="btn btn-black btn-arrow">Neem contact op</a>
+        <a href="/contact" class="btn btn-black btn-arrow">Neem contact op</a>
       </div>
     </div>
   </div>
