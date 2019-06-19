@@ -19,6 +19,11 @@
     'common': {
       init: function() {
 
+        //Close navbar when click somewhere else
+        $('.wrap main').on('click', function(){
+          $('#navigation_container').collapse('hide');
+        });
+
         // init Animate On Scroll
         AOS.init({
           offset: 300,
@@ -179,6 +184,8 @@
           ]
         });
 
+        // Init SimpleLightbox
+        $('.lightbox a').simpleLightbox();
       }
     },
     // Home page
@@ -210,7 +217,7 @@
 
           }
         });
-        
+
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS

@@ -1,15 +1,15 @@
 <? use IMAGA\Theme\Assets; ?>
 <? use IMAGA\Theme\Navigation; ?>
 
-<header id="header" class="fixed-top">
-
-  <div id="brand-container">
-    <div id="brand">
-      <a href="/">
-        <img src="<?= Assets\asset_path("images/brand.svg"); ?>" alt="<?= bloginfo('description'); ?>">
-      </a>
-    </div>
+<div id="brand-container">
+  <div id="brand">
+    <a href="/">
+      <img src="<?= Assets\asset_path("images/brand.svg"); ?>" alt="<?= bloginfo('description'); ?>">
+    </a>
   </div>
+</div>
+
+<header id="header" class="fixed-top">
 
   <?= Navigation\toggler( 'navigation_container' ); ?>
 
