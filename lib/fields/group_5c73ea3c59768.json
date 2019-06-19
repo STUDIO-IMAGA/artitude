@@ -41,71 +41,9 @@
                     "maxlength": ""
                 },
                 {
-                    "key": "field_5c73ea50a4287",
-                    "label": "Dienst",
-                    "name": "service",
-                    "type": "text",
-                    "instructions": "Voer hier de naam van de dienst in. (Bijvoorbeeld: facebook)",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                },
-                {
-                    "key": "field_5c73ea90a4288",
-                    "label": "Icon",
-                    "name": "\n\t\t\t\ticon\t\t",
-                    "type": "image",
-                    "instructions": "Upload hier het icoon voor de dienst.",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "return_format": "array",
-                    "preview_size": "thumbnail",
-                    "library": "all",
-                    "min_width": "",
-                    "min_height": "",
-                    "min_size": "",
-                    "max_width": "",
-                    "max_height": "",
-                    "max_size": "",
-                    "mime_types": ""
-                },
-                {
                     "key": "field_5c73eae1a4289",
                     "label": "URL",
                     "name": "url",
-                    "type": "text",
-                    "instructions": "Voer hier de URL in naar het profiel.",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                },
-                {
-                    "key": "field_5c73eae1a4289",
-                    "label": "URL",
-                    "name": "\n\t\t\t\turl\t\t",
                     "type": "text",
                     "instructions": "Voer hier de URL in naar het profiel.",
                     "required": 0,
@@ -189,5 +127,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1559899385
+    "modified": 1560953447
 }
