@@ -1,6 +1,6 @@
 <? use IMAGA\Theme\Extras; ?>
 
-<? get_template_part('templates/header'); ?>
+<? get_template_part('templates/header','front-page'); ?>
 
 <? if( have_rows('elements') ): ?>
   <? while( have_rows('elements') ): the_row(); ?>

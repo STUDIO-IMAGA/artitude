@@ -1,5 +1,6 @@
 #brand-container{
   position: absolute;
+  top:0;
   left:0;
   right:0;
   height: 65px;
@@ -232,6 +233,7 @@
     width: 200px;
     height: 65px;
     background-color: #000;
+    z-index: 1;
   }
 }
 .admin-bar{
@@ -315,6 +317,11 @@ ul.contact-menu{
           padding-top: 65px;
         }
       }
+    }
+  }
+  .page:not(.home){
+    .toggler-bg{
+      display: none;
     }
   }
 }

@@ -1,56 +1,9 @@
 {
-    "key": "group_5c9a3f38b0575",
-    "title": "Afbeelding Element",
+    "key": "group_5d0b60ed9d775",
+    "title": "Wide Afbeelding Element",
     "fields": [
         {
-            "key": "field_5c9a3f3a14aed",
-            "label": "Uitlijning",
-            "name": "align",
-            "type": "button_group",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "100",
-                "class": "",
-                "id": ""
-            },
-            "choices": {
-                "left": "Afbeelding links",
-                "right": "Afbeelding rechts",
-                "center": "Afbeelding centreren"
-            },
-            "allow_null": 0,
-            "default_value": "",
-            "layout": "horizontal",
-            "return_format": "value"
-        },
-        {
-            "key": "field_5c9a3f3a14716",
-            "label": "Afbeelding",
-            "name": "image",
-            "type": "image",
-            "instructions": "",
-            "required": 1,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "50",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array",
-            "preview_size": "thumbnail",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": ""
-        },
-        {
-            "key": "field_5c9a3f3a142e8",
+            "key": "field_5d0b60eda63d3",
             "label": "Tekst",
             "name": "text",
             "type": "wysiwyg",
@@ -58,7 +11,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "50",
+                "width": "100",
                 "class": "",
                 "id": ""
             },
@@ -69,7 +22,31 @@
             "delay": 0
         },
         {
-            "key": "field_5c9ce8c9ef0bf",
+            "key": "field_5d0b60eda63be",
+            "label": "Afbeelding",
+            "name": "image",
+            "type": "image",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5d0b60eda63e7",
             "label": "Afbeelding onderschrift",
             "name": "description",
             "type": "text",
@@ -88,7 +65,7 @@
             "maxlength": ""
         },
         {
-            "key": "field_5c9ce8ffef0c0",
+            "key": "field_5d0b60eda63fc",
             "label": "Afbeelding link",
             "name": "link",
             "type": "page_link",
@@ -127,5 +104,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1561024057
+    "modified": 1561026847
 }

@@ -1,9 +1,9 @@
 {
-    "key": "group_5c741dcc331e3",
-    "title": "Standaard Template",
+    "key": "group_5d0b42fde44c1",
+    "title": "Voorpagina",
     "fields": [
         {
-            "key": "field_5c741ddaaef16",
+            "key": "field_5d0b42fdecca5",
             "label": "Header",
             "name": "",
             "type": "tab",
@@ -19,10 +19,10 @@
             "endpoint": 0
         },
         {
-            "key": "field_5c8770cfdba65",
+            "key": "field_5d0b42fdeccea",
             "label": "Header Afbeelding",
-            "name": "header_image",
-            "type": "image",
+            "name": "header_images",
+            "type": "gallery",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -33,7 +33,10 @@
             },
             "return_format": "array",
             "preview_size": "medium",
+            "insert": "append",
             "library": "all",
+            "min": 2,
+            "max": "",
             "min_width": "",
             "min_height": "",
             "min_size": "",
@@ -43,7 +46,7 @@
             "mime_types": ""
         },
         {
-            "key": "field_5c8770e1dba66",
+            "key": "field_5d0b42fdecd2c",
             "label": "Header Tekst",
             "name": "header_text",
             "type": "wysiwyg",
@@ -62,7 +65,7 @@
             "delay": 0
         },
         {
-            "key": "field_5c741de6aef17",
+            "key": "field_5d0b42fdecd6f",
             "label": "Inhoud",
             "name": "",
             "type": "tab",
@@ -78,7 +81,7 @@
             "endpoint": 0
         },
         {
-            "key": "field_5c741ecea9bdd",
+            "key": "field_5d0b42fdecdb1",
             "label": "Elementen",
             "name": "elements",
             "type": "flexible_content",
@@ -98,7 +101,7 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5c751907991ec",
+                            "key": "field_5d0b42fdf06cb",
                             "label": "Clone Heading Element",
                             "name": "clone_heading_element",
                             "type": "clone",
@@ -129,7 +132,7 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5c741ee5a9bde",
+                            "key": "field_5d0b42fdf06e3",
                             "label": "Clone Tekst Element",
                             "name": "clone_tekst_element",
                             "type": "clone",
@@ -160,7 +163,7 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5c74238dacc54",
+                            "key": "field_5d0b42fdf06f8",
                             "label": "Clone Quote Element",
                             "name": "clone_quote_element",
                             "type": "clone",
@@ -191,7 +194,7 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5c742449553f3",
+                            "key": "field_5d0b42fdf070d",
                             "label": "Clone Oneliner Element",
                             "name": "clone_oneliner_element",
                             "type": "clone",
@@ -222,7 +225,7 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5c9a3f7c9f7cd",
+                            "key": "field_5d0b42fdf0721",
                             "label": "Clone Image Element",
                             "name": "clone_image_element",
                             "type": "clone",
@@ -246,68 +249,6 @@
                     "min": "",
                     "max": ""
                 },
-                "layout_5d0b5af371958": {
-                    "key": "layout_5d0b5af371958",
-                    "name": "content-image-duo",
-                    "label": "Duo Afbeelding Element",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_5d0b5af371959",
-                            "label": "Clone Element",
-                            "name": "clone_image_duo_element",
-                            "type": "clone",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "clone": [
-                                "group_5d0b5815951cf"
-                            ],
-                            "display": "seamless",
-                            "layout": "block",
-                            "prefix_label": 0,
-                            "prefix_name": 0
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
-                "layout_5d0b6133ca97e": {
-                    "key": "layout_5d0b6133ca97e",
-                    "name": "content-image-wide",
-                    "label": "Wide Afbeelding Element",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_5d0b6133ca97f",
-                            "label": "Clone Element",
-                            "name": "clone_image_wide_element",
-                            "type": "clone",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "clone": [
-                                "group_5d0b60ed9d775"
-                            ],
-                            "display": "seamless",
-                            "layout": "block",
-                            "prefix_label": 0,
-                            "prefix_name": 0
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
                 "layout_5c7425384b77c": {
                     "key": "layout_5c7425384b77c",
                     "name": "content-gallery",
@@ -315,7 +256,7 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5c7425444b77d",
+                            "key": "field_5d0b42fdf0736",
                             "label": "Clone Galerij Element",
                             "name": "clone_galerij_element",
                             "type": "clone",
@@ -346,7 +287,7 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5c750eb2b77e1",
+                            "key": "field_5d0b42fdf0769",
                             "label": "Clone Video Element",
                             "name": "clone_video_element",
                             "type": "clone",
@@ -377,7 +318,7 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5c7533cfc0e5d",
+                            "key": "field_5d0b42fdf07ab",
                             "label": "Clone Tab Element",
                             "name": "clone_tab_element",
                             "type": "clone",
@@ -408,7 +349,7 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5c93a77cff9b5",
+                            "key": "field_5d0b42fdf07ec",
                             "label": "Clone Thema's Element",
                             "name": "clone_themes_element",
                             "type": "clone",
@@ -439,7 +380,7 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5cadefa42df1f",
+                            "key": "field_5d0b42fdf0835",
                             "label": "Clone Call-To-Action Element",
                             "name": "clone_call-to-action_element",
                             "type": "clone",
@@ -477,64 +418,8 @@
                 "value": "page"
             },
             {
-                "param": "post_template",
-                "operator": "==",
-                "value": "default"
-            },
-            {
                 "param": "page_type",
-                "operator": "!=",
-                "value": "front_page"
-            }
-        ],
-        [
-            {
-                "param": "post_type",
                 "operator": "==",
-                "value": "post"
-            },
-            {
-                "param": "post_template",
-                "operator": "==",
-                "value": "default"
-            },
-            {
-                "param": "page_type",
-                "operator": "!=",
-                "value": "front_page"
-            }
-        ],
-        [
-            {
-                "param": "post_type",
-                "operator": "==",
-                "value": "page"
-            },
-            {
-                "param": "post_template",
-                "operator": "==",
-                "value": "template-project.php"
-            },
-            {
-                "param": "page_type",
-                "operator": "!=",
-                "value": "front_page"
-            }
-        ],
-        [
-            {
-                "param": "post_type",
-                "operator": "==",
-                "value": "page"
-            },
-            {
-                "param": "post_template",
-                "operator": "==",
-                "value": "template-diciplines.php"
-            },
-            {
-                "param": "page_type",
-                "operator": "!=",
                 "value": "front_page"
             }
         ]
@@ -554,5 +439,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1561026891
+    "modified": 1561019437
 }
