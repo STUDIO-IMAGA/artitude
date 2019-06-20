@@ -9,10 +9,9 @@ body{
 
       h1 a {
         background-image: url('../images/brand.svg');
-        background-size: cover;
+        background-size: contain;
         width: 320px;
-        height: 65px;
-        box-shadow: 0px 5px 25px 0 rgba(26, 23, 27, 0.63);
+        height: 40px;
       }
 
       #loginform{

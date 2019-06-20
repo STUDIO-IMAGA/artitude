@@ -307,7 +307,33 @@ ul.contact-menu{
   }
 }
 @include media-breakpoint-down(sm){
+  #brand-container{
+    position: fixed;
+    right: 100px;
+    height: 40px;
+    z-index: 3000;
+    #brand{
+      position: absolute;
+      opacity: 1;
+      top: 0;
+      left: 0;
+      height: 40px;
+      width: 100%;
+      a{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 13px;
+        padding-right: 30px;
+
+      }
+    }
+  }
   #header{
+    #toggler{
+      &:after{
+        display: none !important;
+      }
+    }
     #navigation_container{
       #topbar{
         display: none;
@@ -321,16 +347,14 @@ ul.contact-menu{
   }
   .page:not(.home){
     .toggler-bg{
-      display: none;
+      height:40px;
+      width: 100%;
+      right:0;
     }
   }
 }
 @include media-breakpoint-down(xs){
   #header{
-    #brand{
-      left: 0px;
-      width: 200px;
-    }
     #toggler{
       position: relative;
       width: 100px;
@@ -371,7 +395,7 @@ ul.contact-menu{
         max-height: 100vh;
         #primary_navigation{
           width: 100%;
-          padding-top: 2.313rem;
+          padding-top: 3rem;
           padding-left: 1rem;
           padding-right: 1rem;
           padding-bottom: .5rem;
@@ -388,12 +412,5 @@ ul.contact-menu{
         }
       }
     }
-  }
-  .toggler-bg{
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 40px;
   }
 }

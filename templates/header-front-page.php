@@ -18,11 +18,6 @@
                 <? endforeach; ?>
               <? endif; ?>
             </div>
-            <div class="gallery-nav" data-aos="fade-left">
-              <span class="gallery-prev"></span>
-              <span class="gallery-paging"></span>
-              <span class="gallery-next"></span>
-            </div>
           </div>
         </div>
         <div class="col-12 col-sm-6 order-1 order-sm-2 border border-white" data-aos="fade-left">

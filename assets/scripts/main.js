@@ -226,23 +226,8 @@
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS
-        // Current gallery
-        var gallery = $('.slick-slider-frontpage');
 
-        // Current gallery navigation
-        var galleryNav = gallery.siblings('.gallery-nav');
-
-        // Set next/Prev buttons
-        var galleryNext = galleryNav.children('.gallery-next');
-        var galleryPrev = galleryNav.children('.gallery-prev');
-
-        // Set paging
-        var galleryPaging = galleryNav.children('.gallery-paging');
-
-        // Setup Slick
-        gallery.on('init reInit', function(event, slick){
-          galleryPaging.text('1/' + slick.slideCount);
-        }).slick({
+        $('.slick-slider-frontpage').slick({
           infinite: true,
           dots: false,
           arrows: false,
@@ -250,28 +235,11 @@
           speed: 500,
           fade: true,
           adaptiveHeight: true,
-          autoplay: true
-        }).on('beforeChange', function(event, slick, currentSlide, nextSlide){
-          galleryPaging.text( (nextSlide + 1) + '/' + slick.slideCount);
-        });
-
-        // Setup next button
-        galleryNext.on('click', function(){
-          gallery.slick('slickNext');
-        });
-
-        // Setup previous button
-        galleryPrev.on('click', function(){
-          gallery.slick('slickPrev');
+          autoplay: true,
+          autoplaySpeed: 4000
         });
       }
     },
-    // About us page, note the change from about-us to about_us.
-    'about_us': {
-      init: function() {
-        // JavaScript to be fired on the about us page
-      }
-    }
   };
 
   // The routing fires all common scripts, followed by the page specific scripts.
