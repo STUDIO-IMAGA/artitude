@@ -24,28 +24,9 @@
                 {
                     "key": "field_5c73ea50a4287",
                     "label": "Dienst",
-                    "name": "\n\t\t\t\tservice\t\t",
+                    "name": "service",
                     "type": "text",
                     "instructions": "Voer hier de naam van de dienst in. (Bijvoorbeeld: facebook)",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                },
-                {
-                    "key": "field_5c73eae1a4289",
-                    "label": "URL",
-                    "name": "url",
-                    "type": "text",
-                    "instructions": "Voer hier de URL in naar het profiel.",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -82,6 +63,25 @@
                     "max_height": "",
                     "max_size": "",
                     "mime_types": ""
+                },
+                {
+                    "key": "field_5c73eae1a4289",
+                    "label": "URL",
+                    "name": "url",
+                    "type": "text",
+                    "instructions": "Voer hier de URL in naar het profiel.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
                 },
                 {
                     "key": "field_5cd3fb1d20af5",
@@ -125,7 +125,8 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": 1,
+    "active": true,
     "description": "",
-    "modified": 1560953447
+    "0": false,
+    "modified": 1561033225
 }

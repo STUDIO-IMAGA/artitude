@@ -3,27 +3,23 @@
     "title": "Afbeelding Element",
     "fields": [
         {
-            "key": "field_5c9a3f3a14aed",
-            "label": "Uitlijning",
-            "name": "align",
-            "type": "button_group",
+            "key": "field_5c9a3f3a142e8",
+            "label": "Tekst",
+            "name": "text",
+            "type": "wysiwyg",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "100",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
-            "choices": {
-                "left": "Afbeelding links",
-                "right": "Afbeelding rechts",
-                "center": "Afbeelding centreren"
-            },
-            "allow_null": 0,
             "default_value": "",
-            "layout": "horizontal",
-            "return_format": "value"
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0,
+            "delay": 0
         },
         {
             "key": "field_5c9a3f3a14716",
@@ -50,23 +46,27 @@
             "mime_types": ""
         },
         {
-            "key": "field_5c9a3f3a142e8",
-            "label": "Tekst",
-            "name": "text",
-            "type": "wysiwyg",
+            "key": "field_5c9a3f3a14aed",
+            "label": "Uitlijning",
+            "name": "align",
+            "type": "button_group",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "50",
+                "width": "100",
                 "class": "",
                 "id": ""
             },
+            "choices": {
+                "left": "Afbeelding links",
+                "right": "Afbeelding rechts",
+                "center": "Afbeelding centreren"
+            },
+            "allow_null": 0,
             "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 0,
-            "delay": 0
+            "layout": "horizontal",
+            "return_format": "value"
         },
         {
             "key": "field_5c9ce8c9ef0bf",
@@ -125,7 +125,8 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": 0,
+    "active": false,
     "description": "",
-    "modified": 1561029605
+    "0": false,
+    "modified": 1561033225
 }

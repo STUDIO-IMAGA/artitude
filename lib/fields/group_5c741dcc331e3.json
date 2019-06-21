@@ -552,7 +552,7 @@
         "slug",
         "send-trackbacks"
     ],
-    "active": 1,
+    "active": true,
     "description": "",
-    "modified": 1561029582
+    "modified": 1561033225
 }

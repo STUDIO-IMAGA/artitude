@@ -224,7 +224,7 @@
     }
   }
 }
-.page:not(.home){
+.page{
   .toggler-bg{
     position: fixed;
     display: block;
@@ -234,6 +234,11 @@
     height: 65px;
     background-color: #000;
     z-index: 1;
+  }
+  &.home{
+    .toggler-bg{
+      display: none;
+    }
   }
 }
 .admin-bar{
@@ -307,27 +312,6 @@ ul.contact-menu{
   }
 }
 @include media-breakpoint-down(sm){
-  #brand-container{
-    position: fixed;
-    right: 100px;
-    height: 40px;
-    z-index: 3000;
-    #brand{
-      position: absolute;
-      opacity: 1;
-      top: 0;
-      left: 0;
-      height: 40px;
-      width: 100%;
-      a{
-        padding-top: 5px;
-        padding-bottom: 5px;
-        padding-left: 13px;
-        padding-right: 30px;
-
-      }
-    }
-  }
   #header{
     #toggler{
       &:after{
@@ -345,15 +329,39 @@ ul.contact-menu{
       }
     }
   }
-  .page:not(.home){
+}
+@include media-breakpoint-down(xs){
+  #brand-container{
+    position: fixed;
+    right: 100px;
+    height: 40px;
+    z-index: 3000;
+    #brand{
+      position: absolute;
+      opacity: 1;
+      top: 0;
+      left: 0;
+      height: 40px;
+      width: 100%;
+      max-width: 360px;
+      a{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 13px;
+        padding-right: 30px;
+
+      }
+    }
+  }
+  .page,
+  .page.home{
     .toggler-bg{
+      display: block;
       height:40px;
       width: 100%;
       right:0;
     }
   }
-}
-@include media-breakpoint-down(xs){
   #header{
     #toggler{
       position: relative;

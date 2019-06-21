@@ -81,7 +81,7 @@
             "endpoint": 0
         },
         {
-            "key": "field_5d0b42fdecdb1",
+            "key": "field_5d0b799c434ea",
             "label": "Elementen",
             "name": "elements",
             "type": "flexible_content",
@@ -101,7 +101,7 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5d0b42fdf06cb",
+                            "key": "field_5d0b799c434eb",
                             "label": "Clone Heading Element",
                             "name": "clone_heading_element",
                             "type": "clone",
@@ -132,7 +132,7 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5d0b42fdf06e3",
+                            "key": "field_5d0b799c434ec",
                             "label": "Clone Tekst Element",
                             "name": "clone_tekst_element",
                             "type": "clone",
@@ -163,7 +163,7 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5d0b42fdf06f8",
+                            "key": "field_5d0b799c434ed",
                             "label": "Clone Quote Element",
                             "name": "clone_quote_element",
                             "type": "clone",
@@ -194,7 +194,7 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5d0b42fdf070d",
+                            "key": "field_5d0b799c434ee",
                             "label": "Clone Oneliner Element",
                             "name": "clone_oneliner_element",
                             "type": "clone",
@@ -225,7 +225,7 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5d0b42fdf0721",
+                            "key": "field_5d0b799c434ef",
                             "label": "Clone Image Element",
                             "name": "clone_image_element",
                             "type": "clone",
@@ -249,6 +249,68 @@
                     "min": "",
                     "max": ""
                 },
+                "layout_5d0b5af371958": {
+                    "key": "layout_5d0b5af371958",
+                    "name": "content-image-duo",
+                    "label": "Duo Afbeelding Element",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5d0b799c434f0",
+                            "label": "Clone Element",
+                            "name": "clone_image_duo_element",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5d0b5815951cf"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5d0b6133ca97e": {
+                    "key": "layout_5d0b6133ca97e",
+                    "name": "content-image-wide",
+                    "label": "Wide Afbeelding Element",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5d0b799c434f1",
+                            "label": "Clone Element",
+                            "name": "clone_image_wide_element",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5d0b60ed9d775"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
                 "layout_5c7425384b77c": {
                     "key": "layout_5c7425384b77c",
                     "name": "content-gallery",
@@ -256,7 +318,7 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5d0b42fdf0736",
+                            "key": "field_5d0b799c434f2",
                             "label": "Clone Galerij Element",
                             "name": "clone_galerij_element",
                             "type": "clone",
@@ -287,7 +349,7 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5d0b42fdf0769",
+                            "key": "field_5d0b799c434f3",
                             "label": "Clone Video Element",
                             "name": "clone_video_element",
                             "type": "clone",
@@ -318,7 +380,7 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5d0b42fdf07ab",
+                            "key": "field_5d0b799c434f4",
                             "label": "Clone Tab Element",
                             "name": "clone_tab_element",
                             "type": "clone",
@@ -349,7 +411,7 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5d0b42fdf07ec",
+                            "key": "field_5d0b799c434f5",
                             "label": "Clone Thema's Element",
                             "name": "clone_themes_element",
                             "type": "clone",
@@ -380,7 +442,7 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5d0b42fdf0835",
+                            "key": "field_5d0b799c434f6",
                             "label": "Clone Call-To-Action Element",
                             "name": "clone_call-to-action_element",
                             "type": "clone",
@@ -424,7 +486,7 @@
             }
         ]
     ],
-    "menu_order": -1,
+    "menu_order": 0,
     "position": "normal",
     "style": "seamless",
     "label_placement": "top",
@@ -439,5 +501,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1561029604
+    "modified": 1561033243
 }
