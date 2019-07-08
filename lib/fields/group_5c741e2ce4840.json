@@ -16,7 +16,7 @@
                 "id": ""
             },
             "default_value": "",
-            "tabs": "visual",
+            "tabs": "all",
             "toolbar": "full",
             "media_upload": 0,
             "delay": 1
@@ -37,8 +37,7 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": false,
+    "active": 0,
     "description": "",
-    "0": false,
-    "modified": 1561033226
+    "modified": 1561103111
 }

@@ -13,6 +13,22 @@
       }
       .content{
         padding: 2rem;
+
+        .h-accent{
+          position: relative;
+          line-height: 46.5px;
+          margin-bottom: 60px;
+
+          &:after{
+            position: absolute;
+            content:'';
+            height: 4px;
+            width: 138px;
+            background-color: #fff;
+            right: 0px;
+            bottom: -34px;
+          }
+        }
       }
       &:after{
         display: none;

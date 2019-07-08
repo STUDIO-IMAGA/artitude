@@ -4,7 +4,7 @@
 switch (get_sub_field('align')):
   case 'left':
     $image_class = 'pr-md-4 pr-xl-6 order-md-1 left';
-    $text_class = 'pl-md-2 pl-xl-4 text-sm-left';
+    $text_class = 'pl-md-3 pl-xl-4 text-sm-left';
     $aos = 'fade-left';
     break;
   case 'right':

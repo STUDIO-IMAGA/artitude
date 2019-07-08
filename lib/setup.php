@@ -198,3 +198,15 @@ function edit_roles(){
   }
 }
 add_action( 'admin_init', __NAMESPACE__ . '\\edit_roles', 100);
+
+// changing the logo link from wordpress.org to your site
+function login_url() {
+  return home_url();
+}
+add_filter( 'login_headerurl', __NAMESPACE__ . '\\login_url' );
+
+// changing the alt text on the logo to show your site name
+function login_title() {
+  return get_option( 'blogname' );
+}
+add_filter( 'login_headertitle', __NAMESPACE__ . '\\login_title' );
