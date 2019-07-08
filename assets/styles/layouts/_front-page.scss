@@ -8,8 +8,26 @@
       background-color: transparent;
       z-index: 0;
       margin-bottom: 0;
-      img{
-        box-shadow: 0px 5px 25px 0 rgba(26, 23, 27, 0.63);
+      .gallery-container{
+        .front-page-header-bg{
+          position: absolute;
+          content:'';
+          top: -38px;
+          right: 42px;
+          left: -42px;
+          bottom: 20px;
+          background: repeating-linear-gradient(
+          45deg,
+          transparent,
+          transparent 11px,
+          transparent 11px,
+          #ffc7c7 12px
+          );
+          z-index: -1;
+        }
+        .slick-slider-frontpage{
+          box-shadow: 0px 5px 25px 0 rgba(26, 23, 27, 0.63);
+        }
       }
       .content{
         padding: 2rem;

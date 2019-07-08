@@ -90,13 +90,13 @@
     .text{
       position: absolute;
       content:'';
-      height: 20px;
-      width: 50px;
+      height: 15px;
+      width: 40px;
       background-image: url('../images/icons/menu.svg');
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
-      top: calc(50% - 11px);
+      top: calc(50% - 7px);
       left: 55px;
       color: transparent;
       z-index: 2050;
