@@ -1,6 +1,7 @@
 <?
 $files = [
   'lib/setup.php',                        // Theme setup
+  'lib/posttypes.php',                    // Custom Post Types
 
   'lib/integrations/wpsvg.php',           // WPSVG
   'lib/integrations/version-info.php',    // Version Info

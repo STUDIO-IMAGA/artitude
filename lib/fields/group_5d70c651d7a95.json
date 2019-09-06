@@ -1,9 +1,69 @@
 {
-    "key": "group_5c741dcc331e3",
-    "title": "Standaard Template",
+    "key": "group_5d70c651d7a95",
+    "title": "Producten",
     "fields": [
         {
-            "key": "field_5c741ddaaef16",
+            "key": "field_5d70c74fb7672",
+            "label": "Artikelnummer",
+            "name": "product_number",
+            "type": "text",
+            "instructions": "Voer hier het artikelnummer in van het product",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": 10179,
+            "prepend": "Artnr.:",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5d70c6e3b7671",
+            "label": "Prijs",
+            "name": "product_price",
+            "type": "text",
+            "instructions": "Voer hier de prijs in van het product excl. btw.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "0,00",
+            "prepend": "€",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5d724363b2672",
+            "label": "Formulier",
+            "name": "form",
+            "type": "post_object",
+            "instructions": "Kier hier het formulier wat gebruikt moeten worden voor dit product",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "wpcf7_contact_form"
+            ],
+            "taxonomy": "",
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "id",
+            "ui": 1
+        },
+        {
+            "key": "field_5d70c651db551",
             "label": "Header",
             "name": "",
             "type": "tab",
@@ -19,8 +79,8 @@
             "endpoint": 0
         },
         {
-            "key": "field_5c8770cfdba65",
-            "label": "Header Afbeelding",
+            "key": "field_5d70c651db59d",
+            "label": "Afbeelding",
             "name": "header_image",
             "type": "image",
             "instructions": "",
@@ -43,12 +103,12 @@
             "mime_types": ""
         },
         {
-            "key": "field_5c8770e1dba66",
-            "label": "Header Tekst",
+            "key": "field_5d70c651db5dd",
+            "label": "Omschrijving",
             "name": "header_text",
-            "type": "wysiwyg",
-            "instructions": "",
-            "required": 0,
+            "type": "textarea",
+            "instructions": "Voer hier de omschrijving van het product in",
+            "required": 1,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "60",
@@ -56,13 +116,13 @@
                 "id": ""
             },
             "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 0,
-            "delay": 0
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "br"
         },
         {
-            "key": "field_5c741de6aef17",
+            "key": "field_5d70c651db61d",
             "label": "Inhoud",
             "name": "",
             "type": "tab",
@@ -78,7 +138,7 @@
             "endpoint": 0
         },
         {
-            "key": "field_5c741ecea9bdd",
+            "key": "field_5d70c651db65d",
             "label": "Elementen",
             "name": "elements",
             "type": "flexible_content",
@@ -98,7 +158,7 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5c751907991ec",
+                            "key": "field_5d70c651e3a51",
                             "label": "Clone Heading Element",
                             "name": "clone_heading_element",
                             "type": "clone",
@@ -129,7 +189,7 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5c741ee5a9bde",
+                            "key": "field_5d70c651e3a94",
                             "label": "Clone Tekst Element",
                             "name": "clone_tekst_element",
                             "type": "clone",
@@ -160,7 +220,7 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5c74238dacc54",
+                            "key": "field_5d70c651e3ad6",
                             "label": "Clone Quote Element",
                             "name": "clone_quote_element",
                             "type": "clone",
@@ -191,7 +251,7 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5c742449553f3",
+                            "key": "field_5d70c651e3b16",
                             "label": "Clone Oneliner Element",
                             "name": "clone_oneliner_element",
                             "type": "clone",
@@ -222,7 +282,7 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5c9a3f7c9f7cd",
+                            "key": "field_5d70c651e3b57",
                             "label": "Clone Image Element",
                             "name": "clone_image_element",
                             "type": "clone",
@@ -253,7 +313,7 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5d0b5af371959",
+                            "key": "field_5d70c651e3b97",
                             "label": "Clone Element",
                             "name": "clone_image_duo_element",
                             "type": "clone",
@@ -284,7 +344,7 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5d0b6133ca97f",
+                            "key": "field_5d70c651e3bd8",
                             "label": "Clone Element",
                             "name": "clone_image_wide_element",
                             "type": "clone",
@@ -315,7 +375,7 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5c7425444b77d",
+                            "key": "field_5d70c651e3c18",
                             "label": "Clone Galerij Element",
                             "name": "clone_galerij_element",
                             "type": "clone",
@@ -346,7 +406,7 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5c750eb2b77e1",
+                            "key": "field_5d70c651e3c59",
                             "label": "Clone Video Element",
                             "name": "clone_video_element",
                             "type": "clone",
@@ -377,7 +437,7 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5c7533cfc0e5d",
+                            "key": "field_5d70c651e3c9a",
                             "label": "Clone Tab Element",
                             "name": "clone_tab_element",
                             "type": "clone",
@@ -408,40 +468,9 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5c93a77cff9b5",
+                            "key": "field_5d70c651e3cda",
                             "label": "Clone Thema's Element",
                             "name": "clone_themes_element",
-                            "type": "clone",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "clone": [
-                                "group_5d7232c5aa60e"
-                            ],
-                            "display": "seamless",
-                            "layout": "block",
-                            "prefix_label": 0,
-                            "prefix_name": 0
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
-                "layout_5d7228ad97305": {
-                    "key": "layout_5d7228ad97305",
-                    "name": "content-taxonomy",
-                    "label": "Taxonomie Element",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_5d7228ad97306",
-                            "label": "Clone Taxonomie Element",
-                            "name": "clone_taxonomy_element",
                             "type": "clone",
                             "instructions": "",
                             "required": 0,
@@ -470,7 +499,7 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5cadefa42df1f",
+                            "key": "field_5d70c651e3d1c",
                             "label": "Clone Call-To-Action Element",
                             "name": "clone_call-to-action_element",
                             "type": "clone",
@@ -505,51 +534,7 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "page"
-            },
-            {
-                "param": "post_template",
-                "operator": "==",
-                "value": "default"
-            },
-            {
-                "param": "page_type",
-                "operator": "!=",
-                "value": "front_page"
-            }
-        ],
-        [
-            {
-                "param": "post_type",
-                "operator": "==",
-                "value": "page"
-            },
-            {
-                "param": "post_template",
-                "operator": "==",
-                "value": "template-project.php"
-            },
-            {
-                "param": "page_type",
-                "operator": "!=",
-                "value": "front_page"
-            }
-        ],
-        [
-            {
-                "param": "post_type",
-                "operator": "==",
-                "value": "page"
-            },
-            {
-                "param": "post_template",
-                "operator": "==",
-                "value": "template-diciplines.php"
-            },
-            {
-                "param": "page_type",
-                "operator": "!=",
-                "value": "front_page"
+                "value": "producten"
             }
         ]
     ],
@@ -568,5 +553,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1567765359
+    "modified": 1567769492
 }

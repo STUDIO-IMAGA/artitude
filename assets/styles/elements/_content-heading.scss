@@ -4,6 +4,10 @@
       .text{
         padding-left: $grid-gutter-width;
         border-left: 2px solid $black;
+
+        .seperator:last-child(){
+          display: none;
+        }
       }
     }
   }

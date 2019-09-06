@@ -35,7 +35,7 @@ function get_element( $element ){
   if( locate_template( array('templates/elements/'. $element .'.php') ) ):
     include( locate_template('templates/elements/'. $element .'.php') );
   else:
-    include( locate_template('templates/elements/error.php') );
+    include( locate_template('templates/error.php') );
   endif;
 }
 
@@ -48,3 +48,21 @@ function add_bootstrap_container_class( $field_container, $field, $form, $css_cl
 	return '<li id="' . $field_id . '" class="' . $css_class . ' form-group">{FIELD_CONTENT}</li>';
 }
 add_filter( 'gform_field_container', __NAMESPACE__ . '\\add_bootstrap_container_class', 10, 6 );
+
+/**
+ * Shorten $text by $limit amount of words
+ */
+function limit_text($text, $limit, $prepend) {
+
+  $text = strip_tags($text);
+
+  if (str_word_count($text, 0) > $limit):
+
+    $words = str_word_count($text, 2);
+    $pos = array_keys($words);
+    $text = substr($text, 0, $pos[$limit]) . $prepend;
+
+  endif;
+
+  return $text;
+}

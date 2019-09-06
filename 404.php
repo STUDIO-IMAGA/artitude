@@ -1,7 +1,11 @@
-<? get_template_part('templates/page', 'header'); ?>
+<? get_template_part('templates/header'); ?>
 
-<div class="alert alert-warning">
-  <? _e('Sorry, but the page you were trying to view does not exist.', 'imaga'); ?>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h1>404, pagina niet gevonden</h1>
+      <p>Sorry, maar deze pagina konden wij niet vinden.</p>
+      <a class="btn btn-black" href="/" target="_self">Terug naar home</a>
+    </div>
+  </div>
 </div>
-
-<? get_search_form(); ?>

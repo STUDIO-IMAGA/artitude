@@ -53,12 +53,47 @@ function setup() {
 add_action('after_setup_theme', __NAMESPACE__ . '\\setup');
 
 /*
+ * Remove from admin menu: Posts, Comments
+ */
+function remove_admin_menus() {
+  remove_menu_page('edit.php');
+  remove_menu_page('edit-comments.php');
+}
+add_action('admin_menu', __NAMESPACE__ . '\\remove_admin_menus');
+
+/*
+* Remove from admin bar: Posts, Comments
+*/
+function admin_bar_render() {
+  global $wp_admin_bar;
+  $wp_admin_bar->remove_menu('comments');
+  $wp_admin_bar->remove_node('new-post');
+}
+add_action('wp_before_admin_bar_render', __NAMESPACE__ . '\\admin_bar_render');
+
+/*
+ * Remove from post and pages: Comments
+ */
+function remove_comment_support() {
+  remove_post_type_support('post', 'comments');
+  remove_post_type_support('page', 'comments');
+}
+add_action('init', __NAMESPACE__ . '\\remove_comment_support', 100);
+
+
+function remove_draft_widget(){
+    remove_meta_box('dashboard_quick_press', 'dashboard', 'side');
+}
+add_action('wp_dashboard_setup', __NAMESPACE__ . '\\remove_draft_widget', 999);
+
+
+/*
  * Theme assets
  */
 function assets() {
 
-  wp_register_style('imaga/css', Assets\asset_path('styles/main.css') );
-  wp_enqueue_style( 'imaga/css');
+  wp_register_style('imaga/css', Assets\asset_path('styles/main.css'));
+  wp_enqueue_style('imaga/css');
 
   wp_deregister_script('jquery');
   wp_enqueue_script('jquery', Assets\asset_path('scripts/jquery.js'), null, null, true);
@@ -78,17 +113,17 @@ function login_assets() {
 
   wp_enqueue_script('imaga/login', Assets\asset_path('scripts/login.js'), null, null, true);
 
-  wp_enqueue_style( 'imaga/login');
+  wp_enqueue_style('imaga/login');
 
 }
-add_action( 'login_enqueue_scripts', __NAMESPACE__ . '\\login_assets' );
+add_action('login_enqueue_scripts', __NAMESPACE__ . '\\login_assets');
 
 /*
  * ACF Google Maps API Key
  */
 function add_acf_google_maps_key() {
 
-  if( ! defined( 'GOOGLE_MAPS_API' ) ) return;
+  if( ! defined('GOOGLE_MAPS_API') ) return;
 
   acf_update_setting('google_api_key', GOOGLE_MAPS_API );
 
@@ -101,12 +136,12 @@ add_action('acf/init', __NAMESPACE__ . '\\add_acf_google_maps_key');
 function add_google_fonts() {
 
   // Defined in functions.php
-  if( ! defined( 'GOOGLE_FONTS' ) ) return;
+  if( ! defined('GOOGLE_FONTS') ) return;
 
-  wp_enqueue_style( 'imaga/google-fonts', 'https://fonts.googleapis.com/css?family=' . GOOGLE_FONTS );
+  wp_enqueue_style('imaga/google-fonts', 'https://fonts.googleapis.com/css?family=' . GOOGLE_FONTS );
 
 }
-add_action( 'wp_head', __NAMESPACE__ . '\\add_google_fonts' , 1);
+add_action('wp_head', __NAMESPACE__ . '\\add_google_fonts' , 1);
 
 /*
  * Remove 'page-template' from body class on pages with custom templates
@@ -124,40 +159,14 @@ function prefix_remove_body_class($wp_classes) {
 add_filter('body_class', __NAMESPACE__ . '\\prefix_remove_body_class', 20, 2);
 
 /*
- * Remove from admin menu
- */
-function remove_admin_menus() {
-  remove_menu_page( 'edit-comments.php' );
-}
-add_action( 'admin_menu', __NAMESPACE__ . '\\remove_admin_menus' );
-
-/*
- * Remove from post and pages
- */
-function remove_comment_support() {
-  remove_post_type_support( 'post', 'comments' );
-  remove_post_type_support( 'page', 'comments' );
-}
-add_action( 'init', __NAMESPACE__ . '\\remove_comment_support', 100);
-
-/*
- * Remove from admin bar
- */
-function admin_bar_render() {
-  global $wp_admin_bar;
-  $wp_admin_bar->remove_menu('comments');
-}
-add_action( 'wp_before_admin_bar_render', __NAMESPACE__ . '\\admin_bar_render' );
-
-/*
  * Add custom styling for the dashboard interface
  */
 function register_admin_styles(){
 
-  wp_enqueue_style( 'imaga/admin-styles', Assets\asset_path('styles/admin.css') );
+  wp_enqueue_style('imaga/admin-styles', Assets\asset_path('styles/admin.css') );
 
 }
-add_action( 'admin_enqueue_scripts', __NAMESPACE__ . '\\register_admin_styles');
+add_action('admin_enqueue_scripts', __NAMESPACE__ . '\\register_admin_styles');
 
 /*
  * Disable auto-paragraphing for Contact Form 7
@@ -191,22 +200,27 @@ add_filter('xmlrpc_enabled', '__return_false');
  */
 function edit_roles(){
 
-  $role_object = get_role( 'editor' );
+  $role_object = get_role('editor');
 
   if( !$role_object->has_cap('edit_theme_options') ){
-    $role_object->add_cap( 'edit_theme_options' );
+    $role_object->add_cap('edit_theme_options');
   }
 }
-add_action( 'admin_init', __NAMESPACE__ . '\\edit_roles', 100);
+add_action('admin_init', __NAMESPACE__ . '\\edit_roles', 100);
 
-// changing the logo link from wordpress.org to your site
+/*
+ * Change URL of the logo on login screen
+ */
 function login_url() {
   return home_url();
 }
-add_filter( 'login_headerurl', __NAMESPACE__ . '\\login_url' );
+add_filter('login_headerurl', __NAMESPACE__ . '\\login_url');
 
-// changing the alt text on the logo to show your site name
+
+/*
+ * Change alt text of the logo on login screen
+ */
 function login_title() {
-  return get_option( 'blogname' );
+  return get_option('blogname');
 }
-add_filter( 'login_headertitle', __NAMESPACE__ . '\\login_title' );
+add_filter('login_headertitle', __NAMESPACE__ . '\\login_title');

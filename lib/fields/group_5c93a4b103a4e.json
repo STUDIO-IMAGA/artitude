@@ -1,13 +1,13 @@
 {
     "key": "group_5c93a4b103a4e",
-    "title": "Thema's Element",
+    "title": "Taxonomie Element",
     "fields": [
         {
             "key": "field_5c93a4d9265de",
-            "label": "Thema's",
-            "name": "themes",
+            "label": "Taxonomie",
+            "name": "taxonomies",
             "type": "repeater",
-            "instructions": "",
+            "instructions": "Kies hier de verschillende categorieën om te tonen",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -15,17 +15,17 @@
                 "class": "",
                 "id": ""
             },
-            "collapsed": "field_5c93a50b265e0",
+            "collapsed": "field_5d722831231c9",
             "min": 3,
             "max": 0,
-            "layout": "row",
-            "button_label": "Afbeelding Toevoegen",
+            "layout": "table",
+            "button_label": "Categorie Toevoegen",
             "sub_fields": [
                 {
-                    "key": "field_5c93a50b265e0",
-                    "label": "Titel",
-                    "name": "title",
-                    "type": "text",
+                    "key": "field_5d722831231c9",
+                    "label": "Taxonomie",
+                    "name": "taxonomy",
+                    "type": "taxonomy",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -34,62 +34,14 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                },
-                {
-                    "key": "field_5d0a38afd26d7",
-                    "label": "Afbeelding",
-                    "name": "image",
-                    "type": "image",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "return_format": "array",
-                    "preview_size": "medium",
-                    "library": "all",
-                    "min_width": "",
-                    "min_height": "",
-                    "min_size": "",
-                    "max_width": "",
-                    "max_height": "",
-                    "max_size": "",
-                    "mime_types": ""
-                },
-                {
-                    "key": "field_5c93a4e9265df",
-                    "label": "Galerij",
-                    "name": "gallery",
-                    "type": "gallery",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "min": "",
-                    "max": "",
-                    "insert": "append",
-                    "library": "all",
-                    "min_width": "",
-                    "min_height": "",
-                    "min_size": "",
-                    "max_width": "",
-                    "max_height": "",
-                    "max_size": "",
-                    "mime_types": "",
-                    "return_format": "array",
-                    "preview_size": "medium"
+                    "taxonomy": "categorie",
+                    "field_type": "select",
+                    "allow_null": 0,
+                    "add_term": 0,
+                    "save_terms": 0,
+                    "load_terms": 0,
+                    "return_format": "object",
+                    "multiple": 0
                 }
             ]
         }
@@ -109,8 +61,7 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": false,
+    "active": 0,
     "description": "",
-    "0": false,
-    "modified": 1561033226
+    "modified": 1567764527
 }

@@ -1,0 +1,64 @@
+.element{
+  &.content-taxonomy{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    .title{
+      font-weight: 800;
+      font-size: 2.46875rem;
+      color: $red;
+      text-align: center;
+      @extend .heebo;
+    }
+    .taxonomies{
+
+      .taxonomy{
+        padding-right: 2rem;
+        padding-left: 2rem;
+
+        .title{
+          font-weight: 800;
+          font-size: 1.125rem;
+          text-align: center;
+          color: $black;
+          padding-top: 1.6rem;
+          padding-bottom: 3rem;
+          @extend .heebo;
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(md){
+  .element{
+    &.content-taxonomies{
+      .taxonomies{
+        .taxonomy{
+          padding-right: 1rem;
+          padding-left: 1rem;
+
+          .title{
+            padding-bottom: 1.8rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm){
+  .element{
+    &.content-taxonomies{
+      .taxonomies{
+        padding-top: 2rem;
+
+        .taxonomy{
+          .title{
+            padding-bottom: 1.6rem;
+          }
+        }
+      }
+    }
+  }
+}

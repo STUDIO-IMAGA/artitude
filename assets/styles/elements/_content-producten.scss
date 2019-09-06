@@ -1,0 +1,64 @@
+.archive{
+  &.content-producten{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    .producten{
+      .product{
+        padding-right: 2rem;
+        padding-left: 2rem;
+
+        .title{
+          font-weight: 800;
+          font-size: 1.125rem;
+          text-align: center;
+          color: $black;
+          padding-top: 1.6rem;
+          @extend .heebo;
+
+          .price{
+            font-size: 1.2rem;
+          }
+        }
+        .description{
+          font-size: 1rem;
+          padding-top: .5rem;
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(md){
+  .element{
+    &.content-producten{
+      .producten{
+
+        .product{
+          padding-right: 1rem;
+          padding-left: 1rem;
+
+          .description{
+            padding-top: .3rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm){
+  .element{
+    &.content-producten{
+      .producten{
+        padding-top: 2rem;
+
+        .product{
+          .description{
+            padding-top: .2rem;
+          }
+        }
+      }
+    }
+  }
+}
