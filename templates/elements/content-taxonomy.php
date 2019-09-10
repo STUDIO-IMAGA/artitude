@@ -9,9 +9,9 @@
             <div class="col-12 col-sm-6 col-md-4 taxonomy">
               <a href="<?= get_term_link($taxonomy['taxonomy']); ?>">
                 <div class="text-center">
-                  <img class="img-fluid" src="<?= $image['sizes']['gallery-small']; ?>" alt="<?= $image['alt']; ?>" />
+                  <img class="img-fluid" src="<?= $image['sizes']['gallery-small']; ?>" alt="<?= $image['alt']; ?>" data-aos="fade-up" />
                 </div>
-                <div class="title">
+                <div class="title" data-aos="fade-down" data-aos-offset="-100">
                   <?= $taxonomy['taxonomy']->name; ?>
                 </div>
               </a>
