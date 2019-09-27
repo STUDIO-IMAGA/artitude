@@ -12,6 +12,9 @@ add_action('init', function() {
     'labels'                => array(
       'name'                => _x('Producten', 'Plural name of the post type', 'imaga'),
       'singular_name'       => _x('Product', 'Singular name of the post type', 'imaga'),
+      'new_item'              => __( 'Nieuw Item', 'imaga' ),
+      'add_new'               => __( 'Nieuw Item', 'imaga' ),
+      'add_new_item'          => __( 'Nieuw Item', 'imaga' ),
     ),
     'supports'              => array('title'),
     'hierarchical'          => false,
@@ -33,6 +36,9 @@ add_action('init', function() {
     'labels'                     => array(
       'name'                     => _x( 'Categorieën', 'Plural name of the taxonomy', 'imaga' ),
       'singular_name'            => _x( 'Categorie', 'Singular name of the taxonomy', 'imaga' ),
+      'new_item'              => __( 'Nieuw Item', 'imaga' ),
+      'add_new'               => __( 'Nieuw Item', 'imaga' ),
+      'add_new_item'          => __( 'Nieuw Item', 'imaga' ),
     ),
     'hierarchical'               => true,
     'public'                     => true,

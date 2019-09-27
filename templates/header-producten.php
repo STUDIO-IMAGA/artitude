@@ -1,8 +1,17 @@
-<? use IMAGA\Theme\Assets; ?>
-<? use IMAGA\Theme\Navigation; ?>
+<?php
+use IMAGA\Theme\Assets;
+use IMAGA\Theme\Navigation;
 
-<? $image = get_field('header_image'); ?>
+$image = get_field('header_image');
+$ophalen_bezorgen = get_field('ophalen_bezorgen');
+$prijs_per_installateur = get_field('prijs_per_installateur');
+$aantal_installateurs = get_field('aantal_installateurs');
 
+if( ($prijs_per_installateur > 0) and ($aantal_installateurs > 0) ):
+  setlocale(LC_MONETARY, 'nl_NL');
+  $totaal_prijs = str_replace(".00", ",-", money_format('%.2n', ($prijs_per_installateur * $aantal_installateurs) ) );
+endif;
+?>
 <section class="element header empty">
 </section>
 
@@ -44,12 +53,37 @@
         <hr data-aos="fade-left" data-aos-delay="300">
 
         <div class="price" data-aos="fade-up-left" data-aos-delay="150">
-          <span>&euro; <? the_field('product_price'); ?> (excl. btw)</span>
+          <span>&euro; <?php echo str_replace(".00", ",-", money_format('%.2n', get_field('product_price') ) ); ?> (excl. btw)</span>
+
+          <?php if( $ophalen_bezorgen ):
+            switch ( $ophalen_bezorgen ):
+              case 'ophalen': ?>
+                <span class="badge badge-red"><small>Dit artikel kan alleen opghaald worden.</small></span>
+              <?php break;
+
+              case 'bezorgen': ?>
+                <span class="badge badge-red"><small>Dit artikel kan alleen bezorgd worden.</small></span>
+              <?php break;
+
+              case 'bezorgen-ophalen': ?>
+                <span><small>Dit artikel kan opgehaald of bezorgd worden.</small></span>
+              <?php break;
+            endswitch;
+          endif;
+          ?>
         </div>
+
+        <?php if( ($prijs_per_installateur > 0) and ($aantal_installateurs > 0) ): ?>
+          <div class="installation" data-aos="fade-up-left" data-aos-delay="200">
+            <span>&euro; <?php echo $totaal_prijs; ?> (installatiekosten)
+            <span class="badge badge-red"><small>Dit product wordt geïnstalleerd op locatie.</small></span>
+          </div>
+        <?php endif;?>
 
         <hr data-aos="fade-left" data-aos-delay="350" data-aos-offset="-200">
 
-        <div class="call-to-action" data-aos="fade-up-left" data-aos-delay="200" data-aos-offset="-200">
+
+        <div class="call-to-action" data-aos="fade-up-left" data-aos-delay="300" data-aos-offset="-200">
           <button type="button" class="btn btn-black" data-toggle="modal" data-target="#reserveerformulier">Reververen</button>
         </div>
       </div>

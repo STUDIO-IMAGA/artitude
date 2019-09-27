@@ -276,3 +276,13 @@ body{
     transform:translate3d(0, 0, 0)
   }
 }
+
+.icon{
+  &.icon-info{
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    background-image: url('../images/icons/info.svg');
+  }
+}

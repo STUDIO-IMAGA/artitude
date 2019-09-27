@@ -49,7 +49,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "20",
                 "class": "",
                 "id": ""
             },
@@ -61,6 +61,73 @@
             "multiple": 0,
             "return_format": "id",
             "ui": 1
+        },
+        {
+            "key": "field_5d83502dda318",
+            "label": "Ophalen en\/of bezorgen",
+            "name": "ophalen_bezorgen",
+            "type": "radio",
+            "instructions": "Vink hier de ophaal\/bezorgen opties aan.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "ophalen": "Alleen ophalen",
+                "bezorgen": "Alleen bezorgen",
+                "bezorgen-ophalen": "Ophalen en\/of bezorgen"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_5d83662d86482",
+            "label": "Prijs per installateur",
+            "name": "prijs_per_installateur",
+            "type": "number",
+            "instructions": "Voer hier de prijs in per installateur, per uur.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "€",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_5d835980281ce",
+            "label": "Aantal installateurs",
+            "name": "aantal_installateurs",
+            "type": "number",
+            "instructions": "Kies hier het aantal installateurs die nodig zijn voor het opbouwen van het product.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
         },
         {
             "key": "field_5d70c651db551",
@@ -553,5 +620,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1567769492
+    "modified": 1568892925
 }

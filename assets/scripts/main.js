@@ -19,12 +19,22 @@
     'common': {
       init: function() {
 
-        //Close navbar when click somewhere else
+        // Close navbar on click anywhere else on the page
         $('.wrap main').on('click', function(){
           $('#navigation_container').collapse('hide');
         });
 
-        // init Animate On Scroll
+        // Enable tooltips
+        $('[data-toggle="tooltip"]').tooltip({
+          container: 'body',
+          animation: true
+        });
+
+        $('.kliky').on('click', function(){
+          $('#tooltip').tooltip('show');
+        });
+
+        // Init Animate On Scroll
         AOS.init({
           offset: 300,
           once: 'true',
@@ -33,7 +43,7 @@
           disable: 'mobile'
         });
 
-        // init Smooth Scroll
+        // Init Smooth Scroll
         var scroll = new SmoothScroll('a[href*="#"]', {
           updateURL: false,
           topOnEmptyHash: true,

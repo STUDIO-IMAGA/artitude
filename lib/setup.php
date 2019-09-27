@@ -98,6 +98,8 @@ function assets() {
   wp_deregister_script('jquery');
   wp_enqueue_script('jquery', Assets\asset_path('scripts/jquery.js'), null, null, true);
 
+  wp_enqueue_script('popper/js', Assets\asset_path('scripts/popper.js'), ['jquery'], null, true);
+
   wp_enqueue_script('imaga/js', Assets\asset_path('scripts/main.js'), ['jquery'], null, true);
 }
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);
