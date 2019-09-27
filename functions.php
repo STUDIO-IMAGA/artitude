@@ -1,6 +1,7 @@
 <?
 $files = [
   'lib/setup.php',                        // Theme setup
+  'lib/updater.php',                      // Theme Updater
   'lib/posttypes.php',                    // Custom Post Types
 
   'lib/integrations/wpsvg.php',           // WPSVG
@@ -22,15 +23,14 @@ $files = [
 ];
 
 foreach ($files as $file):
-
   if (!$filepath = locate_template($file)):
-
     trigger_error(sprintf(__('Error locating %s for inclusion', 'imaga'), $file), E_USER_ERROR);
-
   endif;
-
   require_once $filepath;
-
 endforeach;
-
 unset($file, $filepath);
+
+// Init updater
+$puc = Puc_v4_Factory::buildUpdateChecker( 'https://github.com/STUDIO-IMAGA/artitude', __FILE__, 'imaga' );
+
+$puc->getVcsApi()->enableReleaseAssets();
