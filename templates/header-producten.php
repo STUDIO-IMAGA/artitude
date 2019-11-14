@@ -19,7 +19,7 @@ endif;
   <section class="breadcrumbs" data-aos="fade-left" data-aos-duration="900">
     <div class="container">
       <div class="row">
-        <div class="col-12">
+        <div class="col-12 mt-6 mt-lg-0">
             <? yoast_breadcrumb(); ?>
         </div>
       </div>
@@ -33,7 +33,7 @@ endif;
       <div class="col-12 col-sm-7 pl-md-4 mb-4 mb-sm-0 ">
         <div class="gallery-container">
           <div class="bg-gallery" data-aos="fade-up-right" data-aos-delay="200"></div>
-          <img src="<?= $image['sizes']['header-image']; ?>" alt="<?= $image['alt']; ?>" data-aos="fade-down-left"/>
+          <img class="img-fluid" src="<?= $image['sizes']['header-image']; ?>" alt="<?= $image['alt']; ?>" data-aos="fade-down-left"/>
         </div>
       </div>
       <div class="col-12 col-sm-5 pr-md-2 pb-4">
