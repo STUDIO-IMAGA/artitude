@@ -23,9 +23,9 @@
             "sub_fields": [
                 {
                     "key": "field_5d7232fb7e4ab",
-                    "label": "Afbeelding",
+                    "label": "Afbeeldingen",
                     "name": "image",
-                    "type": "image",
+                    "type": "gallery",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -34,9 +34,12 @@
                         "class": "",
                         "id": ""
                     },
-                    "return_format": "array",
+                    "return_format": "id",
                     "preview_size": "medium",
+                    "insert": "append",
                     "library": "all",
+                    "min": "",
+                    "max": "",
                     "min_width": "",
                     "min_height": "",
                     "min_size": "",
@@ -84,5 +87,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1567765296
+    "modified": 1574347680
 }
