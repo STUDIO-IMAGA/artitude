@@ -226,3 +226,7 @@ function login_title() {
   return get_option('blogname');
 }
 add_filter('login_headertitle', __NAMESPACE__ . '\\login_title');
+
+add_action( 'wp_enqueue_scripts', function() {
+  wp_enqueue_style( 'dashicons' );
+});

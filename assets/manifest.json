@@ -41,6 +41,7 @@
     }
   },
   "config": {
-    "devUrl": "http://artitude.local"
+    "devUrl": "http://artitude.local",
+    "name": "artitude"
   }
 }

@@ -22,7 +22,7 @@
             </div>
               <?php
               // Very dirty inline.. oops
-              wp_add_inline_script('jquery', "$('.lightbox-".$gallery[0]."').on('click',function(){SimpleLightbox.open({items: [".$array."]});});");
+              wp_add_inline_script('imaga/js', "$('.lightbox-".$gallery[0]."').on('click',function(){SimpleLightbox.open({items: [".$array."]});});");
             ?>
           <?php endforeach; ?>
         </div>

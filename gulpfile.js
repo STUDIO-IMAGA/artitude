@@ -204,7 +204,7 @@ gulp.task('jshint', function() {
     .pipe(gulpif(enabled.failJSHint, jshint.reporter('fail')));
 });
 
-gulp.task('clean', require('del').bind(null, [path.dist, 'temp/**']));
+gulp.task('clean', require('del').bind(null, [path.dist, config.name + '/**']));
 
 gulp.task('watch', function() {
   browserSync.init({
@@ -292,13 +292,13 @@ gulp.task('move', ['version'], function() {
   ], {
    base: '.'
   })
-  .pipe(gulp.dest( './temp' ));
+  .pipe(gulp.dest( './' + pkg.name ));
 });
 
 gulp.task('zip', ['move'], function() {
   var pkg = getPackageJSON();
   return gulp.src([
-    'temp/**',
+    pkg.name + '/**',
   ], {
    base: '.'
   })
