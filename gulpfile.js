@@ -292,10 +292,11 @@ gulp.task('move', ['version'], function() {
   ], {
    base: '.'
   })
-  .pipe(gulp.dest( './' + pkg.name ));
+  .pipe(gulp.dest( './temp' ));
 });
 
 gulp.task('zip', ['move'], function() {
+  var pkg = getPackageJSON();
   return gulp.src([
     'temp/**',
   ], {
