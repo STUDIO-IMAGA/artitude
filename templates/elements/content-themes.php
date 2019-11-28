@@ -14,7 +14,7 @@
             <div class="col-12 col-sm-6 col-md-4 theme lightbox-<?php echo $gallery[0]; ?>">
               <div class="gallery-container">
                 <img class="img-fluid" src="<?php echo $thumbnail_url; ?>" alt="<?php echo $theme['title']; ?>" />
-                <div class="gallery-paging"><?php echo count($gallery); ?><span class="dashicons dashicons-images-alt2"></span></div>
+                <div class="gallery-paging"><?php echo count($gallery); ?></div>
               </div>
               <div class="title">
                 <?php echo $theme['title']; ?>
