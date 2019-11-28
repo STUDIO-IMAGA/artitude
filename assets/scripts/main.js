@@ -197,9 +197,9 @@
         // Init SimpleLightbox
         $('a.lightbox').simpleLightbox({
           closeBtnCaption: 'Sluiten',
-           nextBtnCaption: 'Volgende',
-           prevBtnCaption: 'Vorige',
-           loadingCaption: 'Bezig met laden...',
+          nextBtnCaption: 'Volgende',
+          prevBtnCaption: 'Vorige',
+          loadingCaption: 'Bezig met laden...',
         });
       }
     },
